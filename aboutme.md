@@ -1,16 +1,16 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Hakkımda
+subtitle: Benimle İlgili
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Ben Ali İlteriş Keksin. Atatürk Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Pek
+iyi bir öğrenci olduğum söylenemez. Genelde bilgisayar başında yeni şeyler öğrenmek için 
+vakit harcıyorum. Haliyle okul iyi gitmiyor. Kendimle ilgili kısaca şunları söyleyebilirim:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- 4 yıldır GNU/Linux dağıtımları (şuan Fedora) kullanıyorum. 
+- 4 yıldır Windows'a elimi sürmedim. (Bunun haklı gururunu yaşıyorum.)
+- Python/Django, C++ ile ilgileniyorum. 
+- Okulun bir şey katmadığını sadece diploma için okudumuzu düşünüyorum.
+- Yeni şeyler öğrenmek kurcalamak çok keyif veriyor.
+- Özgür yazılım felsefesini destekliyor ve benimsiyorum.
