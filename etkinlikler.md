@@ -1,4 +1,4 @@
-### Düzenlediğimiz veya Düzenleyeceğimiz Etkinliklerin Bulunduğu Sayfa
+##### Düzenlediğimiz veya Düzenleyeceğimiz Etkinliklerin Bulunduğu Sayfa
 
 
 
@@ -21,5 +21,7 @@ Kimler Gelmeli:
 - Ufkunu Genişletmek İsteyen Kimseler
 
 *Yer: MucitPark Bilim ve Fikir Atölyesi (Erzurum Teknik Üniversitesi Fen Fakültesi)*
+
 *Tarih: 7 Ağustos 2018 Salı günü 12.00-18.00*
+
 *Organizasyon: MucitPark Bilim ve Fikir Atölyesi*
