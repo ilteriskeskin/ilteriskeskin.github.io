@@ -74,18 +74,18 @@ Hemen ilk olarak base.html adında bir dosya oluşturalım ve içine şunları e
 
 Hemen görüntüleri paylaşayım.
 
-![alt text](https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/home_yazi.png "IMG 1")
+<img src="https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/home_yazi.png" align="center">
 
 **Anasayfa görüntümüz bu şekilde olacaktır arkadaşlar.**
 
-![alt text](https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/register_yazi.png "IMG 1")
+<img src="https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/register_yazi.png" align="center">
 
 **Kayıt bölümü bu şekildedir ve formu doldurup kaydolalım.**
 
-![alt text](https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/sqlitebrowser_yazi.png "IMG 1")
+<img src="https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/sqlitebrowser_yazi.png" align = "center">
 
 **Sqlitebrowser adlı program yardımıyla oluşan veritabanımızı açalım ve içine bakalım.**
 
-![alt text](https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/db_yazi.png "IMG 1")
+<img src="https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/db_yazi.png" align = "center">
 
 **Bu şekilde kullanıcı adınız ve parolanız kaydoldu ise programınız sorunsuz bir şekilde çalışıyor.**
