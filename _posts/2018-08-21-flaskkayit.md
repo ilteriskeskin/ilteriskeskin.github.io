@@ -74,7 +74,7 @@ Hemen ilk olarak base.html adında bir dosya oluşturalım ve içine şunları e
 
 Hemen görüntüleri paylaşayım.
 
-<img src="/ilteriskesk.github.io/tree/master/img/home_yazi.png" align="center">
+![IMG 1]({{ "/img/home_yazi.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/home_yazi.png }})
 
 **Anasayfa görüntümüz bu şekilde olacaktır arkadaşlar.**
 
