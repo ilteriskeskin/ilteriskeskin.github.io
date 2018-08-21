@@ -66,7 +66,7 @@ Projemizin Back-End kısmı bu kadar. Bundan sonrası oldukça sade ve basit tem
 
 Hemen ilk olarak base.html adında bir dosya oluşturalım ve içine şunları ekleyelim.
 
-```Html
+```
 <html>
   <head>
     <title>Flask Kayıt Olma</title>
@@ -84,7 +84,7 @@ Hemen ilk olarak base.html adında bir dosya oluşturalım ve içine şunları e
 ```
 Ardından index.html adlı bir dosya açıp, anasayfamızın içeriğini dolduralım.
 
-```Html
+```
 {% extends "base.html" %}
 {% block content %}
  
@@ -96,7 +96,7 @@ Ardından index.html adlı bir dosya açıp, anasayfamızın içeriğini doldura
 
 Bunuda hallettiysek zaman kaybetmeden register.html adlı bir dosya açalım ve kayıt formumuzu oluşturalım.
 
-```Html
+```
 {% extends "base.html" %}
 {% block content %}
 
@@ -115,7 +115,7 @@ Bunuda hallettiysek zaman kaybetmeden register.html adlı bir dosya açalım ve 
 Ve son olarak kullanıcı kaydolduktan sonra yönlendireceğimiz giriş yap yani login.html sayfamızı oluşturup içine
 şunları ekleyelim.
 
-```Html
+```
 {% extends "base.html" %}
 {% block content %}
 
