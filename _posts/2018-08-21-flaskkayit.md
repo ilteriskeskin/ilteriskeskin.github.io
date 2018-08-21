@@ -66,70 +66,9 @@ Projemizin Back-End kısmı bu kadar. Bundan sonrası oldukça sade ve basit tem
 
 Hemen ilk olarak base.html adında bir dosya oluşturalım ve içine şunları ekleyelim.
 
-```
-<html>
-  <head>
-    <title>Flask Kayıt Olma</title>
-  </head>
-  <body>
-    <div><a href="/">Flask Kayıt Olma</a></div>
-		
-    <hr>
-    {% block content %}
-    
-    {% endblock %}
-  </body>
-</html>
-
-```
-Ardından index.html adlı bir dosya açıp, anasayfamızın içeriğini dolduralım.
-
-```
-{% extends "base.html" %}
-{% block content %}
- 
-<a href="/register">Register</a>
-
-{% endblock %}
-
-```
-
-Bunuda hallettiysek zaman kaybetmeden register.html adlı bir dosya açalım ve kayıt formumuzu oluşturalım.
-
-```
-{% extends "base.html" %}
-{% block content %}
-
-<h2>Kayıt Ol</h2>
-<hr>
-<form action="/register/" method="POST">
-  <input type="username" name="username" placeholder="Username">
-  <input type="password" name="password" placeholder="Password">
-  <input type="submit" value="Log in">
-</form>
-
-{% endblock %}
-
-```
-
-Ve son olarak kullanıcı kaydolduktan sonra yönlendireceğimiz giriş yap yani login.html sayfamızı oluşturup içine
-şunları ekleyelim.
-
-```
-{% extends "base.html" %}
-{% block content %}
-
-<h1>Giriş Yap</h1>
-
-{% endblock %}
-
-```
-
 İşte şimdi tamam. Projemiz artık hazır. Ben nasıl olması gerektiğine dair ekran görüntüleri paylaşacağım. Bazı noktalar var
 öncelikle onları belirteyim.
 
-* Projemiz tasarım amaçlı olmayıp yalnızca kayıt olma formu nasıl yapılır anlatmak içindir.
-* Tasarımı kendi imkanlarınız ile güzelleştirebilirsiniz.
 * Proje kodlarını [GitHub](https://github.com/ilteriskesk) hesabımda paylaşmadım ancak isteyen olursa mail atabilirim.
 * Daha sonra login olma ile ilgili bir yazı gelecek.
 
