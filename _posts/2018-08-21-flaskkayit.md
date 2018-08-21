@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Neden Git?
-subtitle: Git Tercihim Hakkında
+title: Flask ve SQLAlchemy ile Kayıt Uygulaması
+subtitle: Python Microframewor'u olan Flask ile register uygulaması
 gh-repo: ilteriskesk/ilteriskesk.github.io
 gh-badge: [star, fork, follow]
-tags: [flask, sqlalchemy]
+tags: [jekyll, git, github, flask, sqlalchemy]
 
 ---
 
