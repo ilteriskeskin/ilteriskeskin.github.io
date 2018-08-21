@@ -4,7 +4,7 @@ title: Neden Git?
 subtitle: Git Tercihim Hakkında
 gh-repo: ilteriskesk/ilteriskesk.github.io
 gh-badge: [star, fork, follow]
-tags: [jekyll, blog, git, github, flask, sqlalchemy]
+tags: [flask, sqlalchemy]
 
 ---
 
