@@ -78,14 +78,14 @@ Hemen görüntüleri paylaşayım.
 
 **Anasayfa görüntümüz bu şekilde olacaktır arkadaşlar.**
 
-<img src="https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/register_yazi.png" align="center">
+![IMG 1]({{ "/img/register_yazi.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/register_yazi.png }})
 
 **Kayıt bölümü bu şekildedir ve formu doldurup kaydolalım.**
 
-<img src="https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/sqlitebrowser_yazi.png" align = "center">
+![IMG 1]({{ "/img/sqlitebrowser_yazi.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/sqlitebrowser_yazi.png }})
 
 **Sqlitebrowser adlı program yardımıyla oluşan veritabanımızı açalım ve içine bakalım.**
 
-<img src="https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/db_yazi.png" align = "center">
+![IMG 1]({{ "/img/db_yazi.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/db_yazi.png }})
 
 **Bu şekilde kullanıcı adınız ve parolanız kaydoldu ise programınız sorunsuz bir şekilde çalışıyor.**
