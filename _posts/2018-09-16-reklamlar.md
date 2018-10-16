@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Neden Blogda Reklam Var?
+title: Neden Blogumda Reklam Var?
 subtitle: Blogumdaki reklamlar nedir neden varlar?
 gh-repo: ilteriskesk/ilteriskesk.github.io
 gh-badge: [star, fork, follow]
