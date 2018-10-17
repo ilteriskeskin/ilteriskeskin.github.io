@@ -8,12 +8,12 @@ tags: [jekyll, blog, github, adsense, google, reklam]
 
 ---
 
-Herkese merhaba bu yazımda neden siteme reklam koyduğumu ve o reklamların ne olduğunu
+Herkese merhaba bu yazımda neden bloguma reklam koyduğumu ve o reklamların ne olduğunu
 anlatacağım. Herkese iyi okumalar.
 
 ### Neden Reklam Koydum?
 
-Siteme reklam koydum malum görüyorsunuzdur. Öyle sık bir reklam akışı yok yani kullanıcıyı
+Bloguma reklam koydum malum görüyorsunuzdur. Öyle sık bir reklam akışı yok yani kullanıcıyı
 boğmak istemedim. Bildiğiniz gibi blogumun sunucu ve domain masrafı yok. [GtiHub Pages](https://pages.github.com/) bize ücretsiz domain ve sunucu veriyor. Ancak öğrenci olduğum için ek bir gelir kaynağı elde etmem gerekiyordu. Zaten blogum aşırı bir tıklanma almadığı için ve reklamlara insanlar genelde tıklamadığı için öyle pek fazla geliri olmayacak. E tabi çoğumuz reklam engelleyici kullanıyoruz. En azından belki biraz olsun gelir elde ederim diye düşünerek böyle bir işe giriştim.
 
 ------------------------
