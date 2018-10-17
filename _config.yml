@@ -76,7 +76,7 @@ social-network-links:
   email: "aliilteriskeskin@gmail.com"
   github: ilteriskesk
   twitter: ilteriskeskin
-#  reddit: yourname
+  reddit: ilteriskeskin
 #  google-plus: +DeanAttali
   linkedin: aliilteriskeskin
 #  xing: yourname
@@ -96,6 +96,7 @@ share-links-active:
   facebook: true
   google: false
   linkedin: true
+  reddit: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
