@@ -56,8 +56,8 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
+navbar-img: "/img/bgimage.png"
+footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
@@ -126,6 +126,8 @@ gtag: "UA-123219075-1"
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 # disqus: ""
+layout: default
+comments: true
 
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
