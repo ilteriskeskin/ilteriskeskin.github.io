@@ -124,9 +124,14 @@ serilere devam edeceğim. Okuduğunuz için teşekkür ederim.
 
 İyi çalışmalar diliyorum.
 
-**Yazı Hazırlanılırken Dinlenilen Şarkılar**
+--------------------------------------
+
+**Yazı Hazırlanılırken Dinlenilen Şarkılar:**
 
 [Cem Karaca - Kerkük Zindanı](https://www.youtube.com/watch?v=BqJ-4ePe_Pk)
+
 [Cem Karaca - Tamirci Çırağı](https://www.youtube.com/watch?v=9KkAtcPku2k)
+
 [Sagopa Kajmer & Bergen - Affetmem](https://www.youtube.com/watch?v=-dlJ1S4GHM8)
+
 [DJ Tarkan ft. Sagopa Kajmer - Oldu Olanlar](https://www.youtube.com/watch?v=dcEbtq4ezXk)
