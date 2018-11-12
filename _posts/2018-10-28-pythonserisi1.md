@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Python ile Az Kullanılanlar 1
-subtitle: Python ile az kullanılan ancak çok işe yarayan yöntemler
+title: Python'da İşe Yarayan Yöntemler 1
+subtitle: Python'da çok işe yarayan yöntemlerden bahsedeceğiz.
 gh-repo: ilteriskesk/ilteriskesk.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, git, github, python3]
 
 ---
 
-Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride python ile az kullanılan ancak oldukça
+Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.
 
 Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)
