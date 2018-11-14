@@ -4,9 +4,8 @@ title: Hakkımda
 subtitle: Benimle İlgili
 ---
 
-Ben Ali İlteriş Keksin. Atatürk Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Pek
-iyi bir öğrenci olduğum söylenemez. Genelde bilgisayar başında yeni şeyler öğrenmek için
-vakit harcıyorum. Haliyle okul iyi gitmiyor. Kendimle ilgili kısaca şunları söyleyebilirim:
+Ben Ali İlteriş Keksin. Genelde bilgisayar başında yeni şeyler öğrenmek için ve özgür yazılım lisanslı açık kaynak kodlu yazılımlar 
+geliştirmek için vakit harcıyorum. Kendimle ilgili kısaca şunları söyleyebilirim:
 
 - 4 yıldır GNU/Linux dağıtımları (şuan Fedora ve Pardus) kullanıyorum.
 - 4 yıldır Windows'a elimi sürmedim. (Bunun haklı gururunu yaşıyorum.)
@@ -14,3 +13,5 @@ vakit harcıyorum. Haliyle okul iyi gitmiyor. Kendimle ilgili kısaca şunları 
 - Okulun bir şey katmadığını sadece diploma için okudumuzu düşünüyorum.
 - Yeni şeyler öğrenmek kurcalamak çok keyif veriyor.
 - Özgür yazılım felsefesini destekliyor ve benimsiyorum.
+
+[GitHub](https://github.com/ilteriskesk) hesabımdan paylaştığım projelere bakabilirsiniz.
