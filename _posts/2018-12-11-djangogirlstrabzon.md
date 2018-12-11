@@ -41,7 +41,15 @@ Eğitimden sonra bizim Erzurum'a dönmemiz gerekiyordu. E tabi giderken içimiz 
 
 Ayrıca Django Girls Erzurum düzenleme kararı aldık. Umarım bu fikir gerçekleşir :)
 
+**Etkinlik sonunda ortaya çıkan blogumuzu canlıda görmek için [buraya](http://alis.pythonanywhere.com/) tıklayabilirsiniz :)**
+
 Okuduğunuz için teşekkür ederim :)
+
+---------------------------------------
+
+Bir fotoğraf bırakayım madem :)
+
+![IMG 1]({{ "/img/djgirlstr.jpg" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/djgirlstr.jpg }})
 
 ---------------------------------------
 
