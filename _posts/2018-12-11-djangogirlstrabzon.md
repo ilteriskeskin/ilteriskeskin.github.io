@@ -56,7 +56,11 @@ Bir fotoğraf bırakayım madem :)
 **Yazı Hazırlanılırken Dinlenilen Şarkılar:**
 
 [Mor ve Ötesi - Bir Derdim Var](https://www.youtube.com/watch?v=7RW8n4iXZbA)
+
 [Can Bonomo - Hikayem Bitmedi](https://www.youtube.com/watch?v=Rgcte2XEgDQ)
+
 [Burry Soprano - Mary Jane](https://www.youtube.com/watch?v=-UQNUpRWS-8)
+
 [Sansar Salvo - Dum Taka Dum](https://www.youtube.com/watch?v=T_VB_HjibHA)
+
 [Sansar Salvo - Gözlerimin İçinde](https://www.youtube.com/watch?v=SdTsXt6rSOM)
