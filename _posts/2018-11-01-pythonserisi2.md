@@ -11,7 +11,7 @@ tags: [jekyll, git, github, python3, turtle]
 Merhaba, yeni bir [yazı](2018-10-28-pythonserisi1.md) serisine başlama kararı almıştım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.
 
-Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. :ocuklara Python öğretmek istediğinizde siyah 
+Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. çocuklara Python öğretmek istediğinizde siyah 
 ekran sıkıcı geldiğinde ortama biraz renk ve eğlence katması açısından oldukça hoş bir modül.
 
 **Not:**
@@ -19,7 +19,7 @@ Bir süredir sınavlarım dolayısıyla yazamıyordum. Müsait bir an buldum ve 
 
 ---------------------------------------
 
-İlk olarak bir turtle1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.
+İlk olarak turtle1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.
 
 **turtle1.py**
 
