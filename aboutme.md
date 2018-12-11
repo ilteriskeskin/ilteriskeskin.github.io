@@ -10,7 +10,7 @@ geliştirmekteyiz. Şuan sadece Android uygulamalar ve web uygulamaları gelişt
 
 Kendimle ilgili kısaca şunları söyleyebilirim:
 
-- 4 yıldır GNU/Linux dağıtımları (şuan Ubuntu ve Pardus) kullanıyorum.
+- 4 yıldır GNU/Linux dağıtımları (şuan Ubuntu ve Arch) kullanıyorum.
 - 4 yıldır Windows'a elimi sürmedim. (Bunun haklı gururunu yaşıyorum.)
 - Python, Django, Flask ve C/C++ ile ilgileniyorum.
 - Okulun bir şey katmadığını sadece diploma için okudumuzu düşünüyorum.
