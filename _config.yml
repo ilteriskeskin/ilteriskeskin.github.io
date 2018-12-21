@@ -26,6 +26,7 @@ navbar-links:
   Hakkımda: "aboutme"
   Etiketler: "tags"
   Bağış: "donate"
+  Çalışma: "JavaScriptExample/index"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
