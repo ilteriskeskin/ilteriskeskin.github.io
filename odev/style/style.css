@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(52, 14, 66);
+}
+
+.title{
+    text-align: center;
+    color: rgb(207, 186, 186);
+    font-weight: bold;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.content{
+    text-align: center;
+    font-weight: bold;
+    color: azure;
+}
+
+.image2{
+    display: table-row;
+    margin: 1.5%;
+}
+
+.content2{
+    text-align: 5%;
+    font-weight: bold;
+}
+
+hr { 
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  } 
+
+.kaynak{
+    margin-left: 15%;
+    font-weight: bold;
+    color: azure;
+}
+
+.hazirlayanlar{
+    margin-left: 44.5%;
+    font-weight: bold;
+    color: azure;
+}
+
+.subTitle{
+    display: block;
+    margin-left: 47%;
+    font-weight: bold;
+    color: azure;
+}
