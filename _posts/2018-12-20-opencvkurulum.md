@@ -8,7 +8,7 @@ tags: [jekyll, git, github, OpenCV, Ubuntu]
 
 ---
 
-Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladık. Ekipte içinde ben yazılım kısmıyla ilgileniyorum.
+Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladık. Ekip içinde ben yazılım kısmıyla ilgileniyorum.
 Yani görüntü işleme ile epeyce içli dışlı olacağım. Daha önce OpenCV kurmamış arakdaşlar kurulumda zorlanıyorlardı. İlk 
 OpenCV kurulumumumda (bundan 1 yıl önce) resmen ağlamıştım :). 1-2 hafta önce yeniden kurdum. Oldukça sancısız geçti. E 
 durum böyle olunca bir yazı yazayım dedim.
@@ -21,8 +21,8 @@ Hadi başlayalım.
 
 **Not:**
 
-* Mümkünse internetini iyi olan bir yerde indirme yapın.
-* Ubuntu 18.04 ve 16.04 üzerinde denenmeştir.
+* Mümkünse interneti iyi olan bir yerde indirme yapın.
+* Ubuntu 18.04 ve 16.04 üzerinde denenmiştir.
 
 **Gerekli Paketler**
 
