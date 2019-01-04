@@ -1,3 +1,3 @@
 **Kişisel Blogum**
-* [ilteriskesk.github.io](https://ilteriskesk.github.io)
+* [ilteriskeskin.github.io](https://ilteriskeskin.github.io)
 * [NokulSoft](http://nokulsoft.com)

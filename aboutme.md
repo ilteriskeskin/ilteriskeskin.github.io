@@ -17,4 +17,4 @@ Kendimle ilgili kısaca şunları söyleyebilirim:
 - Yeni şeyler öğrenmek kurcalamak çok keyif veriyor.
 - Özgür yazılım felsefesini destekliyor ve benimsiyorum.
 
-[GitHub](https://github.com/ilteriskesk) hesabımdan paylaştığım projelere bakabilirsiniz.
+[GitHub](https://github.com/ilteriskeskin) hesabımdan paylaştığım projelere bakabilirsiniz.
