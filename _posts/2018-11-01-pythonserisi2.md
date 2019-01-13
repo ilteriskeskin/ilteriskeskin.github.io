@@ -34,7 +34,7 @@ turtle.getscreen()._root.mainloop()
 
 **Ekran Çıktısı:**
 
-![IMG 1]({{ "/img/t1.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/t1.png }})
+![IMG 1]({{ "/img/t1.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t1.png }})
 
 İlk kodlarımız bunlar. Burada 150 birim çapında bir çember oluşturuyoruz.
 
@@ -55,7 +55,7 @@ turtle.getscreen()._root.mainloop()
 
 **Ekran Çıktısı:**
 
-![IMG 1]({{ "/img/t2.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/t2.png }})
+![IMG 1]({{ "/img/t2.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t2.png }})
 
 Burada ise ilk programın hemen hemen aynısını yaptık. Sadece burada çizim yapan aracımızın şekli (shape) 
 kaplumbağa.
@@ -86,7 +86,7 @@ done()
 
 **Ekran Çıktısı:**
 
-![IMG 1]({{ "/img/t3.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/t3.png }})
+![IMG 1]({{ "/img/t3.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t3.png }})
 
 Burada ise Python3 turtle dökümantasyonundan yardım alarak karmaşık ama hoş görünümlü bir şekil çizdirdik.
 
@@ -121,7 +121,7 @@ drawRainbow()
 
 **Ekran Çıktısı:**
 
-![IMG 1]({{ "/img/t4.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/t4.png }})
+![IMG 1]({{ "/img/t4.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t4.png }})
 
 Burada ise yine karmaşık ancak güzel bir çizim yaptırdık kaplumbağamıza.
 

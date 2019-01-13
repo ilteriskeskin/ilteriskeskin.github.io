@@ -53,7 +53,7 @@ print("dispatch_dict func: ", dispatch_dict('unknown', 2, 8))
 
 **Ekran Çıktısı:**
 
-![IMG 1]({{ "/img/p1.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/p1.png }})
+![IMG 1]({{ "/img/p1.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/p1.png }})
 
 İlk kodlarımız bunlar. Karşılaştırıp aradaki bağlantıyı bulabilirsiniz :)
 
@@ -78,7 +78,7 @@ print(string[4::-1])
 
 **Ekran Çıktısı:**
 
-![IMG 1]({{ "/img/p2.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/p2.png }})
+![IMG 1]({{ "/img/p2.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/p2.png }})
 
 Burada ise stringler ile güzel işlemler yaptığımız bir program yazdık.
 
@@ -112,7 +112,7 @@ print(b is my_list)
 
 **Ekran Çıktısı:**
 
-![IMG 1]({{ "/img/p3.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/p3.png }})
+![IMG 1]({{ "/img/p3.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/p3.png }})
 
 
 Burada ise listeler ile işlemler yaptık.

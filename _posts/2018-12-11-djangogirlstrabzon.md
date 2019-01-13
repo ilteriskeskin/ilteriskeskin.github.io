@@ -49,7 +49,7 @@ Okuduğunuz için teşekkür ederim :)
 
 Bir fotoğraf bırakayım madem :)
 
-![IMG 1]({{ "/img/djgirlstr.jpg" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/djgirlstr.jpg }})
+![IMG 1]({{ "/img/djgirlstr.jpg" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/djgirlstr.jpg }})
 
 ---------------------------------------
 

@@ -106,7 +106,7 @@ print(cv2.__version__)
 
 ve çalıştırın. Eğer çıktınız aşağıdaki gibi ise herhangi bir sorun yok demektir.
 
-![IMG 1]({{ "/img/opencv.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/opencv.png }})
+![IMG 1]({{ "/img/opencv.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/opencv.png }})
 
 Okuduğunuz için teşekkür ederim :)
 

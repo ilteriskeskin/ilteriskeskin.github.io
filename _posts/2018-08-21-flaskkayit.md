@@ -74,18 +74,18 @@ Hemen ilk olarak base.html adında bir dosya oluşturalım ve içine şunları e
 
 Hemen görüntüleri paylaşayım.
 
-![IMG 1]({{ "/img/home_yazi.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/home_yazi.png }})
+![IMG 1]({{ "/img/home_yazi.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/home_yazi.png }})
 
 **Anasayfa görüntümüz bu şekilde olacaktır arkadaşlar.**
 
-![IMG 1]({{ "/img/register_yazi.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/register_yazi.png }})
+![IMG 1]({{ "/img/register_yazi.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/register_yazi.png }})
 
 **Kayıt bölümü bu şekildedir ve formu doldurup kaydolalım.**
 
-![IMG 1]({{ "/img/sqlitebrowser_yazi.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/sqlitebrowser_yazi.png }})
+![IMG 1]({{ "/img/sqlitebrowser_yazi.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/sqlitebrowser_yazi.png }})
 
 **Sqlitebrowser adlı program yardımıyla oluşan veritabanımızı açalım ve içine bakalım.**
 
-![IMG 1]({{ "/img/db_yazi.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/db_yazi.png }})
+![IMG 1]({{ "/img/db_yazi.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/db_yazi.png }})
 
 **Bu şekilde kullanıcı adınız ve parolanız kaydoldu ise programınız sorunsuz bir şekilde çalışıyor.**

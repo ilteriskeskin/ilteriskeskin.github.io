@@ -35,13 +35,13 @@ print("karakter2 = *, ASCII: ", ord(karakter2))
 
 **Ekran Çıktısı:**
 
-![IMG 1]({{ "/img/sss1.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/sss1.png }})
+![IMG 1]({{ "/img/sss1.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/sss1.png }})
 
 İlk kodlarımız bunlar. Burada yaptığımız şey sayıların, harflerin ve karakterlerin ASCII karşılığını
 görüntülememizi sağlamak. **chr** ile sayıların, **ord** ile harf ve karakterlerin ASCII karşılığını
 görüntülüyoruz.
 
-**Not:** Harflerde birer karakterdir.
+**Not:** Harfler de birer karakterdir.
 
 --------------------------------------
 
@@ -62,7 +62,7 @@ print(round(sayi, 3))
 
 **Ekran Çıktısı:**
 
-![IMG 2]({{ "/img/sss2.png" | https://github.com/ilteriskesk/ilteriskesk.github.io/tree/master/img/sss2.png }})
+![IMG 2]({{ "/img/sss2.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/sss2.png }})
 
 **round** fonksiyonu ondalıklı sayıları, kendine en yakın tam sayıya yuvarlar. Ancak yanına verdiğimiz
 parametreler ile yuvarlama hassasiyetini arttırıp azalttık.
