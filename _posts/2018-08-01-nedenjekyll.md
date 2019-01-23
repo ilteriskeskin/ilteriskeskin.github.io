@@ -2,7 +2,7 @@
 layout: post
 title: Neden Jekyll?
 subtitle: Jekyll Tercihim Hakkında
-gh-repo: ilteriskesk/ilteriskesk.github.io
+gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, blog, github]
 

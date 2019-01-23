@@ -2,7 +2,7 @@
 layout: post
 title: Bloguma Reklamları Nasıl Koydum?
 subtitle: Blogumdaki reklamları nasıl koyduğumdan bahsedeceğim.
-gh-repo: ilteriskesk/ilteriskesk.github.io
+gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, blog, github, adsense, google, reklam]
 

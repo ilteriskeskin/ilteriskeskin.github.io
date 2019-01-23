@@ -2,7 +2,7 @@
 layout: post
 title: Django Girls Trabzon
 subtitle: Django Girls Trabzon nasıldı? Neler yaptık?
-gh-repo: ilteriskesk/ilteriskesk.github.io
+gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, git, github, python3]
 

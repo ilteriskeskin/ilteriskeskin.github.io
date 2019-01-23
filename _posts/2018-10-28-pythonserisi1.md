@@ -2,7 +2,7 @@
 layout: post
 title: Python'da İşe Yarayan Yöntemler 1
 subtitle: Python'da çok işe yarayan yöntemlerden bahsedeceğiz.
-gh-repo: ilteriskesk/ilteriskesk.github.io
+gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, git, github, python3]
 

@@ -2,7 +2,7 @@
 layout: post
 title: NokulSoft Nedir?
 subtitle: NokulSoft hakkında.
-gh-repo: ilteriskesk/ilteriskesk.github.io
+gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, blog, Android, NokulSoft]
 

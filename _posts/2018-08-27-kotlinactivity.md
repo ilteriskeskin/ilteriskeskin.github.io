@@ -2,7 +2,7 @@
 layout: post
 title: Kotlin ile Activityler Arası Geçiş
 subtitle: Kotlin Programlama Dili ile Android'de Activityler Arası Geçiş Yapma
-gh-repo: ilteriskesk/ilteriskesk.github.io
+gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, git, github, kotlin, android]
 

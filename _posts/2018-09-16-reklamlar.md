@@ -2,7 +2,7 @@
 layout: post
 title: Neden Blogumda Reklam Var?
 subtitle: Blogumdaki reklamlar nedir neden varlar?
-gh-repo: ilteriskesk/ilteriskesk.github.io
+gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, blog, github, adsense, google, reklam]
 

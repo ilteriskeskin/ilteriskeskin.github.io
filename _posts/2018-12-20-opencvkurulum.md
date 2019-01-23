@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu 18.04 Üzerine OpenCV Kurulumu
 subtitle: Resmi döküman takibi ile Ubuntu üzerine OpenCV kurulumu. 
-gh-repo: ilteriskesk/ilteriskesk.github.io
+gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, git, github, OpenCV, Ubuntu]
 
