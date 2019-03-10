@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python ile Görüntü İşlemleri 1
+title: Python ile Görüntü İşleme-1
 subtitle: Resmi döküman takibi ile Pillow kütüphanesine giriş.
 gh-repo: ilteriskeskin/ilteriskeskin.github.io
 gh-badge: [star, fork, follow]
@@ -68,7 +68,7 @@ Eğer ekranınızda herhangi bir değişiklik olmadıysa endişelenmeyin. Zaten 
 Şimdi kaldığınız yerden itibaren şunları yazın.
 
 ```
-print(im.format, im.size, im.mode)
+>>> print(im.format, im.size, im.mode)
 ```
 
 Bu size görüntünüzün format, boyut ve mod özelliklerini verecektir.
