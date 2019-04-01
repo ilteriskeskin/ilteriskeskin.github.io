@@ -17,6 +17,12 @@ Kendime bir süre önce Thinkpad x200s almıştım. Neden aldın filan gibi şey
 
 ---------------------------------------
 
+**Kuruluma geçmeden önce bilgisayarımın özelliklerini şöyle bırakayım**
+
+![IMG 1]({{ "/img/screenfetch.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/screenfetch.png }})
+
+---------------------------------------
+
 ### Gerekli Kütüphanelerin Yüklenmesi ve Kurulum
 
 **Not:**
@@ -113,6 +119,6 @@ ve çalıştırın. Eğer çıktınız aşağıdaki gibi ise herhangi bir sorun 
 
 Okuduğunuz için teşekkür ederim :) Bundan sonraki yazım Python ile Görüntü İşleme serisinin 2. yazısı olacak.
 
-Herkese iyi çalışmalar :) 
+Herkese iyi çalışmalar :)
 
 ---------------------------------------
