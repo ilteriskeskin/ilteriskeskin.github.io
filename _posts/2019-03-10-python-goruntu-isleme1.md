@@ -8,7 +8,7 @@ tags: [jekyll, git, github, Pillow, Python3]
 
 ---
 
-Merhaba ardakaşlar. [Batuhan Taşkaya](https://twitter.com/isidentical?lang=tr)'nın bir
+Merhaba arkadaşlar. [Batuhan Taşkaya](https://twitter.com/isidentical?lang=tr)'nın bir
 [tweetinin](https://twitter.com/isidentical/status/1104698057403387904) altında python ile
 görsel işleme konulu yazı isteği gördüm. Bu yazımda Pillow kütüphanesine giriş yapacağım.
 

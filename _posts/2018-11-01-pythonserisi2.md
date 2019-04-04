@@ -8,10 +8,10 @@ tags: [jekyll, git, github, python3, turtle]
 
 ---
 
-Merhaba, yeni bir [yazı](2018-10-28-pythonserisi1.md) serisine başlama kararı almıştım. Bu seride Python'da oldukça
+Merhaba, yeni bir [yazı](/2018-10-28-pythonserisi1) serisine başlama kararı almıştım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.
 
-Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. çocuklara Python öğretmek istediğinizde siyah 
+Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. çocuklara Python öğretmek istediğinizde siyah
 ekran sıkıcı geldiğinde ortama biraz renk ve eğlence katması açısından oldukça hoş bir modül.
 
 **Not:**
@@ -57,7 +57,7 @@ turtle.getscreen()._root.mainloop()
 
 ![IMG 1]({{ "/img/t2.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t2.png }})
 
-Burada ise ilk programın hemen hemen aynısını yaptık. Sadece burada çizim yapan aracımızın şekli (shape) 
+Burada ise ilk programın hemen hemen aynısını yaptık. Sadece burada çizim yapan aracımızın şekli (shape)
 kaplumbağa.
 
 -------------------------------------------------
@@ -127,8 +127,8 @@ Burada ise yine karmaşık ancak güzel bir çizim yaptırdık kaplumbağamıza.
 
 --------------------------------------
 
-Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça 
-işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim. 
+Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
+işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim.
 
 İyi çalışmalar diliyorum.
 
