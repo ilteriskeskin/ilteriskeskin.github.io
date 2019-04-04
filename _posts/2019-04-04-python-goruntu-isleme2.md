@@ -8,7 +8,7 @@ tags: [jekyll, git, github, OpenCV, Python3]
 
 ---
 
-Merhaba arkadaşlar. [Python İle Görüntü İşleme-1](/2019-03-10-python-goruntu-isleme) isimli bir yazı yazmıştım. Bu yazıda Python ile görüntü işlemeye giriş yapmıştık. Bu yazımda ise OpenCV kütüphanesine giriş yapacağız ve biraz daha kullanışlı fonksiyonları göreceğiz. Yazıya başlamadan önce bazı kurulumlar gerekli.
+Merhaba arkadaşlar. [Python İle Görüntü İşleme-1](/2019-03-10-python-goruntu-isleme1) isimli bir yazı yazmıştım. Bu yazıda Python ile görüntü işlemeye giriş yapmıştık. Bu yazımda ise OpenCV kütüphanesine giriş yapacağız ve biraz daha kullanışlı fonksiyonları göreceğiz. Yazıya başlamadan önce bazı kurulumlar gerekli.
 
 Kurulumları tamamlayarak başlayalım.
 
@@ -16,9 +16,9 @@ Kurulumları tamamlayarak başlayalım.
 
 ### Gereklilikler
 
-**Kurulumlar ve işlemler tamamiyle GNU/Linux dağıtımı olan Fedora baz alınarak yapılacaktır.**
+**Kurulumlar ve işlemler tamamiyle GNU/Linux dağıtımı olan Fedora üzerinde yapılacaktır.**
 
-İlk olarak bilgisayarınızda Python3, pip3, Numpy ve Matplotlib ve OpenCV kurulu olmalıdır.
+İlk olarak bilgisayarınızda Python3, pip3, Numpy ve Matplotlib, Tkinter ve OpenCV kurulu olmalıdır.
 
 Kurmak için:
 
@@ -34,7 +34,7 @@ sudo pip3 install matplotlib
 sudo yum install python3-tkinter
 ```
 
-Fedoraya OpenCV kurulumu için [bu](/2019-04-01-fedora-opencv-kurulum), Ubuntuya OpenCV kurulumu için ise [bu](2018-12-20-opencvkurulum) yazıyı takip edebilirsiniz.
+Fedoraya OpenCV kurulumu için [bu](/2019-04-01-fedora-opencv-kurulum), Ubuntuya OpenCV kurulumu için ise [bu](/2018-12-20-opencvkurulum) yazıyı takip edebilirsiniz.
 
 Kurulumları tamamladıysanız artık başlayabiliriz.
 
@@ -43,10 +43,10 @@ Kurulumları tamamladıysanız artık başlayabiliriz.
 Bir görüntüyü okumak için cv2.imread() fonksiyonunu kullanabiliriz. Bir görüntüyü okuyabilmek için görüntü, çalıştığımız dizinde olmalı veya tam yolunu vermeliyiz.
 
 Görüntüyü renkli bir şekilde açmak için cv2.IMREAD_COLOR,
-
 Görüntüyü gri tonlarında açmak için cv2.IMREAD_GRAYSCALE,
+Görüntüyü alfa kanalında açmak için cv2.IMREAD_UNCHANGED
 
-Görüntüyü alfa kanalında açmak için cv2.IMREAD_UNCHANGED bayraklarını kullanabiliriz. Ancak bunlar yerine direkt **1,0,-1** değerleri vererek çok daha rahat kullanabiliriz. Gelin aşağıdaki kodumuzu inceleyelim.
+bayraklarını kullanabiliriz. Ancak bunlar yerine direkt **1,0,-1** değerleri vererek çok daha rahat kullanabiliriz. Gelin aşağıdaki kodumuzu inceleyelim.
 
 ```Python
 import numpy as np
