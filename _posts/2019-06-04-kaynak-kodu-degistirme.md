@@ -56,7 +56,7 @@ Bizi ilgilendiren iki dosya var. Birisi sl.h ve diğeri sl.c.
 
 ![IMG 1]({{ "/img/main-sl.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/main-sl.png }})
 
-**sl.h**
+**sl.h:**
 
 ![IMG 1]({{ "/img/header-sl.png" | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/header-sl.png }})
 
