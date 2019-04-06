@@ -48,7 +48,7 @@ make
 
 ---------------------------------------
 
-Artık projemizi derledik ve çalıştırdık şimdi sıra kodlar üzerinde oynama yapmada. Benim yapmak istediğim şey trenin görüntüsünde oynamalar yapmak. Gelin ilk olarak projemizde hangi dosyalar var bakalım.
+Artık projemizi derledik ve çalıştırdık şimdi sıra kodlar üzerinde oynama yapmada. Gelin ilk olarak projemizde hangi dosyalar var bakalım.
 
 Bizi ilgilendiren iki dosya var. Birisi sl.h ve diğeri sl.c.
 
