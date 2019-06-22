@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - News</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2019-06-04T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Özgür Bir Projenin Kaynak Kodunda Oynama Yapmak</title><link href="/ozgur-bir-projenin-kaynak-kodunda-oynama-yapmak.html" rel="alternate"></link><published>2019-06-04T00:00:00+03:00</published><updated>2019-06-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2019-06-04:/ozgur-bir-projenin-kaynak-kodunda-oynama-yapmak.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar. Öncelikle bugün ne yapacağımızı kısaca açıklayayım. Özgür bir projenin kaynak kodlarını bilgisayarımıza indirip kodlarında oynama yapacağız. Bir projeyi ihtiyaçlarımız doğrultusunda nasıl değiştiririz ona bakacağız. Çok küçük bir değişiklik olacak.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - News</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2019-06-04T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Özgür Bir Projenin Kaynak Kodunda Oynama Yapmak</title><link href="/ozgurprojeyekatki.html" rel="alternate"></link><published>2019-06-04T00:00:00+03:00</published><updated>2019-06-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2019-06-04:/ozgurprojeyekatki.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar. Öncelikle bugün ne yapacağımızı kısaca açıklayayım. Özgür bir projenin kaynak kodlarını bilgisayarımıza indirip kodlarında oynama yapacağız. Bir projeyi ihtiyaçlarımız doğrultusunda nasıl değiştiririz ona bakacağız. Çok küçük bir değişiklik olacak.&lt;/p&gt;
 &lt;p&gt;Bu yazı için &lt;a href="https://github.com/mtoyoda/sl/"&gt;sl&lt;/a&gt; projesini seçtim arkadaşlar. Projenin kaynak kodlarını bilgisayarımıza klonlayarak başlayalım.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Anlatımım Fedora 29 üzerinde gerçekleşecektir ancak …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar. Öncelikle bugün ne yapacağımızı kısaca açıklayayım. Özgür bir projenin kaynak kodlarını bilgisayarımıza indirip kodlarında oynama yapacağız. Bir projeyi ihtiyaçlarımız doğrultusunda nasıl değiştiririz ona bakacağız. Çok küçük bir değişiklik olacak.&lt;/p&gt;
@@ -7,14 +7,14 @@
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Anlatımım Fedora 29 üzerinde gerçekleşecektir ancak GNU/Linux dağıtımlarının birçoğu için geçerlidir.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;İlk olarak üzerinde oynama yapacağımız projenin lisansına bakmalıyız. Eğer lisansında onu değiştiremeyeceğimize dair bir şey yazıyorsa değiştirmememiz gerekir.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/license-sl.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/license-sl.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/license-sl.png"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Ardından projeyi kendi bilgisayarımıza klonlamamız lazım. Klonlamak için aşağıdaki komutu yazabilirsiniz.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mtoyoda&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;sl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/clone-sl.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/clone-sl.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/clone-sl.png"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Artık kodlarımızı incelemenin vakti geldi. Proje &lt;strong&gt;C Programlama Dili&lt;/strong&gt; ile yazılmış. Benim amacım &lt;strong&gt;sl&lt;/strong&gt; programı çalıştığında geçen trende oynama yapmak.&lt;/p&gt;
 &lt;p&gt;Öncelikle projeyi derleyelim ve çalıştıralım. Bunun için ise klonladığınız projenin içince girin.&lt;/p&gt;
@@ -26,17 +26,17 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/compile-sl.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/compile-sl.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/compile-sl.png"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Artık projemizi derledik ve çalıştırdık şimdi sıra kodlar üzerinde oynama yapmada. Gelin ilk olarak projemizde hangi dosyalar var bakalım.&lt;/p&gt;
 &lt;p&gt;Bizi ilgilendiren iki dosya var. Birisi sl.h ve diğeri sl.c.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;sl.c:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/main-sl.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/main-sl.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/main-sl.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;sl.h:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/header-sl.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/header-sl.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/header-sl.png"&gt;&lt;/p&gt;
 &lt;p&gt;Görsellerde de gördüğünüz gibi benim ilgileneceğim dosya &lt;strong&gt;sl.h&lt;/strong&gt; dosyası. Çünkü ben yukarıda da belirttiğim gibi trenin görüntüsüyle oynayacağım.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;sl.h&lt;/strong&gt; dosyasını açıyorum ve düzenliyorum. Aşağıdaki görselde yaptığım değişikliği görebilirsiniz.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/change-code-sl.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/change-code-sl.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/change-code-sl.png"&gt;&lt;/p&gt;
 &lt;p&gt;Ardından kaydedip çıkıyorum ve sırasıyla aşağıdaki komutları çalıştırıyorum.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;make&lt;/span&gt;
 
@@ -45,11 +45,11 @@
 
 
 &lt;p&gt;Ve programımın çalışır hali:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/run-sl.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/run-sl.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/run-sl.png"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Gördüğünüz gibi aslında oldukça basit bir şekilde değişiklik yaptık.&lt;/p&gt;
 &lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="freesoftware"></category></entry><entry><title>NokulSoft Nedir?</title><link href="/nokulsoft-nedir.html" rel="alternate"></link><published>2018-11-17T00:00:00+03:00</published><updated>2018-11-17T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-11-17:/nokulsoft-nedir.html</id><summary type="html">&lt;h3&gt;Kim Bu NokulSoft?&lt;/h3&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="freesoftware"></category></entry><entry><title>NokulSoft Nedir?</title><link href="/nokulsoft.html" rel="alternate"></link><published>2018-11-17T00:00:00+03:00</published><updated>2018-11-17T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-11-17:/nokulsoft.html</id><summary type="html">&lt;h3&gt;Kim Bu NokulSoft?&lt;/h3&gt;
 &lt;p&gt;NokulSoft bir kimse değil, bir girişim hareketidir. Açık kaynak koldu ve özgür yazılım lisanslı uygulamalar geliştirip bunları
 yayınlar. Detaylı bilgi için &lt;a href="http://nokulsoft.com"&gt;resmi web sitesini&lt;/a&gt; ziyaret edebilirsiniz.&lt;/p&gt;
 &lt;h3&gt;Neler Yaptı?&lt;/h3&gt;
@@ -61,12 +61,12 @@ yayınlar. Detaylı bilgi için &lt;a href="http://nokulsoft.com"&gt;resmi web s
 ise &lt;a href="https://github.com/ilteriskeskin/NokulSoft"&gt;GitHub Repomuza&lt;/a&gt; bakabilirsiniz.&lt;/p&gt;
 &lt;p&gt;Yaptığımız uygulamalara isteğinize bağlı olarak güncelleme verebilir, istediğiniz uygulamaları yapıp yayına alabiliriz. İsteğe bağlı
 güncelleme verme konusunu biraz daha açmak gerekirse uygulamalarımızda eksik gördüğünüz noktaları geliştirip güncelleyebiliriz.&lt;/p&gt;
-&lt;p&gt;Okuduğunuz için teşekkür ederim :)&lt;/p&gt;</content><category term="Android"></category><category term="NokulSoft"></category></entry><entry><title>Yeni Blogum Hakkında</title><link href="/yeni-blogum-hakkinda.html" rel="alternate"></link><published>2018-07-30T00:00:00+03:00</published><updated>2018-07-30T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-07-30:/yeni-blogum-hakkinda.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Yeni blogum ile ilgili bilgilendirme yazısı, merak etmeyen için sıkıcı olabilir :)&lt;/p&gt;
-&lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="/aboutme"&gt;hakkımda&lt;/a&gt; kısmından 
+&lt;p&gt;Okuduğunuz için teşekkür ederim :)&lt;/p&gt;</content><category term="Android"></category><category term="NokulSoft"></category></entry><entry><title>Yeni Blogum Hakkında</title><link href="/newblog.html" rel="alternate"></link><published>2018-07-30T00:00:00+03:00</published><updated>2018-07-30T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-07-30:/newblog.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Yeni blogum ile ilgili bilgilendirme yazısı, merak etmeyen için sıkıcı olabilir :)&lt;/p&gt;
+&lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="about.html"&gt;hakkımda&lt;/a&gt; kısmından 
 ulaşabilirsiniz. Bu yazımda (bu blog üzerindeki ilk yazım) neden yeni blog açtığımdan bahsedeceğim.
 Aslında yeni bir blog açmadım. Bu güne kadar zaten &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; kullananıyordum.
 Ancak dümdüz …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Yeni blogum ile ilgili bilgilendirme yazısı, merak etmeyen için sıkıcı olabilir :)&lt;/p&gt;
-&lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="/aboutme"&gt;hakkımda&lt;/a&gt; kısmından 
+&lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="about.html"&gt;hakkımda&lt;/a&gt; kısmından 
 ulaşabilirsiniz. Bu yazımda (bu blog üzerindeki ilk yazım) neden yeni blog açtığımdan bahsedeceğim.
 Aslında yeni bir blog açmadım. Bu güne kadar zaten &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; kullananıyordum.
 Ancak dümdüz &lt;strong&gt;html&lt;/strong&gt; ve &lt;strong&gt;css&lt;/strong&gt; ile yazılmış pek hoşuma gitmeyen bir blogdu. Zamanım olmaması nedeniyle

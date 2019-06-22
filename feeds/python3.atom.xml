@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Python3</title><link href="/" rel="alternate"></link><link href="/feeds/python3.atom.xml" rel="self"></link><id>/</id><updated>2019-02-15T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Python'da İşe Yarayan Yöntemler 4</title><link href="/pythonda-ise-yarayan-yontemler-4.html" rel="alternate"></link><published>2019-02-15T00:00:00+03:00</published><updated>2019-02-15T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2019-02-15:/pythonda-ise-yarayan-yontemler-4.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="2018-10-28-pythonserisi1.md"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Python3</title><link href="/" rel="alternate"></link><link href="/feeds/python3.atom.xml" rel="self"></link><id>/</id><updated>2019-02-15T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Python'da İşe Yarayan Yöntemler 4</title><link href="/pythonserisi4.html" rel="alternate"></link><published>2019-02-15T00:00:00+03:00</published><updated>2019-02-15T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2019-02-15:/pythonserisi4.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Önemli Not:&lt;/strong&gt; Bir GNU/Linux dağıtımında Python kabuğunu açmak için terminali açıp içine &lt;strong&gt;python3&lt;/strong&gt; yazıp …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="2018-10-28-pythonserisi1.md"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Önemli Not:&lt;/strong&gt; Bir GNU/Linux dağıtımında Python kabuğunu açmak için terminali açıp içine &lt;strong&gt;python3&lt;/strong&gt; yazıp …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Önemli Not:&lt;/strong&gt; Bir GNU/Linux dağıtımında Python kabuğunu açmak için terminali açıp içine &lt;strong&gt;python3&lt;/strong&gt; yazıp enter tuşuna basın. Ardından kabuk açılacaktır. Kabuktan
 çıkmak için &lt;strong&gt;exit()&lt;/strong&gt; ya da ctrl + d&lt;/p&gt;
@@ -16,7 +16,7 @@
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/py4_1.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/py4_1.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/py4_1.png"&gt;&lt;/p&gt;
 &lt;p&gt;İlk kodlarımız bunlar. Burada yaptığımız şey aslında bir swap (takas) işlemi. Python'da iki değişkene örnekteki gibi atama yapmak mümkün. Bu yüzden
 takas işlemi oldukça kolay bir şekilde yapıldı.  &lt;/p&gt;
 &lt;hr&gt;
@@ -29,7 +29,7 @@ takas işlemi oldukça kolay bir şekilde yapıldı.  &lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/py4_2.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/py4_2.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/py4_2.png"&gt;&lt;/p&gt;
 &lt;p&gt;Bu kısımda ise bir listemiz var. İçinde üç farklı elemanımız var. Bu elemanların aralarına istediğimiz karakterleri koyarak ekrana basıyoruz.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Aynı şekilde ister yeni kabuk açın ister aynı kabuktan devam edin.&lt;/p&gt;
@@ -46,7 +46,7 @@ takas işlemi oldukça kolay bir şekilde yapıldı.  &lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/py4_3.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/py4_3.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/py4_3.png"&gt;&lt;/p&gt;
 &lt;p&gt;Bu kod parçasında &lt;strong&gt;sys&lt;/strong&gt; modülünü içine aktardık. Ardından &lt;strong&gt;sys&lt;/strong&gt; modülünün &lt;strong&gt;getsizeof()&lt;/strong&gt; metodunu kullanarak objelerin bellekte kapladığı yeri
 öğrenebiliriz.&lt;/p&gt;
 &lt;hr&gt;
@@ -62,12 +62,12 @@ takas işlemi oldukça kolay bir şekilde yapıldı.  &lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/py4_4.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/py4_4.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/py4_4.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada bir listenin elemanlarını tek bir eşitleme ile üç farklı değişkene atadık.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
 işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim.&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>Python Turtle Modülü ile Doğru Parçası</title><link href="/python-turtle-modulu-ile-dogru-parcasi.html" rel="alternate"></link><published>2019-01-24T00:00:00+03:00</published><updated>2019-01-24T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2019-01-24:/python-turtle-modulu-ile-dogru-parcasi.html</id><summary type="html">&lt;p&gt;Herkese merhaba. Bugün noktalar ile bir şeyler yapacağız. Biraz farklı bir konu olacak. Taa ortaokul matematiğine döneceğiz.
+&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>Python Turtle Modülü ile Doğru Parçası</title><link href="/dogruparcasi.html" rel="alternate"></link><published>2019-01-24T00:00:00+03:00</published><updated>2019-01-24T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2019-01-24:/dogruparcasi.html</id><summary type="html">&lt;p&gt;Herkese merhaba. Bugün noktalar ile bir şeyler yapacağız. Biraz farklı bir konu olacak. Taa ortaokul matematiğine döneceğiz.
 İlk olarak kavramların anlamlarına bakrak başlayalım.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Nokta:&lt;/strong&gt; Kalemin defterde veya farklı alanda bıraktığı ize nokta denir. &lt;/p&gt;
@@ -83,21 +83,21 @@ tahtanın sonuna kadar uzatıp bunlar böyle sonsuza kadar gider diyip doğru ol
 Şimdi bunu hep beraber yapalım ve bir doğru parçası oluşturalım.&lt;/p&gt;
 &lt;p&gt;Programın kodunun ve çıktısının ekran görüntüsünü sizlerle paylaşacağım.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/yirmiK.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/yirmiK.png }}"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 2" src="{{ &amp;quot;/img/yirmiS.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/yirmiS.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/yirmiK.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/yirmiS.png"&gt;&lt;/p&gt;
 &lt;p&gt;Bu ekran görüntüsünde kodumuzda dikkat etmemiz gereken kısım 15. satır. Her nokta arası 20 birim boşluk bırakılarak çizilmiş bir çizgi var. Aslında çizgi yok
 noktalar var. &lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img alt="IMG 3" src="{{ &amp;quot;/img/onK.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/onK.png }}"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 4" src="{{ &amp;quot;/img/onS.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/onS.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/onK.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/onS.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada ise kodumuzda yine 15. satıra dikkat edelim. Aradaki boşluğu azalttık ve 10 birim yaptık.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img alt="IMG 5" src="{{ &amp;quot;/img/besK.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/besK.png }}"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 6" src="{{ &amp;quot;/img/besS.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/besS.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 5" src="../images/besK.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 5" src="../images/besS.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada da aynı şekilde 15. satıra baktığımızda aradaki boşluğun 5 olduğunu görüyoruz.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img alt="IMG 7" src="{{ &amp;quot;/img/birK.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/birK.png }}"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 8" src="{{ &amp;quot;/img/birS.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/birS.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 7" src="../images/birK.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 7" src="../images/birS.png"&gt;&lt;/p&gt;
 &lt;p&gt;Görüldüğü gibi aradaki boşluğu iyice azalttığımızda artık bir doğru parçası gibi görünmeye başladı. &lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Böylece noktalar ile doğru parçası nasıl çiziliyor anlamış olduk. Zaten biliyor isek görselleştirmiş ve kanıtlamış olduk.  &lt;/p&gt;
@@ -108,12 +108,12 @@ noktalar var. &lt;/p&gt;
 &lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvRG_En3J1XyhnZW9tZXRyaSk&lt;/li&gt;
 &lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvTm9rdGE&lt;/li&gt;
 &lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvRG8lQzQlOUZydV9wYXIlQzMlQTdhcyVDNCVCMQ&lt;/li&gt;
-&lt;/ul&gt;</content><category term="python3"></category><category term="turtle"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 3</title><link href="/pythonda-ise-yarayan-yontemler-3.html" rel="alternate"></link><published>2018-11-23T00:00:00+03:00</published><updated>2018-11-23T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-11-23:/pythonda-ise-yarayan-yontemler-3.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="2018-10-28-pythonserisi1.md"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="python3"></category><category term="turtle"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 3</title><link href="/pythonserisi3.html" rel="alternate"></link><published>2018-11-23T00:00:00+03:00</published><updated>2018-11-23T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-11-23:/pythonserisi3.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;İlk olarak dosya1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;dosya1.py&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sayi1 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="2018-10-28-pythonserisi1.md"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sayi1 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;İlk olarak dosya1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -133,7 +133,7 @@ noktalar var. &lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/sss1.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/sss1.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/sss1.png"&gt;&lt;/p&gt;
 &lt;p&gt;İlk kodlarımız bunlar. Burada yaptığımız şey sayıların, harflerin ve karakterlerin ASCII karşılığını
 görüntülememizi sağlamak. &lt;strong&gt;chr&lt;/strong&gt; ile sayıların, &lt;strong&gt;ord&lt;/strong&gt; ile harf ve karakterlerin ASCII karşılığını
 görüntülüyoruz.&lt;/p&gt;
@@ -152,16 +152,16 @@ görüntülüyoruz.&lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 2" src="{{ &amp;quot;/img/sss2.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/sss2.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/sss2.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;round&lt;/strong&gt; fonksiyonu ondalıklı sayıları, kendine en yakın tam sayıya yuvarlar. Ancak yanına verdiğimiz
 parametreler ile yuvarlama hassasiyetini arttırıp azalttık.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
 işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim.&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 2 - Turtle Modülü</title><link href="/pythonda-ise-yarayan-yontemler-2-turtle-modulu.html" rel="alternate"></link><published>2018-11-01T00:00:00+03:00</published><updated>2018-11-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-11-01:/pythonda-ise-yarayan-yontemler-2-turtle-modulu.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="/2018-10-28-pythonserisi1"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
+&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 2 - Turtle Modülü</title><link href="/pythonserisi2.html" rel="alternate"></link><published>2018-11-01T00:00:00+03:00</published><updated>2018-11-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-11-01:/pythonserisi2.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. çocuklara Python öğretmek istediğinizde siyah
-ekran sıkıcı geldiğinde ortama biraz renk ve eğlence katması açısından oldukça hoş bir modül …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="/2018-10-28-pythonserisi1"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
+ekran sıkıcı geldiğinde ortama biraz renk ve eğlence katması açısından oldukça hoş bir modül …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. çocuklara Python öğretmek istediğinizde siyah
 ekran sıkıcı geldiğinde ortama biraz renk ve eğlence katması açısından oldukça hoş bir modül.&lt;/p&gt;
@@ -179,7 +179,7 @@ Bir süredir sınavlarım dolayısıyla yazamıyordum. Müsait bir an buldum ve 
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/t1.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t1.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/t1.png"&gt;&lt;/p&gt;
 &lt;p&gt;İlk kodlarımız bunlar. Burada 150 birim çapında bir çember oluşturuyoruz.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Şimdi ise turtle2.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -193,7 +193,7 @@ Bir süredir sınavlarım dolayısıyla yazamıyordum. Müsait bir an buldum ve 
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/t2.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t2.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/t2.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada ise ilk programın hemen hemen aynısını yaptık. Sadece burada çizim yapan aracımızın şekli (shape)
 kaplumbağa.&lt;/p&gt;
 &lt;hr&gt;
@@ -217,7 +217,7 @@ kaplumbağa.&lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/t3.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t3.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/t3.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada ise Python3 turtle dökümantasyonundan yardım alarak karmaşık ama hoş görünümlü bir şekil çizdirdik.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Şimdi turtle4.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -245,7 +245,7 @@ kaplumbağa.&lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/t4.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/t4.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/t4.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada ise yine karmaşık ancak güzel bir çizim yaptırdık kaplumbağamıza.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
@@ -260,7 +260,7 @@ işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekk
 &lt;a href="https://www.youtube.com/watch?v=PC78PmiYob0"&gt;Adamlar - Eski Dostum Tankla Gelmiş&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Kaynak&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.halitalptekin.com/python-turtle-modulu.html"&gt;Halit Alptekin&lt;/a&gt;
-&lt;a href="https://docs.python.org/3/library/turtle.html"&gt;Python3 Docs&lt;/a&gt;&lt;/p&gt;</content><category term="python3"></category><category term="tutle"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 1</title><link href="/pythonda-ise-yarayan-yontemler-1.html" rel="alternate"></link><published>2018-10-28T00:00:00+03:00</published><updated>2018-10-28T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-10-28:/pythonda-ise-yarayan-yontemler-1.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
+&lt;a href="https://docs.python.org/3/library/turtle.html"&gt;Python3 Docs&lt;/a&gt;&lt;/p&gt;</content><category term="python3"></category><category term="tutle"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 1</title><link href="/pythonserisi1.html" rel="alternate"></link><published>2018-10-28T00:00:00+03:00</published><updated>2018-10-28T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-10-28:/pythonserisi1.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
@@ -302,7 +302,7 @@ olsun :)&lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/p1.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/p1.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/p1.png"&gt;&lt;/p&gt;
 &lt;p&gt;İlk kodlarımız bunlar. Karşılaştırıp aradaki bağlantıyı bulabilirsiniz :)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Şimdi ise py2.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -320,7 +320,7 @@ olsun :)&lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/p2.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/p2.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/p2.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada ise stringler ile güzel işlemler yaptığımız bir program yazdık.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Son olarak py3.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -347,7 +347,7 @@ olsun :)&lt;/p&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/p3.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/p3.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/p3.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada ise listeler ile işlemler yaptık.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler ve yine az kullanılan özellikler ile 

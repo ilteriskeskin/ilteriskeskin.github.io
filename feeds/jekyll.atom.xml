@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Jekyll</title><link href="/" rel="alternate"></link><link href="/feeds/jekyll.atom.xml" rel="self"></link><id>/</id><updated>2018-08-01T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Neden Jekyll?</title><link href="/neden-jekyll.html" rel="alternate"></link><published>2018-08-01T00:00:00+03:00</published><updated>2018-08-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-08-01:/neden-jekyll.html</id><summary type="html">&lt;h3&gt;Neden Jekyll Tercih Ettim?&lt;/h3&gt;
-&lt;p&gt;Öncelikle Jekyll tercihimin nedenlerinden biri &lt;a href="/2018-07-30.md"&gt;önceki yazımda&lt;/a&gt; bahsettiğim
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Jekyll</title><link href="/" rel="alternate"></link><link href="/feeds/jekyll.atom.xml" rel="self"></link><id>/</id><updated>2018-08-01T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Neden Jekyll?</title><link href="/nedenjekyll.html" rel="alternate"></link><published>2018-08-01T00:00:00+03:00</published><updated>2018-08-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-08-01:/nedenjekyll.html</id><summary type="html">&lt;h3&gt;Neden Jekyll Tercih Ettim?&lt;/h3&gt;
+&lt;p&gt;Öncelikle Jekyll tercihimin nedenlerinden biri &lt;a href="newblog.html"&gt;önceki yazımda&lt;/a&gt; bahsettiğim
 statik site oluşturucuların listelendiği bir adresten bir çoğunu incelemem. Bana kullanım, tema ve özelleştirme konusunda daha kolay ve güzel geldi. Diğer bir etken popüler olması.&lt;/p&gt;
 &lt;p&gt;Ayrıca Jekyll &lt;a href="http://ozgurlisanslar.org.tr/mit/"&gt;MIT&lt;/a&gt; lisansı ile lisanslanmıştır. Bu da tercih
 sebeplerimden birisi oldu tabii …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Neden Jekyll Tercih Ettim?&lt;/h3&gt;
-&lt;p&gt;Öncelikle Jekyll tercihimin nedenlerinden biri &lt;a href="/2018-07-30.md"&gt;önceki yazımda&lt;/a&gt; bahsettiğim
+&lt;p&gt;Öncelikle Jekyll tercihimin nedenlerinden biri &lt;a href="newblog.html"&gt;önceki yazımda&lt;/a&gt; bahsettiğim
 statik site oluşturucuların listelendiği bir adresten bir çoğunu incelemem. Bana kullanım, tema ve özelleştirme konusunda daha kolay ve güzel geldi. Diğer bir etken popüler olması.&lt;/p&gt;
 &lt;p&gt;Ayrıca Jekyll &lt;a href="http://ozgurlisanslar.org.tr/mit/"&gt;MIT&lt;/a&gt; lisansı ile lisanslanmıştır. Bu da tercih
 sebeplerimden birisi oldu tabii. &lt;/p&gt;

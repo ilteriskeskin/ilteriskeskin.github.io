@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Flask</title><link href="/" rel="alternate"></link><link href="/feeds/flask.atom.xml" rel="self"></link><id>/</id><updated>2018-10-26T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Flask ve SQLAlchemy ile Kayıt-Giriş Uygulaması</title><link href="/flask-ve-sqlalchemy-ile-kayit-giris-uygulamasi.html" rel="alternate"></link><published>2018-10-26T00:00:00+03:00</published><updated>2018-10-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-10-26:/flask-ve-sqlalchemy-ile-kayit-giris-uygulamasi.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt ve Giriş Sayfası Oluşturma&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Flask</title><link href="/" rel="alternate"></link><link href="/feeds/flask.atom.xml" rel="self"></link><id>/</id><updated>2018-10-26T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Flask ve SQLAlchemy ile Kayıt-Giriş Uygulaması</title><link href="/flaskapp.html" rel="alternate"></link><published>2018-10-26T00:00:00+03:00</published><updated>2018-10-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-10-26:/flaskapp.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt ve Giriş Sayfası Oluşturma&lt;/h3&gt;
 &lt;p&gt;Herkese merhaba. &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı).
 Oluşturacağım küçük web projelerini flask ile yapmayı tercih ediyorum. Ancak daha karmaşık projeleri
 küçük küçük kütüphaneler kurarak kolayca yapmanız mümkün.&lt;/p&gt;
@@ -10,7 +10,7 @@ küçük küçük kütüphaneler kurarak kolayca yapmanız mümkün.&lt;/p&gt;
 &lt;p&gt;Bu yazıda &lt;strong&gt;Flask&lt;/strong&gt; ve &lt;strong&gt;SQLAlchemy&lt;/strong&gt; kullanılarak basit bir kayıt-giriş olma sistemi yapacağız. Hazırsak hadi
 gelin başlayalım.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
-&lt;a href="/2018-08-21-flaskkayit.md"&gt;Önceki&lt;/a&gt; yazımda basit bir kayıt uygulaması yapmıştık ancak bu yazım hem giriş hem kayıt 
+&lt;a href="flaskkayit.html"&gt;Önceki&lt;/a&gt; yazımda basit bir kayıt uygulaması yapmıştık ancak bu yazım hem giriş hem kayıt 
 uygulaması olacak.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;İlk olarak bir app.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -104,11 +104,11 @@ uygulaması olacak.&lt;/p&gt;
 &lt;li&gt;Tasarım kısmı tamamiyle size kalmış ancak benim repomda kendi yaptığımı bulabilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Hemen görüntüleri paylaşayım.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/index.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/index.png }}"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/kayit.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/kayit.png }}"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/giris.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/giris.png }}"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/dashboard.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/dashboard.png }}"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Çıktılar böyle ise sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="flask"></category><category term="sqlalchemy"></category><category term="python3"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt Uygulaması</title><link href="/flask-ve-sqlalchemy-ile-kayit-uygulamasi.html" rel="alternate"></link><published>2018-08-21T00:00:00+03:00</published><updated>2018-08-21T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-08-21:/flask-ve-sqlalchemy-ile-kayit-uygulamasi.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt Sayfası Oluşturma&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/index.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/kayit.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/giris.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/dashboard.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Çıktılar böyle ise sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="flask"></category><category term="sqlalchemy"></category><category term="python3"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt Uygulaması</title><link href="/flaskkayit.html" rel="alternate"></link><published>2018-08-21T00:00:00+03:00</published><updated>2018-08-21T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:None,2018-08-21:/flaskkayit.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt Sayfası Oluşturma&lt;/h3&gt;
 &lt;p&gt;Öncelikle herkese iyi bayramlar. Bayramın ilk günü beklediğimden daha az yoğun geçiyordu bende fırsat
 bulmuşken bir yazı yazayım dedim.
 &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı).
@@ -169,11 +169,11 @@ gelin başlayalım.&lt;/p&gt;
 &lt;li&gt;Daha sonra login olma ile ilgili bir yazı gelecek.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Hemen görüntüleri paylaşayım.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/images/home_yazi.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/home_yazi.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/home_yazi.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Anasayfa görüntümüz bu şekilde olacaktır arkadaşlar.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/register_yazi.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/register_yazi.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 2" src="../images/register_yazi.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Kayıt bölümü bu şekildedir ve formu doldurup kaydolalım.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/sqlitebrowser_yazi.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/sqlitebrowser_yazi.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/sqlitebrowser_yazi.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sqlitebrowser adlı program yardımıyla oluşan veritabanımızı açalım ve içine bakalım.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="{{ &amp;quot;/img/db_yazi.png&amp;quot; | https://github.com/ilteriskeskin/ilteriskeskin.github.io/tree/master/img/db_yazi.png }}"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/db_yazi.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bu şekilde kullanıcı adınız ve parolanız kaydoldu ise programınız sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="python3"></category><category term="flask"></category><category term="sqlalchemy"></category></entry></feed>
