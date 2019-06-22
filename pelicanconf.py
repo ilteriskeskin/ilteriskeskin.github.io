@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Ali İlteriş Keskin'
 SITENAME = 'Ali İlteriş Keskin Kişisel Blog'
-SITEURL = 'https://ilteriskeskin.github.io/'
+SITEURL = ''
 SITESUBTITLE = 'GNU/Linux && Freesoftware'
 
 BROWSER_COLOR = '#333333'
