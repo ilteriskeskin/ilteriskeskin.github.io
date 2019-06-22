@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Android</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/android.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2018-08-27T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Kotlin ile Activityler Arası Geçiş</title><link href="http://localhost:8000/kotlin-ile-activityler-arasi-gecis.html" rel="alternate"></link><published>2018-08-27T00:00:00+03:00</published><updated>2018-08-27T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:localhost,2018-08-27:/kotlin-ile-activityler-arasi-gecis.html</id><summary type="html">&lt;h3&gt;Kotlin ile Activityler Arası Geçiş&lt;/h3&gt;
+&lt;p&gt;Merhaba arkadaşlar, bu yazımızda Google'den destek almaya başlayan(uzunca bir süre oldu)
+Kotlin programlama dili ile iki adet activity arası geçiş yapmayı öğreneceğiz. &lt;/p&gt;
+&lt;p&gt;Bugün yapmayı öğreneceğimiz olay çok basit ama sıkça kullanılan, oldukça gerekli bir konu. Hazırsak hadi başlayalım :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;İlk olarak bir proje başlattığınızı ve …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Kotlin ile Activityler Arası Geçiş&lt;/h3&gt;
+&lt;p&gt;Merhaba arkadaşlar, bu yazımızda Google'den destek almaya başlayan(uzunca bir süre oldu)
+Kotlin programlama dili ile iki adet activity arası geçiş yapmayı öğreneceğiz. &lt;/p&gt;
+&lt;p&gt;Bugün yapmayı öğreneceğimiz olay çok basit ama sıkça kullanılan, oldukça gerekli bir konu. Hazırsak hadi başlayalım :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;İlk olarak bir proje başlattığınızı ve app kısmından iki adet &lt;strong&gt;empty activity&lt;/strong&gt; oluşturduğunuzu
+varsayıyorum. Activitylerin içine birer buton ekleyin ve onclick metotlarını doldurun.&lt;/p&gt;
+&lt;p&gt;Ardından ilk activitye gelin ve şu kodları yazın.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;changeActivity1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;View&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;intent&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Intent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;activity2&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;startActivity&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;intent&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;changeActivity2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;View&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;intent&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Intent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;activity1&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;startActivity&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;intent&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Kodlar bu şekilde olacak arkadaşlar. İki fonksiyondada intent adlı bir sabitimiz var bunlar nasıl karışmıyor? diye düşünecek olursanız, her fonksiyonun etki alanı(scope) kendi içindedir.&lt;/p&gt;
+&lt;p&gt;Bu şekilde basit bir activity geçiş programı yazmanız mümkündür. İyi çalışmalar :)&lt;/p&gt;</content><category term="kotlin"></category><category term="android"></category></entry></feed>

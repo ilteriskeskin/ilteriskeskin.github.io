@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - ZSH</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/zsh.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2019-03-31T00:00:00+03:00</updated><subtitle>GNU/Linux &amp;&amp; Freesoftware</subtitle><entry><title>Fedora Sisteme Zsh Kurulumu</title><link href="http://localhost:8000/fedora-sisteme-zsh-kurulumu.html" rel="alternate"></link><published>2019-03-31T00:00:00+03:00</published><updated>2019-03-31T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:localhost,2019-03-31:/fedora-sisteme-zsh-kurulumu.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Bu yazımda şuanda kullandığım Fedora 29 üzerine zsh kabuğunun kurulumunu anlatacağım.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;ZSH Nedir?&lt;/h3&gt;
+&lt;p&gt;Zsh aslında Bash'e göre oldukça yeni bir kabuktur. GNU/Linux ve MacOS sistemlerin terminalinde hazır olarak
+gelen Bash oldukça eskidir. Bash fanatikleri lütfen bana kızmayın ama bazı noktalarda eksik kalıyor. Zsh son
+kullanıcıya terminal tarafında …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba ardakaşlar. Bu yazımda şuanda kullandığım Fedora 29 üzerine zsh kabuğunun kurulumunu anlatacağım.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;ZSH Nedir?&lt;/h3&gt;
+&lt;p&gt;Zsh aslında Bash'e göre oldukça yeni bir kabuktur. GNU/Linux ve MacOS sistemlerin terminalinde hazır olarak
+gelen Bash oldukça eskidir. Bash fanatikleri lütfen bana kızmayın ama bazı noktalarda eksik kalıyor. Zsh son
+kullanıcıya terminal tarafında epeyce hız ve kolaylık sağlıyor.&lt;/p&gt;
+&lt;h3&gt;Fedora Üzerine Kurulumu&lt;/h3&gt;
+&lt;p&gt;Kurulum için aşağıdaki adımları izlemeniz yeterli olacaktır.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;dnf&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;zsh&lt;/span&gt;
+
+&lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="c1"&gt;--no-check-certificate http://install.ohmyz.sh -O - | sh&lt;/span&gt;
+
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;chsh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;zsh&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Artık hazırsınız ancak tema seçimi nasıl yapılır kısaca buna değineyim.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;nano&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zshrc&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Açılan ekranda &lt;strong&gt;ZSH_THEME="robbyrussell"&lt;/strong&gt; satırını bulun ve robbyrussell kısmını silin.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes"&gt;Bu adresten&lt;/a&gt; hoşunuza giden bir temanın ismini
+robbyrussell'i sildiğiniz yere yazarak yeni temanızı kullanmaya başlayabilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Eğer benim kullandığım temayı merak ediyorsanız ben &lt;strong&gt;risto&lt;/strong&gt; isimli temayı kullanıyorum.&lt;/p&gt;
+&lt;p&gt;Umarım hoşlanırsınız. Herkese iyi çalışmalar :)&lt;/p&gt;</content><category term="fedora"></category><category term="zsh"></category></entry></feed>
