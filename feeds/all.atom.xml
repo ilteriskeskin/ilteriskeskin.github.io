@@ -22,7 +22,7 @@ lisansı ile yayınlanmış açık kaynaklı bir teknolojidir.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Flask Nedir?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Herkese merhaba. Flask bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı). Oluşturacağım küçük web projelerini flask ile yapmayı tercih ediyorum. Ancak daha karmaşık projeleri küçük küçük kütüphaneler kurarak kolayca yapmanız mümkün. Flask ile daha detaylı araştırma yapabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Flask bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı). Oluşturacağım küçük web projelerini flask ile yapmayı tercih ediyorum. Ancak daha karmaşık projeleri küçük küçük kütüphaneler kurarak kolayca yapmanız mümkün. Flask ile daha detaylı araştırma yapabilirsiniz.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Gerekli Modüller&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Aşağıdaki modülleri kurmamız yeterli olacaktır.&lt;/p&gt;
