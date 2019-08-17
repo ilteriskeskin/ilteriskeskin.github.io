@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-08-12T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Flask ile MongoDB Örneği</title><link href="https://ilteriskeskin.github.io/flaskmongodb.html" rel="alternate"></link><published>2019-08-12T00:00:00+03:00</published><updated>2019-08-12T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-12:/flaskmongodb.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-08-16T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
+veya web uygulamalarında emoji kullanmanıza olanak sağlayan tatlı bir proje.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Emoji Modülü Kurulumu&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pip&lt;/strong&gt; ile her zaman olduğu gibi modülümüzü kuruyoruz.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pip3&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;emoji&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Peki ya şimdi? E madem kurduk küçük bir konsol …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
+veya web uygulamalarında emoji kullanmanıza olanak sağlayan tatlı bir proje.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Emoji Modülü Kurulumu&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pip&lt;/strong&gt; ile her zaman olduğu gibi modülümüzü kuruyoruz.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pip3&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;emoji&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Peki ya şimdi? E madem kurduk küçük bir konsol uygulamasıyla bunu test edelim. konsol.py isimli bir dosya açalım ve içine aşağıdakileri
+yazalım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;emoji&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;emoji&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;emojize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Python is :thumbs_up:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;uygulamanızı çalıştırdığınızda konsol ekranınızda bir onay emojisi göreceksiniz..&lt;/p&gt;
+&lt;p&gt;Peki bir Flask uygulamasında nasıl oluyor o işler? Hemen ufak bir örnekle bakalım nasıl oluyor. app.py isimli bir dosya açalım ve içine aşağıdakileri yazalım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;flask&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;emoji&lt;/span&gt;
+
+&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="nd"&gt;@app.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;home&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;emoji&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;emojize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Water! :grinning_face:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;uygulamanızı çalıştırdığınızda ve 127.0.0.1:5000 adresine girdiğinizde gülen bir surat sizi karşılayacak.&lt;/p&gt;
+&lt;p&gt;Emoji listelerine &lt;a href="http://www.unicode.org/emoji/charts/full-emoji-list.html"&gt;burdan&lt;/a&gt; ulaşabilirsiniz. Orada yazan isimleri &lt;strong&gt;_&lt;/strong&gt; ile birleştirip
+kullanabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="python3"></category><category term="emoji"></category></entry><entry><title>Flask ile MongoDB Örneği</title><link href="https://ilteriskeskin.github.io/flaskmongodb.html" rel="alternate"></link><published>2019-08-12T00:00:00+03:00</published><updated>2019-08-12T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-12:/flaskmongodb.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerind gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;İlk olarak neyin ne olduğundan bahsedelim. Sonrasında gerekli kurulumları yapalım ve ardından hızlıca kodumuza geçelim.&lt;/p&gt;
