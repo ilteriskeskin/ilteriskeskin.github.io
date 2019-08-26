@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Jekyll</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/jekyll.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2018-08-01T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Neden Jekyll?</title><link href="https://ilteriskeskin.github.io/nedenjekyll.html" rel="alternate"></link><published>2018-08-01T00:00:00+03:00</published><updated>2018-08-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-01:/nedenjekyll.html</id><summary type="html">&lt;h3&gt;Neden Jekyll Tercih Ettim?&lt;/h3&gt;
+&lt;p&gt;Öncelikle Jekyll tercihimin nedenlerinden biri &lt;a href="newblog.html"&gt;önceki yazımda&lt;/a&gt; bahsettiğim
+statik site oluşturucuların listelendiği bir adresten bir çoğunu incelemem. Bana kullanım, tema ve özelleştirme konusunda daha kolay ve güzel geldi. Diğer bir etken popüler olması.&lt;/p&gt;
+&lt;p&gt;Ayrıca Jekyll &lt;a href="http://ozgurlisanslar.org.tr/mit/"&gt;MIT&lt;/a&gt; lisansı ile lisanslanmıştır. Bu da tercih
+sebeplerimden birisi oldu tabii …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Neden Jekyll Tercih Ettim?&lt;/h3&gt;
+&lt;p&gt;Öncelikle Jekyll tercihimin nedenlerinden biri &lt;a href="newblog.html"&gt;önceki yazımda&lt;/a&gt; bahsettiğim
+statik site oluşturucuların listelendiği bir adresten bir çoğunu incelemem. Bana kullanım, tema ve özelleştirme konusunda daha kolay ve güzel geldi. Diğer bir etken popüler olması.&lt;/p&gt;
+&lt;p&gt;Ayrıca Jekyll &lt;a href="http://ozgurlisanslar.org.tr/mit/"&gt;MIT&lt;/a&gt; lisansı ile lisanslanmıştır. Bu da tercih
+sebeplerimden birisi oldu tabii. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Peki bu Jekyll Nasıl Çalışıyor?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jekyll veritabanı gerektirmeden kullanılabilen, &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt; tarafından geliştirilen
+açık kaynak kodlu, performans konusunda başarılı, statik(sabit) site oluşturucudur. Ruby alt yapısı kullanılarak ortaya çıkarılmıştır. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nasıl Kullanılıyor Bu Jekyll?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jekyll kendi sisteminize kurduktan sonra işler oldukça kolay işliyor aslında. Ben bir GNU/Linux
+dağıtımı olan Fedora'yı kullanıyorum ve kurulum konusunda pek bir sıkıntı yaşamadım. Boş bir vaktimde kurulum ile ilgili bir döküman hazırlamayı düşünüyorum. Peki sonrası?&lt;/p&gt;
+&lt;p&gt;Sonrası şöyle işliyor, bir tema hazırlıyorsunuz ya da hazır bir temayı indiriyorsunuz. Zaten adım adım size dosyaları, dizinleri oluşturuyor. İstediğiniz özelleştirmeyi yapmakta özgürsünüz. Şahsen ben oldukça başarılı buldum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Avantajları Neler?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Öncelikle şunu belirteyim ben uzun süredir kullanmıyorum. Hatta daha 2 gün oldu sanırım kullanmaya başlayalı. Kendi sayfamda eksiklerim var. Mesela okuyucu yorumu gibi. Ancak zamanla halledeceğim. Bunlara rağmen oldukça memnunum. GitHub Pages ile ilişkili olması beni sunucu ve alan adı masrafından kurtarmış olması oldukça memnun edici :) Yükleme(Deploy) aşamasının yalnızca GitHub'a push edilmekten ibaret olmasıda ayrıca tatmin edici. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Bu yazımızdan bu kadar arkadaşlar. Umarım faydalı olmuştur. Zamanla blogumda teknik yazılar paylaşmaya başlayacağım. Ancak şu sıralar projelerden pek vakit bulamıyorum.&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar :)&lt;/p&gt;</content><category term="jekyll"></category><category term="blog"></category><category term="github"></category></entry></feed>

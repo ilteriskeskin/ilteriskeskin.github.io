@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="https://ilteriskeskin.github.io/theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://ilteriskeskin.github.io/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="https://ilteriskeskin.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://ilteriskeskin.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://ilteriskeskin.github.io/theme/font-awesome/css/solid.css">
+
+    <link href="https://ilteriskeskin.github.io/static/custom.css" rel="stylesheet">
+
+    <link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ali İlteriş Keskin Kişisel Blog Atom">
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-123219075-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+<meta name="author" content="Ali İlteriş Keskin" />
+<meta name="description" content="Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz. Anlatımım Ubuntu 19.04 üzerind gerçekleşecektir İlk olarak neyin ne olduğundan bahsedelim. Sonrasında gerekli kurulumları yapalım ve ardından hızlıca kodumuza geçelim. MongoDB Nedir? MongoDB, NoSQL verilerini belge biçiminde saklayıp, analiz edebileceğimiz ölçeklenebilir bir veritabanı teknolojisidir. MongoDB özgür yazılım lisansı …" />
+<meta name="keywords" content="flask, mongodb">
+
+<meta property="og:site_name" content="Ali İlteriş Keskin Kişisel Blog"/>
+<meta property="og:title" content="Flask ile MongoDB Örneği"/>
+<meta property="og:description" content="Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz. Anlatımım Ubuntu 19.04 üzerind gerçekleşecektir İlk olarak neyin ne olduğundan bahsedelim. Sonrasında gerekli kurulumları yapalım ve ardından hızlıca kodumuza geçelim. MongoDB Nedir? MongoDB, NoSQL verilerini belge biçiminde saklayıp, analiz edebileceğimiz ölçeklenebilir bir veritabanı teknolojisidir. MongoDB özgür yazılım lisansı …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://ilteriskeskin.github.io/flaskmongodb.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-08-12 00:00:00+03:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://ilteriskeskin.github.io/author/ali-ilteris-keskin.html">
+<meta property="article:section" content="Flask"/>
+<meta property="article:tag" content="flask"/>
+<meta property="article:tag" content="mongodb"/>
+<meta property="og:image" content="">
+
+  <title>Ali İlteriş Keskin Kişisel Blog &ndash; Flask ile MongoDB Örneği</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://ilteriskeskin.github.io">
+        <img src="https://ilteriskeskin.github.io/theme/img/profile.png" alt="" title="">
+      </a>
+      <h1><a href="https://ilteriskeskin.github.io"></a></h1>
+
+<p>Freelancer Software Developer         Python/Django && Python/Flask</p>
+      <nav>
+        <ul class="list">
+          <li><a href="https://ilteriskeskin.github.io/pages/about.html#about">Hakkında</a></li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-github" href="https://github.com/ilteriskeskin" target="_blank">
+            <i class="fab fa-github">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/ilteriskeskin" target="_blank">
+            <i class="fab fa-twitter">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/aliilteriskeskin/" target="_blank">
+            <i class="fab fa-linkedin">
+            </i>
+          </a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://ilteriskeskin.github.io">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://ilteriskeskin.github.io/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="flaskmongodb">Flask ile MongoDB Örneği</h1>
+    <p>
+          Posted on Pzt 12 Ağustos 2019 in <a href="https://ilteriskeskin.github.io/category/flask.html">Flask</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz.</p>
+<hr>
+<p><strong>Anlatımım Ubuntu 19.04 üzerind gerçekleşecektir</strong></p>
+<p>İlk olarak neyin ne olduğundan bahsedelim. Sonrasında gerekli kurulumları yapalım ve ardından hızlıca kodumuza geçelim.</p>
+<hr>
+<p><strong>MongoDB Nedir?</strong></p>
+<p>MongoDB, NoSQL verilerini belge biçiminde saklayıp, analiz edebileceğimiz ölçeklenebilir bir veritabanı teknolojisidir. MongoDB özgür yazılım
+lisansı ile yayınlanmış açık kaynaklı bir teknolojidir.</p>
+<ul>
+<li>Ölçeklenebilirdir (Scalable). Veri boyutu arttığı durumlarda veya performans sıkıntısı yaşadığımız durumlarda makine ekleyebiliriz</li>
+<li>Veriler belge biçiminde saklanır. Burada JSON verilerini kullanabiliriz</li>
+<li>Veriler JSON şeklinde saklandığı için gelen veri yapısı değişse bile kaydetme işleminde sıkıntı yaşanmaz.</li>
+<li>Verilerin birden fazla kopyası saklanabilir ve veri kaybı yaşanmaz.</li>
+</ul>
+<hr>
+<p><strong>Flask Nedir?</strong></p>
+<p>Flask bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı). Oluşturacağım küçük web projelerini flask ile yapmayı tercih ediyorum. Ancak daha karmaşık projeleri küçük küçük kütüphaneler kurarak kolayca yapmanız mümkün. Flask ile daha detaylı araştırma yapabilirsiniz.</p>
+<hr>
+<p><strong>Gerekli Modüller</strong></p>
+<p>Aşağıdaki modülleri kurmamız yeterli olacaktır.</p>
+<div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">Flask</span>
+
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">Flask</span><span class="o">-</span><span class="n">PyMongo</span>
+</pre></div>
+
+
+<hr>
+<p><strong>Gerekli Ayarlar</strong></p>
+<p><a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> üzerinden kendinize bir free cluster oluşturmalısınız. Yoksa kodumuzdaki [MONGO_URI] kısmıyla ilgili sorun yaşayabiliriniz. Şimdi gelelim kodumuza.</p>
+<p><strong>app.py</strong></p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
+<span class="kn">from</span> <span class="nn">flask_pymongo</span> <span class="kn">import</span> <span class="n">PyMongo</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;SECRET_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;linuxdegilgnulinux&#39;</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span>
+    <span class="s1">&#39;MONGO_URI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;mongodb://&lt;username&gt;:&lt;password&gt;@myflask-shard-00-00-raeh0.mongodb.net:27017,myflask-shard-00-01-raeh0.mongodb.net:27017,myflask-shard-00-02-raeh0.mongodb.net:27017/test?ssl=true&amp;replicaSet=myFlask-shard-0&amp;authSource=admin&amp;retryWrites=true&amp;w=majority&quot;</span>
+<span class="n">mongo</span> <span class="o">=</span> <span class="n">PyMongo</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">home</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;index.html&quot;</span><span class="p">)</span>
+
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">&#39;/create&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;username&#39;</span><span class="p">)</span>
+    <span class="n">mongo</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">insert_one</span><span class="p">({</span><span class="s1">&#39;username&#39;</span><span class="p">:</span> <span class="n">username</span><span class="p">})</span>
+
+    <span class="k">return</span> <span class="s1">&#39;Done!&#39;</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<p><strong>index.html</strong></p>
+<div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>
+        Flask_PyMongo Deneme:
+    <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/create&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;username&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<hr>
+<p>Uygulamanızı çalıştırıp deneyin ve MongoDB Atlas'tan collection kısmından eklediğiniz verileri görüp test edebilirsiniz.</p>
+<p>Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.</p>
+<p>Herkese iyi çalışmalar diliyorum :)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://ilteriskeskin.github.io/tag/flask.html">flask</a>
+      <a href="https://ilteriskeskin.github.io/tag/mongodb.html">mongodb</a>
+    </p>
+  </div>
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'ilteriskesk';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Ali İlteriş Keskin Kişisel Blog ",
+  "url" : "https://ilteriskeskin.github.io",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>

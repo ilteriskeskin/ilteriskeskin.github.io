@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Python3</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/python3.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-08-26T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Farklı Python Sürümleri ile Çalışmak</title><link href="https://ilteriskeskin.github.io/farkl%C4%B1pythonsurumleri.html" rel="alternate"></link><published>2019-08-26T00:00:00+03:00</published><updated>2019-08-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-26:/farklıpythonsurumleri.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda bilgisayarımızdaki farklı Python sürümleri ile çalışmanın nasıl olduğunu göstereceğim.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Peki ya neden farklı Python sürümleri ile çalışalım?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bunun birden fazla yanıtı var. Benim kullanım sebebim bazı modüller Python 3.5 ve altını destekliyor ancak ben kendi projelerimde 3.7'de kullanmak istiyorum. Yani hem 3.5 ile …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda bilgisayarımızdaki farklı Python sürümleri ile çalışmanın nasıl olduğunu göstereceğim.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Peki ya neden farklı Python sürümleri ile çalışalım?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bunun birden fazla yanıtı var. Benim kullanım sebebim bazı modüller Python 3.5 ve altını destekliyor ancak ben kendi projelerimde 3.7'de kullanmak istiyorum. Yani hem 3.5 ile hem 3.7 ile projemi test edip çalıştırıyorum.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Bilgisayarımızdaki Python Sürümlerini Görüntüleme&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Şimdi gelin bilgisayarımızda hangi Python sürümleri kurulu görelim :)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ls&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki komutu yazdıktan sonra bilgisayarınızda kurulu olan Python sürümlerini görüntüleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Farklı Python Sürümü Kurmak&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gelin şimdi istediğimiz Python sürümünü indirelim sonrsında onu kuralım. İlk olarak &lt;a href="https://www.python.org/ftp/python/"&gt;bu adresten&lt;/a&gt; istediğimiz Python sürümünü .tar.xz uzantısı ile indirilerim. Bu indirme işini terminali açıp&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ftp&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xz&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;indirebiliriz. Ardından komut satırından indirdiğimiz dizine girip&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt; &lt;span class="n"&gt;xf&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xz&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;yazarak dosyamızı çıkartma işlemini yapabiliriz. Şimdi çıkan dosyamızın içine girelim&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ardından sırasıyla aşağıdaki iki komutu çalıştıralım,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt; &lt;span class="c1"&gt;--enable-optimizations&lt;/span&gt;
+
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;altinstall&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Komutların tamamlanması uzun sürebilir sabırlı olmakta fayda var :) Bittikten sonra artık yeni Python sürümünüz kurulmuş olacaktır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Farklı Sürümler ile Çalışalım&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gelelim şimdi asıl konumuza. Bir projemde 3.5 başka bir projemde 3.7 kullanmak istiyorum ne yapmalıyım? Aslında oldukça kolay. Gelin iki tane proje açalım. Sırasıyla aşağıdaki komutları terminalde çalıştırın.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt;
+&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="n"&gt;Python35Proje&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;Python35Proje&lt;/span&gt;
+&lt;span class="n"&gt;python3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;venv&lt;/span&gt; &lt;span class="n"&gt;myenv&lt;/span&gt;
+&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="n"&gt;myenv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Şimdi aynı yerde bir dosya açalım ve içine aşağıdaki kodları yazıp çalıştıralım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;platform&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;python_version&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Kodu çalıştırdığınızda eğer benimle aynı adımları izlediyseniz &lt;strong&gt;3.5.3&lt;/strong&gt; yani sanal ortamı kurduğumuz Python sürümü ekrana yazılacaktır.
+Ardından &lt;strong&gt;deactivate&lt;/strong&gt; yazarak sanal ortamdan çıkış yapalım.&lt;/p&gt;
+&lt;p&gt;Şimdi başka bir proje açalım ve bunda başka bir sürüm kullanalım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt;
+&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="n"&gt;Python37Proje&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;Python37Proje&lt;/span&gt;
+&lt;span class="n"&gt;python3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;venv&lt;/span&gt; &lt;span class="n"&gt;myvenv&lt;/span&gt;
+&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="n"&gt;muvenv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Şimdi aynı yerde bir dosya açalım ve içine aşağıdaki kodları yazıp çalıştıralım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;platform&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;python_version&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Kodu çalıştırdığınızda &lt;strong&gt;3.7.x&lt;/strong&gt; yazacaktır. Yani sanal ortamı kurduğunuz Python3.7 sürümü hangisi ise o yazacaktır. Aynı şekilde &lt;strong&gt;deactivate&lt;/strong&gt; yazarak sanal ortamı kapatabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="python3"></category><category term="venv"></category><category term="soruce code"></category></entry><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
+veya web uygulamalarında emoji kullanmanıza olanak sağlayan tatlı bir proje.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Emoji Modülü Kurulumu&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pip&lt;/strong&gt; ile her zaman olduğu gibi modülümüzü kuruyoruz.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pip3&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;emoji&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Peki ya şimdi? E madem kurduk küçük bir konsol …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
+veya web uygulamalarında emoji kullanmanıza olanak sağlayan tatlı bir proje.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Emoji Modülü Kurulumu&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pip&lt;/strong&gt; ile her zaman olduğu gibi modülümüzü kuruyoruz.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pip3&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;emoji&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Peki ya şimdi? E madem kurduk küçük bir konsol uygulamasıyla bunu test edelim. konsol.py isimli bir dosya açalım ve içine aşağıdakileri
+yazalım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;emoji&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;emoji&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;emojize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Python is :thumbs_up:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;uygulamanızı çalıştırdığınızda konsol ekranınızda bir onay emojisi göreceksiniz..&lt;/p&gt;
+&lt;p&gt;Peki bir Flask uygulamasında nasıl oluyor o işler? Hemen ufak bir örnekle bakalım nasıl oluyor. app.py isimli bir dosya açalım ve içine aşağıdakileri yazalım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;flask&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;emoji&lt;/span&gt;
+
+&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="nd"&gt;@app.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;home&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;emoji&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;emojize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Water! :grinning_face:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;uygulamanızı çalıştırdığınızda ve 127.0.0.1:5000 adresine girdiğinizde gülen bir surat sizi karşılayacak.&lt;/p&gt;
+&lt;p&gt;Emoji listelerine &lt;a href="http://www.unicode.org/emoji/charts/full-emoji-list.html"&gt;burdan&lt;/a&gt; ulaşabilirsiniz. Orada yazan isimleri &lt;strong&gt;_&lt;/strong&gt; ile birleştirip
+kullanabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="python3"></category><category term="emoji"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 4</title><link href="https://ilteriskeskin.github.io/pythonserisi4.html" rel="alternate"></link><published>2019-02-15T00:00:00+03:00</published><updated>2019-02-15T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-02-15:/pythonserisi4.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Önemli Not:&lt;/strong&gt; Bir GNU/Linux dağıtımında Python kabuğunu açmak için terminali açıp içine &lt;strong&gt;python3&lt;/strong&gt; yazıp …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Önemli Not:&lt;/strong&gt; Bir GNU/Linux dağıtımında Python kabuğunu açmak için terminali açıp içine &lt;strong&gt;python3&lt;/strong&gt; yazıp enter tuşuna basın. Ardından kabuk açılacaktır. Kabuktan
+çıkmak için &lt;strong&gt;exit()&lt;/strong&gt; ya da ctrl + d&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;İlk olarak Python kabuğu açalım ve aşağıdakileri sırasıyla yazalım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+
+&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; 
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/py4_1.png"&gt;&lt;/p&gt;
+&lt;p&gt;İlk kodlarımız bunlar. Burada yaptığımız şey aslında bir swap (takas) işlemi. Python'da iki değişkene örnekteki gibi atama yapmak mümkün. Bu yüzden
+takas işlemi oldukça kolay bir şekilde yapıldı.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Şimdi ise ister yeni bir kabuk açın ister aynı kabuktan devam edin.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Ali&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Ata&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Bak&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;,&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/py4_2.png"&gt;&lt;/p&gt;
+&lt;p&gt;Bu kısımda ise bir listemiz var. İçinde üç farklı elemanımız var. Bu elemanların aralarına istediğimiz karakterleri koyarak ekrana basıyoruz.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Aynı şekilde ister yeni kabuk açın ister aynı kabuktan devam edin.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+
+&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;A&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Ali&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getsizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getsizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getsizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/py4_3.png"&gt;&lt;/p&gt;
+&lt;p&gt;Bu kod parçasında &lt;strong&gt;sys&lt;/strong&gt; modülünü içine aktardık. Ardından &lt;strong&gt;sys&lt;/strong&gt; modülünün &lt;strong&gt;getsizeof()&lt;/strong&gt; metodunu kullanarak objelerin bellekte kapladığı yeri
+öğrenebiliriz.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Son örneğimize gelelim. Zamanla örnekler artacaktır.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/py4_4.png"&gt;&lt;/p&gt;
+&lt;p&gt;Burada bir listenin elemanlarını tek bir eşitleme ile üç farklı değişkene atadık.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
+işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim.&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>Python Turtle Modülü ile Doğru Parçası</title><link href="https://ilteriskeskin.github.io/dogruparcasi.html" rel="alternate"></link><published>2019-01-24T00:00:00+03:00</published><updated>2019-01-24T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-01-24:/dogruparcasi.html</id><summary type="html">&lt;p&gt;Herkese merhaba. Bugün noktalar ile bir şeyler yapacağız. Biraz farklı bir konu olacak. Taa ortaokul matematiğine döneceğiz.
+İlk olarak kavramların anlamlarına bakrak başlayalım.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Nokta:&lt;/strong&gt; Kalemin defterde veya farklı alanda bıraktığı ize nokta denir. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Doğru Parçası:&lt;/strong&gt; Doğru parçası, geometri'de bir doğrunun sınırlı iki ucu arasında kalan ve her biri yan yana …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Herkese merhaba. Bugün noktalar ile bir şeyler yapacağız. Biraz farklı bir konu olacak. Taa ortaokul matematiğine döneceğiz.
+İlk olarak kavramların anlamlarına bakrak başlayalım.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Nokta:&lt;/strong&gt; Kalemin defterde veya farklı alanda bıraktığı ize nokta denir. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Doğru Parçası:&lt;/strong&gt; Doğru parçası, geometri'de bir doğrunun sınırlı iki ucu arasında kalan ve her biri yan yana aynı doğrultuda olan noktalar kümesidir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Doğru:&lt;/strong&gt; Geometride aynı doğrultuda olan ve her iki yönden de sonsuza kadar giden noktalar kümesi diye de tanımlanır.&lt;/p&gt;
+&lt;p&gt;Bunları muhtemelen ortaokuldan beri biliyoruz. Hepimize öğretmenlerimiz tahtada yan yana noktalar çizip bir doğru parçası oluşturmuştur. Hatta noktaları
+tahtanın sonuna kadar uzatıp bunlar böyle sonsuza kadar gider diyip doğru oluşturmayı bile denemiştir. Gelin biz bunu görselleştirelim.&lt;/p&gt;
+&lt;p&gt;Bu işlemde bize Python dilindeki Turtle modülü yardımcı olacak. Turtle modülü sevdiğim bir modül. Bazı basit işlemlerimi görselleştirmek için kullanıyorum.
+Şimdi bunu hep beraber yapalım ve bir doğru parçası oluşturalım.&lt;/p&gt;
+&lt;p&gt;Programın kodunun ve çıktısının ekran görüntüsünü sizlerle paylaşacağım.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/yirmiK.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/yirmiS.png"&gt;&lt;/p&gt;
+&lt;p&gt;Bu ekran görüntüsünde kodumuzda dikkat etmemiz gereken kısım 15. satır. Her nokta arası 20 birim boşluk bırakılarak çizilmiş bir çizgi var. Aslında çizgi yok
+noktalar var. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/onK.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/onS.png"&gt;&lt;/p&gt;
+&lt;p&gt;Burada ise kodumuzda yine 15. satıra dikkat edelim. Aradaki boşluğu azalttık ve 10 birim yaptık.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="IMG 5" src="../images/besK.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 5" src="../images/besS.png"&gt;&lt;/p&gt;
+&lt;p&gt;Burada da aynı şekilde 15. satıra baktığımızda aradaki boşluğun 5 olduğunu görüyoruz.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="IMG 7" src="../images/birK.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 7" src="../images/birS.png"&gt;&lt;/p&gt;
+&lt;p&gt;Görüldüğü gibi aradaki boşluğu iyice azalttığımızda artık bir doğru parçası gibi görünmeye başladı. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Böylece noktalar ile doğru parçası nasıl çiziliyor anlamış olduk. Zaten biliyor isek görselleştirmiş ve kanıtlamış olduk.  &lt;/p&gt;
+&lt;p&gt;Okuduğunuz için teşekkür ederim :)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kaynakça:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://docs.python.org/3/library/turtle.html&lt;/li&gt;
+&lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvRG_En3J1XyhnZW9tZXRyaSk&lt;/li&gt;
+&lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvTm9rdGE&lt;/li&gt;
+&lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvRG8lQzQlOUZydV9wYXIlQzMlQTdhcyVDNCVCMQ&lt;/li&gt;
+&lt;/ul&gt;</content><category term="python3"></category><category term="turtle"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 3</title><link href="https://ilteriskeskin.github.io/pythonserisi3.html" rel="alternate"></link><published>2018-11-23T00:00:00+03:00</published><updated>2018-11-23T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-11-23:/pythonserisi3.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;İlk olarak dosya1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;dosya1.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sayi1 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;İlk olarak dosya1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;dosya1.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sayi1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;97&lt;/span&gt;
+&lt;span class="n"&gt;harf1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;a&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;harf2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;A&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;karakter1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;karakter2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;*&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;sayi1 = 30, ASCII   : &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;chr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sayi1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;harf1 = a, ASCII    : &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;ord&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;harf1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;harf2 = A, ASCII    : &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;ord&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;harf2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;karakter1 = /, ASCII: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;ord&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;karakter1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;karakter2 = *, ASCII: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;ord&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;karakter2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/sss1.png"&gt;&lt;/p&gt;
+&lt;p&gt;İlk kodlarımız bunlar. Burada yaptığımız şey sayıların, harflerin ve karakterlerin ASCII karşılığını
+görüntülememizi sağlamak. &lt;strong&gt;chr&lt;/strong&gt; ile sayıların, &lt;strong&gt;ord&lt;/strong&gt; ile harf ve karakterlerin ASCII karşılığını
+görüntülüyoruz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Harfler de birer karakterdir.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Şimdi ise dosya2.py adında bir dosya açalım ve içine aşağıdaki kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;dosya2.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sayi&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;12.87654&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sayi&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sayi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sayi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sayi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sayi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/sss2.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;round&lt;/strong&gt; fonksiyonu ondalıklı sayıları, kendine en yakın tam sayıya yuvarlar. Ancak yanına verdiğimiz
+parametreler ile yuvarlama hassasiyetini arttırıp azalttık.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
+işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim.&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 2 - Turtle Modülü</title><link href="https://ilteriskeskin.github.io/pythonserisi2.html" rel="alternate"></link><published>2018-11-01T00:00:00+03:00</published><updated>2018-11-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-11-01:/pythonserisi2.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
+işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. çocuklara Python öğretmek istediğinizde siyah
+ekran sıkıcı geldiğinde ortama biraz renk ve eğlence katması açısından oldukça hoş bir modül …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
+işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. çocuklara Python öğretmek istediğinizde siyah
+ekran sıkıcı geldiğinde ortama biraz renk ve eğlence katması açısından oldukça hoş bir modül.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
+Bir süredir sınavlarım dolayısıyla yazamıyordum. Müsait bir an buldum ve hemen yazayım dedim :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;İlk olarak turtle1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;turtle1.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;turtle&lt;/span&gt;
+
+&lt;span class="n"&gt;kaplumbaga&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;turtle&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Turtle&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;circle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;200&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;turtle&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getscreen&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_root&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mainloop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/t1.png"&gt;&lt;/p&gt;
+&lt;p&gt;İlk kodlarımız bunlar. Burada 150 birim çapında bir çember oluşturuyoruz.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Şimdi ise turtle2.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;turtle2.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;turtle&lt;/span&gt;
+
+&lt;span class="n"&gt;kaplumbaga&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;turtle&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Turtle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;turtle&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;circle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;200&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;turtle&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getscreen&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_root&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mainloop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/t2.png"&gt;&lt;/p&gt;
+&lt;p&gt;Burada ise ilk programın hemen hemen aynısını yaptık. Sadece burada çizim yapan aracımızın şekli (shape)
+kaplumbağa.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Şimdi turtle3.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;turtle3.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;turtle&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+
+&lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;yellow&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;begin_fill&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;forward&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;200&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;left&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;170&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;break&lt;/span&gt;
+
+&lt;span class="n"&gt;end_fill&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/t3.png"&gt;&lt;/p&gt;
+&lt;p&gt;Burada ise Python3 turtle dökümantasyonundan yardım alarak karmaşık ama hoş görünümlü bir şekil çizdirdik.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Şimdi turtle4.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;turtle4.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;turtle&lt;/span&gt;
+
+&lt;span class="n"&gt;kaplumbaga&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;turtle&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Turtle&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;turtle&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bgcolor&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Black&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Arka plan rengi&lt;/span&gt;
+&lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;speed&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Varsayılan hız&lt;/span&gt;
+
+&lt;span class="n"&gt;turtle&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Kaplumbaaaaa&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Başlık&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;drawRainbow&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# kalem rengi&lt;/span&gt;
+        &lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;backward&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;left&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;110&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# 110 derece sola dönüş&lt;/span&gt;
+
+    &lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# kaplumbağa rengi&lt;/span&gt;
+    &lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hideturtle&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;# kaplumbağa görünmez&lt;/span&gt;
+    &lt;span class="n"&gt;kaplumbaga&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setpos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# x = 20, y = 0 koordinat ayarlama&lt;/span&gt;
+
+&lt;span class="n"&gt;drawRainbow&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/t4.png"&gt;&lt;/p&gt;
+&lt;p&gt;Burada ise yine karmaşık ancak güzel bir çizim yaptırdık kaplumbağamıza.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
+işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim.&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Yazı Hazırlanılırken Dinlenilen Şarkılar:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Sdw7eaCSzhg"&gt;Teoman - N'apim Tabiatım Böyle&lt;/a&gt;
+&lt;a href="https://www.youtube.com/watch?v=qsqeRdgySiI"&gt;Teoman - Serseri&lt;/a&gt;
+&lt;a href="https://www.youtube.com/watch?v=7RW8n4iXZbA"&gt;Mor ve Ötesi - Bir Derdim Var&lt;/a&gt;
+&lt;a href="https://www.youtube.com/watch?v=9KkAtcPku2k"&gt;Cem Karaca - Tamirci Çırağı&lt;/a&gt;
+&lt;a href="https://www.youtube.com/watch?v=PC78PmiYob0"&gt;Adamlar - Eski Dostum Tankla Gelmiş&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kaynak&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.halitalptekin.com/python-turtle-modulu.html"&gt;Halit Alptekin&lt;/a&gt;
+&lt;a href="https://docs.python.org/3/library/turtle.html"&gt;Python3 Docs&lt;/a&gt;&lt;/p&gt;</content><category term="python3"></category><category term="tutle"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 1</title><link href="https://ilteriskeskin.github.io/pythonserisi1.html" rel="alternate"></link><published>2018-10-28T00:00:00+03:00</published><updated>2018-10-28T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-10-28:/pythonserisi1.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
+işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
+Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet 
+olsun …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
+işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
+Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet 
+olsun :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;İlk olarak bir py1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;py1.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;dispatch_if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;operator&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;operator&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;add&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;
+    &lt;span class="k"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;operator&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;sub&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;
+    &lt;span class="k"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;operator&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;mul&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;
+    &lt;span class="k"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;operator&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;div&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;dispatch_dict&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;operator&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;add&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;sub&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;mul&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;div&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;operator&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)()&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;dispatch_if func  : &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dispatch_if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;mul&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;dispatch_dict func: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dispatch_dict&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;mul&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;dispatch_if func  : &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dispatch_if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;unknown&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;dispatch_dict func: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dispatch_dict&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;unknown&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/p1.png"&gt;&lt;/p&gt;
+&lt;p&gt;İlk kodlarımız bunlar. Karşılaştırıp aradaki bağlantıyı bulabilirsiniz :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Şimdi ise py2.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;py2.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello Python&amp;quot;&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[::&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[::&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;][::&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[::&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/p2.png"&gt;&lt;/p&gt;
+&lt;p&gt;Burada ise stringler ile güzel işlemler yaptığımız bir program yazdık.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Son olarak py3.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;py3.py&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;my_list&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_list&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;del&lt;/span&gt; &lt;span class="n"&gt;my_list&lt;/span&gt;&lt;span class="p"&gt;[:]&lt;/span&gt; &lt;span class="c1"&gt;# my_list adındaki listenin elemanlarını siler&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_list&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# del my_list # my_list adında oluşturulan listeyi tamamen siler&lt;/span&gt;
+&lt;span class="c1"&gt;# print(my_list) # Hata verecektir. O yüzden yorum satırı&lt;/span&gt;
+
+&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;my_list&lt;/span&gt;
+&lt;span class="n"&gt;my_list&lt;/span&gt;&lt;span class="p"&gt;[:]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_list&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;my_list&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;my_list&lt;/span&gt;&lt;span class="p"&gt;[:]&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;my_list&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran Çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/p3.png"&gt;&lt;/p&gt;
+&lt;p&gt;Burada ise listeler ile işlemler yaptık.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler ve yine az kullanılan özellikler ile 
+serilere devam edeceğim. Okuduğunuz için teşekkür ederim. &lt;/p&gt;
+&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Yazı Hazırlanılırken Dinlenilen Şarkılar:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=BqJ-4ePe_Pk"&gt;Cem Karaca - Kerkük Zindanı&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=9KkAtcPku2k"&gt;Cem Karaca - Tamirci Çırağı&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=-dlJ1S4GHM8"&gt;Sagopa Kajmer &amp;amp; Bergen - Affetmem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=dcEbtq4ezXk"&gt;DJ Tarkan ft. Sagopa Kajmer - Oldu Olanlar&lt;/a&gt;&lt;/p&gt;</content><category term="python3"></category></entry></feed>
