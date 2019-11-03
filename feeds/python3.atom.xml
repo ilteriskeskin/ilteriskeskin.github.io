@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Python3</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/python3.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-11-03T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Poetry ile Python Paketleme ve Bağımlılık Yönetimi</title><link href="https://ilteriskeskin.github.io/poetry.html" rel="alternate"></link><published>2019-11-03T00:00:00+03:00</published><updated>2019-11-03T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-11-03:/poetry.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Python paketleme ve bağımlılık yönetim aracı olan Poetry'i inceleyeceğiz. Aracı
 &lt;a href="https://t.me/flask_turkey"&gt;Flask Türkiye Telegram Grubunda&lt;/a&gt; dile getiren &lt;a href="https://twitter.com/yasarcelepp"&gt;Yaşar Celep'e&lt;/a&gt;
 teşekkür ederim :)&lt;/p&gt;
@@ -119,7 +118,7 @@ dokümanına ulaşabilirsiniz. Umarım faydalı olmuştur.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Katkılarından dolayı &lt;a href="https://twitter.com/uguryuceee"&gt;Uğur Yüce&lt;/a&gt; arkadaşıma teşekkür ederim. Katkılarını açmak gerekirse sabah kahvaltı hazırladı,
 akşam yemek hazırladı, spor yaptırdı ve en önemlisi çok uygun bir fiyata evini benimle paylaştı.&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category><category term="poetry"></category></entry><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
-=======
+
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Python3</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/python3.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-08-26T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Farklı Python Sürümleri ile Çalışmak</title><link href="https://ilteriskeskin.github.io/farkl%C4%B1pythonsurumleri.html" rel="alternate"></link><published>2019-08-26T00:00:00+03:00</published><updated>2019-08-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-26:/farklıpythonsurumleri.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda bilgisayarımızdaki farklı Python sürümleri ile çalışmanın nasıl olduğunu göstereceğim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Peki ya neden farklı Python sürümleri ile çalışalım?&lt;/strong&gt;&lt;/p&gt;
@@ -195,7 +194,6 @@ Ardından &lt;strong&gt;deactivate&lt;/strong&gt; yazarak sanal ortamdan çıkı
 &lt;p&gt;Kodu çalıştırdığınızda &lt;strong&gt;3.7.x&lt;/strong&gt; yazacaktır. Yani sanal ortamı kurduğunuz Python3.7 sürümü hangisi ise o yazacaktır. Aynı şekilde &lt;strong&gt;deactivate&lt;/strong&gt; yazarak sanal ortamı kapatabilirsiniz.&lt;/p&gt;
 &lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
 &lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="python3"></category><category term="venv"></category><category term="soruce code"></category></entry><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
->>>>>>> 075af0588d0e9b30fe078904bf2cfffa39d79483
 veya web uygulamalarında emoji kullanmanıza olanak sağlayan tatlı bir proje.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Emoji Modülü Kurulumu&lt;/strong&gt;&lt;/p&gt;
@@ -256,10 +254,10 @@ kullanabilirsiniz.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;İlk olarak Python kabuğu açalım ve aşağıdakileri sırasıyla yazalım.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; 
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -512,12 +510,12 @@ işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekk
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
-Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet 
+Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet
 olsun …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
-Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet 
+Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet
 olsun :)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;İlk olarak bir py1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -598,7 +596,7 @@ olsun :)&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/p3.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada ise listeler ile işlemler yaptık.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler ve yine az kullanılan özellikler ile 
+&lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler ve yine az kullanılan özellikler ile
 serilere devam edeceğim. Okuduğunuz için teşekkür ederim. &lt;/p&gt;
 &lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;
 &lt;hr&gt;

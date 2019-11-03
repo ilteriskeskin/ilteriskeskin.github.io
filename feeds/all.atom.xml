@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-11-03T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Poetry ile Python Paketleme ve Bağımlılık Yönetimi</title><link href="https://ilteriskeskin.github.io/poetry.html" rel="alternate"></link><published>2019-11-03T00:00:00+03:00</published><updated>2019-11-03T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-11-03:/poetry.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Python paketleme ve bağımlılık yönetim aracı olan Poetry'i inceleyeceğiz. Aracı
 &lt;a href="https://t.me/flask_turkey"&gt;Flask Türkiye Telegram Grubunda&lt;/a&gt; dile getiren &lt;a href="https://twitter.com/yasarcelepp"&gt;Yaşar Celep'e&lt;/a&gt;
 teşekkür ederim :)&lt;/p&gt;
@@ -119,7 +118,6 @@ dokümanına ulaşabilirsiniz. Umarım faydalı olmuştur.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Katkılarından dolayı &lt;a href="https://twitter.com/uguryuceee"&gt;Uğur Yüce&lt;/a&gt; arkadaşıma teşekkür ederim. Katkılarını açmak gerekirse sabah kahvaltı hazırladı,
 akşam yemek hazırladı, spor yaptırdı ve en önemlisi çok uygun bir fiyata evini benimle paylaştı.&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category><category term="poetry"></category></entry><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
-=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-08-26T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Farklı Python Sürümleri ile Çalışmak</title><link href="https://ilteriskeskin.github.io/farkl%C4%B1pythonsurumleri.html" rel="alternate"></link><published>2019-08-26T00:00:00+03:00</published><updated>2019-08-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-26:/farklıpythonsurumleri.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda bilgisayarımızdaki farklı Python sürümleri ile çalışmanın nasıl olduğunu göstereceğim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Peki ya neden farklı Python sürümleri ile çalışalım?&lt;/strong&gt;&lt;/p&gt;
@@ -728,10 +726,10 @@ nasıl kaydedeceğinizi biliyorsunuzdur. Bir deneyin bakalım olacak mı? Herkes
 &lt;hr&gt;
 &lt;p&gt;İlk olarak Python kabuğu açalım ve aşağıdakileri sırasıyla yazalım.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; 
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -883,11 +881,11 @@ ve güzel bir dokümantasyona sahiptir.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=_fw5GJdAbLY"&gt;Pamela - istanbul&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=XFvSd1HDagY"&gt;Teoman - İstanbul'da Sonbahar&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=XwNUspuZWlQ"&gt;sevdadandır dedi annem aldırma&lt;/a&gt;&lt;/p&gt;</content><category term="OpenCV"></category><category term="opencv"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Ubuntu 18.04 Üzerine OpenCV Kurulumu</title><link href="https://ilteriskeskin.github.io/opencvubuntukurulum.html" rel="alternate"></link><published>2018-12-20T00:00:00+03:00</published><updated>2018-12-20T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-12-20:/opencvubuntukurulum.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladık. Ekip içinde ben yazılım kısmıyla ilgileniyorum.
-Yani görüntü işleme ile epeyce içli dışlı olacağım. Daha önce OpenCV kurmamış arakdaşlar kurulumda zorlanıyorlardı. İlk 
-OpenCV kurulumumumda (bundan 1 yıl önce) resmen ağlamıştım :). 1-2 hafta önce yeniden kurdum. Oldukça sancısız geçti. E 
+Yani görüntü işleme ile epeyce içli dışlı olacağım. Daha önce OpenCV kurmamış arakdaşlar kurulumda zorlanıyorlardı. İlk
+OpenCV kurulumumumda (bundan 1 yıl önce) resmen ağlamıştım :). 1-2 hafta önce yeniden kurdum. Oldukça sancısız geçti. E
 durum böyle olunca bir …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladık. Ekip içinde ben yazılım kısmıyla ilgileniyorum.
-Yani görüntü işleme ile epeyce içli dışlı olacağım. Daha önce OpenCV kurmamış arakdaşlar kurulumda zorlanıyorlardı. İlk 
-OpenCV kurulumumumda (bundan 1 yıl önce) resmen ağlamıştım :). 1-2 hafta önce yeniden kurdum. Oldukça sancısız geçti. E 
+Yani görüntü işleme ile epeyce içli dışlı olacağım. Daha önce OpenCV kurmamış arakdaşlar kurulumda zorlanıyorlardı. İlk
+OpenCV kurulumumumda (bundan 1 yıl önce) resmen ağlamıştım :). 1-2 hafta önce yeniden kurdum. Oldukça sancısız geçti. E
 durum böyle olunca bir yazı yazayım dedim.&lt;/p&gt;
 &lt;p&gt;Hadi başlayalım.&lt;/p&gt;
 &lt;hr&gt;
@@ -973,29 +971,29 @@ olun :).&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=ehanblxZeA4"&gt;Adamlar - Koca Yaşlı Şişko Dünya&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=cl4cLEToPfc"&gt;Eddie Vedder - Society - Into The Wild - HD 1080p - Soundtrack - lyrics&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=brRnhthvnKs"&gt;Cem Adrian &amp;amp; Hande Mehan - Sen Benim Şarkılarımsın (Official Audio)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=a4ddJyBkRVo"&gt;Pilli Bebek - Haram Geceler&lt;/a&gt;&lt;/p&gt;</content><category term="OpenCV"></category><category term="opencv"></category><category term="ubuntu"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Django Girls Trabzon</title><link href="https://ilteriskeskin.github.io/djangogirlstrabzon.html" rel="alternate"></link><published>2018-12-11T00:00:00+03:00</published><updated>2018-12-11T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-12-11:/djangogirlstrabzon.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Çok yoğun bir hafta geçirdim. Yorucu ancak çok eğlenceli ve güzeldi. 
-&lt;a href="https://github.com/selametsamli"&gt;Selamet&lt;/a&gt; ile EtüBilir 
-(Erzurum Teknik Üniversitesi Bilim ve Fikir Topluluğu) Topluluğunda Python eğitimleri veriyorduk. 
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=a4ddJyBkRVo"&gt;Pilli Bebek - Haram Geceler&lt;/a&gt;&lt;/p&gt;</content><category term="OpenCV"></category><category term="opencv"></category><category term="ubuntu"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Django Girls Trabzon</title><link href="https://ilteriskeskin.github.io/djangogirlstrabzon.html" rel="alternate"></link><published>2018-12-11T00:00:00+03:00</published><updated>2018-12-11T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-12-11:/djangogirlstrabzon.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Çok yoğun bir hafta geçirdim. Yorucu ancak çok eğlenceli ve güzeldi.
+&lt;a href="https://github.com/selametsamli"&gt;Selamet&lt;/a&gt; ile EtüBilir
+(Erzurum Teknik Üniversitesi Bilim ve Fikir Topluluğu) Topluluğunda Python eğitimleri veriyorduk.
 Ardından &lt;a href="https://djangogirls.org/trabzon/"&gt;Django Girls Trabzon&lt;/a&gt; etkinliğine mentör olarak katıldık.&lt;/p&gt;
-&lt;p&gt;Sonra tekrar EtüBilir'de Python eğitimlerine devam ettik. Ayrıca &lt;a href="http://mucitpark.com/"&gt;MucitPark&lt;/a&gt;'ta 
+&lt;p&gt;Sonra tekrar EtüBilir'de Python eğitimlerine devam ettik. Ayrıca &lt;a href="http://mucitpark.com/"&gt;MucitPark&lt;/a&gt;'ta
 eğitimlerimiz devam etmekteydi.&lt;/p&gt;
-&lt;p&gt;Bu yazımda …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba ardakaşlar. Çok yoğun bir hafta geçirdim. Yorucu ancak çok eğlenceli ve güzeldi. 
-&lt;a href="https://github.com/selametsamli"&gt;Selamet&lt;/a&gt; ile EtüBilir 
-(Erzurum Teknik Üniversitesi Bilim ve Fikir Topluluğu) Topluluğunda Python eğitimleri veriyorduk. 
+&lt;p&gt;Bu yazımda …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba ardakaşlar. Çok yoğun bir hafta geçirdim. Yorucu ancak çok eğlenceli ve güzeldi.
+&lt;a href="https://github.com/selametsamli"&gt;Selamet&lt;/a&gt; ile EtüBilir
+(Erzurum Teknik Üniversitesi Bilim ve Fikir Topluluğu) Topluluğunda Python eğitimleri veriyorduk.
 Ardından &lt;a href="https://djangogirls.org/trabzon/"&gt;Django Girls Trabzon&lt;/a&gt; etkinliğine mentör olarak katıldık.&lt;/p&gt;
-&lt;p&gt;Sonra tekrar EtüBilir'de Python eğitimlerine devam ettik. Ayrıca &lt;a href="http://mucitpark.com/"&gt;MucitPark&lt;/a&gt;'ta 
+&lt;p&gt;Sonra tekrar EtüBilir'de Python eğitimlerine devam ettik. Ayrıca &lt;a href="http://mucitpark.com/"&gt;MucitPark&lt;/a&gt;'ta
 eğitimlerimiz devam etmekteydi.&lt;/p&gt;
 &lt;p&gt;Bu yazımda Django Girls Trabzon ile ilgili bir şeyler yazacağım. Hadi başlayalım :)&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;En Baştan En Sona&lt;/h3&gt;
 &lt;p&gt;7 Aralık Cuma günü Erzurum'dan Trabzon'a doğru yola çıktık. Akşam saatlerinde varmıştık. Ne yapalım ne edelim derken
 kendimizi Karadeniz Teknik Üniversitesi bilgisayar mühendisliği bölümünde bulduk. Ekiptekiler saat 8-9 olmasına rağmen
-çalışıyorlardı (sanırım işleri son güne bıraktılar :)). Bizde bir şeyler yapalım dedik yardımcı olmak istedik ama pek 
+çalışıyorlardı (sanırım işleri son güne bıraktılar :)). Bizde bir şeyler yapalım dedik yardımcı olmak istedik ama pek
 bir şey yapmadık. Bize gayet samimi davrandılar. &lt;/p&gt;
 &lt;p&gt;Sonrasında yemeğe kahve içmeye vs. gittik ve ardından dağıldık. Ertesi gün 9.00-18.00 eğitim olduğu için uyumak şarttı.
-Uyuduk ama bana hiç yetmedi... Sabah gerçekten ölü gibiydim. Sabah konakladığımız yerden çıktık tesadüfen ekipten birilerine 
+Uyuduk ama bana hiç yetmedi... Sabah gerçekten ölü gibiydim. Sabah konakladığımız yerden çıktık tesadüfen ekipten birilerine
 denk geldik. Bizi karşılamış gibi oldular :) Sonra tekrar bilgisayar mühendisliği bölümüne geçtik.&lt;/p&gt;
-&lt;p&gt;Bir kahve içtim ve başladık. Her mentör 3 kişi ile ilgilenecekti ancak bana 2 kişi geldi. Gayet güzel vakit geçiriyorduk. 
+&lt;p&gt;Bir kahve içtim ve başladık. Her mentör 3 kişi ile ilgilenecekti ancak bana 2 kişi geldi. Gayet güzel vakit geçiriyorduk.
 Sabah zaman oldukça yavaş geçiyordu. Öğle yemeğinden sonra kendime geldim. Benim takımım oldukça iyiydi :) Hızlıca tutorialı
 bitirdik. Hatta ilk biz tamamladık :) Mentör arkadaşlar çok iyilerdi. Ben zaten çabuk kaynaşan biri olduğumu düşünüyorum ama
 1 günde gerçekten oldukça fazla kaynaştık. &lt;/p&gt;
@@ -1181,12 +1179,12 @@ işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekk
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
-Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet 
+Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet
 olsun …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
-Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet 
+Maalesef benim masam yok o yüzden yatağımda idare edeceğim... Ama oldukça güzel bir kahvem var, hepimize afiyet
 olsun :)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;İlk olarak bir py1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -1267,7 +1265,7 @@ olsun :)&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/p3.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada ise listeler ile işlemler yaptık.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler ve yine az kullanılan özellikler ile 
+&lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler ve yine az kullanılan özellikler ile
 serilere devam edeceğim. Okuduğunuz için teşekkür ederim. &lt;/p&gt;
 &lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;
 &lt;hr&gt;
@@ -1286,7 +1284,7 @@ küçük küçük kütüphaneler kurarak kolayca yapmanız mümkün.&lt;/p&gt;
 &lt;p&gt;Bu yazıda &lt;strong&gt;Flask&lt;/strong&gt; ve &lt;strong&gt;SQLAlchemy&lt;/strong&gt; kullanılarak basit bir kayıt-giriş olma sistemi yapacağız. Hazırsak hadi
 gelin başlayalım.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
-&lt;a href="flaskkayit.html"&gt;Önceki&lt;/a&gt; yazımda basit bir kayıt uygulaması yapmıştık ancak bu yazım hem giriş hem kayıt 
+&lt;a href="flaskkayit.html"&gt;Önceki&lt;/a&gt; yazımda basit bir kayıt uygulaması yapmıştık ancak bu yazım hem giriş hem kayıt
 uygulaması olacak.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;İlk olarak bir app.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -1322,7 +1320,7 @@ uygulaması olacak.&lt;/p&gt;
                 &lt;span class="n"&gt;flash&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Başarıyla Giriş Yaptınız&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;success&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
                 &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;logged_in&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
-                &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;email&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; 
+                &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;email&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;
 
                 &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;redirect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url_for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;home&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
             &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
@@ -1531,7 +1529,7 @@ kullanıyorum. Git'in ne olduğu ile ilgili &lt;a href="gitnedir.html"&gt;yazım
 Çok çabuk sıkılıyorum, yeni arayışlara giriyorum ve sürekli sistemimi değiştiriyorum (asla ama asla yedek alan bir insan değilim). E sistemi değiştirdim diye çalışmalarıma ara veremezdim ya da aksatamazdım. Mesele böyle olunca projelerimi, kodlarımı saklayabileceğim, ihtiyaç halinde hemen temin edebileceğim bir platforma ihtiyacım oldu. &lt;/p&gt;
 &lt;p&gt;Git, yukarıda bahsettiğim durumu karşılıyor. Karşılamakla kalmıyor özgür yazılım ve açık
 kaynak fikirlerine katkıda bulunuyor. O iş ise şöyle oluyor;&lt;/p&gt;
-&lt;p&gt;Ben bir projeye başladım, kodumu yazdım. Sistemimi değiştirdim ve bilgisayarım sıfırlandı. Benim kodum GitHub'da açık kaynak ve özgür yazılım lisansı ile aynen duruyor. Yeni sistemi 
+&lt;p&gt;Ben bir projeye başladım, kodumu yazdım. Sistemimi değiştirdim ve bilgisayarım sıfırlandı. Benim kodum GitHub'da açık kaynak ve özgür yazılım lisansı ile aynen duruyor. Yeni sistemi
 açtığımda yaptığım tek şey şu oluyor:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ilteriskeskin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;repo_ismi&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -1582,11 +1580,11 @@ dağıtımı olan Fedora'yı kullanıyorum ve kurulum konusunda pek bir sıkınt
 &lt;hr&gt;
 &lt;p&gt;Bu yazımızdan bu kadar arkadaşlar. Umarım faydalı olmuştur. Zamanla blogumda teknik yazılar paylaşmaya başlayacağım. Ancak şu sıralar projelerden pek vakit bulamıyorum.&lt;/p&gt;
 &lt;p&gt;İyi çalışmalar :)&lt;/p&gt;</content><category term="Jekyll"></category><category term="jekyll"></category><category term="blog"></category><category term="github"></category></entry><entry><title>Yeni Blogum Hakkında</title><link href="https://ilteriskeskin.github.io/newblog.html" rel="alternate"></link><published>2018-07-30T00:00:00+03:00</published><updated>2018-07-30T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-07-30:/newblog.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Yeni blogum ile ilgili bilgilendirme yazısı, merak etmeyen için sıkıcı olabilir :)&lt;/p&gt;
-&lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="about.html"&gt;hakkımda&lt;/a&gt; kısmından 
+&lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="about.html"&gt;hakkımda&lt;/a&gt; kısmından
 ulaşabilirsiniz. Bu yazımda (bu blog üzerindeki ilk yazım) neden yeni blog açtığımdan bahsedeceğim.
 Aslında yeni bir blog açmadım. Bu güne kadar zaten &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; kullananıyordum.
 Ancak dümdüz …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Yeni blogum ile ilgili bilgilendirme yazısı, merak etmeyen için sıkıcı olabilir :)&lt;/p&gt;
-&lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="about.html"&gt;hakkımda&lt;/a&gt; kısmından 
+&lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="about.html"&gt;hakkımda&lt;/a&gt; kısmından
 ulaşabilirsiniz. Bu yazımda (bu blog üzerindeki ilk yazım) neden yeni blog açtığımdan bahsedeceğim.
 Aslında yeni bir blog açmadım. Bu güne kadar zaten &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; kullananıyordum.
 Ancak dümdüz &lt;strong&gt;html&lt;/strong&gt; ve &lt;strong&gt;css&lt;/strong&gt; ile yazılmış pek hoşuma gitmeyen bir blogdu. Zamanım olmaması nedeniyle
