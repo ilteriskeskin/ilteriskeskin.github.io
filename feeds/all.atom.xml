@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-11-03T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Poetry ile Python Paketleme ve Bağımlılık Yönetimi</title><link href="https://ilteriskeskin.github.io/poetry.html" rel="alternate"></link><published>2019-11-03T00:00:00+03:00</published><updated>2019-11-03T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-11-03:/poetry.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Python paketleme ve bağımlılık yönetim aracı olan Poetry'i inceleyeceğiz. Aracı
 &lt;a href="https://t.me/flask_turkey"&gt;Flask Türkiye Telegram Grubunda&lt;/a&gt; dile getiren &lt;a href="https://twitter.com/yasarcelepp"&gt;Yaşar Celep'e&lt;/a&gt;
 teşekkür ederim :)&lt;/p&gt;
@@ -118,6 +119,83 @@ dokümanına ulaşabilirsiniz. Umarım faydalı olmuştur.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Katkılarından dolayı &lt;a href="https://twitter.com/uguryuceee"&gt;Uğur Yüce&lt;/a&gt; arkadaşıma teşekkür ederim. Katkılarını açmak gerekirse sabah kahvaltı hazırladı,
 akşam yemek hazırladı, spor yaptırdı ve en önemlisi çok uygun bir fiyata evini benimle paylaştı.&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category><category term="poetry"></category></entry><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-08-26T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Farklı Python Sürümleri ile Çalışmak</title><link href="https://ilteriskeskin.github.io/farkl%C4%B1pythonsurumleri.html" rel="alternate"></link><published>2019-08-26T00:00:00+03:00</published><updated>2019-08-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-26:/farklıpythonsurumleri.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda bilgisayarımızdaki farklı Python sürümleri ile çalışmanın nasıl olduğunu göstereceğim.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Peki ya neden farklı Python sürümleri ile çalışalım?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bunun birden fazla yanıtı var. Benim kullanım sebebim bazı modüller Python 3.5 ve altını destekliyor ancak ben kendi projelerimde 3.7'de kullanmak istiyorum. Yani hem 3.5 ile …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda bilgisayarımızdaki farklı Python sürümleri ile çalışmanın nasıl olduğunu göstereceğim.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Peki ya neden farklı Python sürümleri ile çalışalım?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bunun birden fazla yanıtı var. Benim kullanım sebebim bazı modüller Python 3.5 ve altını destekliyor ancak ben kendi projelerimde 3.7'de kullanmak istiyorum. Yani hem 3.5 ile hem 3.7 ile projemi test edip çalıştırıyorum.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Bilgisayarımızdaki Python Sürümlerini Görüntüleme&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Şimdi gelin bilgisayarımızda hangi Python sürümleri kurulu görelim :)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ls&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki komutu yazdıktan sonra bilgisayarınızda kurulu olan Python sürümlerini görüntüleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Farklı Python Sürümü Kurmak&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gelin şimdi istediğimiz Python sürümünü indirelim sonrsında onu kuralım. İlk olarak &lt;a href="https://www.python.org/ftp/python/"&gt;bu adresten&lt;/a&gt; istediğimiz Python sürümünü .tar.xz uzantısı ile indirilerim. Bu indirme işini terminali açıp&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ftp&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xz&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;indirebiliriz. Ardından komut satırından indirdiğimiz dizine girip&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt; &lt;span class="n"&gt;xf&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xz&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;yazarak dosyamızı çıkartma işlemini yapabiliriz. Şimdi çıkan dosyamızın içine girelim&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ardından sırasıyla aşağıdaki iki komutu çalıştıralım,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt; &lt;span class="c1"&gt;--enable-optimizations&lt;/span&gt;
+
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;altinstall&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Komutların tamamlanması uzun sürebilir sabırlı olmakta fayda var :) Bittikten sonra artık yeni Python sürümünüz kurulmuş olacaktır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Farklı Sürümler ile Çalışalım&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gelelim şimdi asıl konumuza. Bir projemde 3.5 başka bir projemde 3.7 kullanmak istiyorum ne yapmalıyım? Aslında oldukça kolay. Gelin iki tane proje açalım. Sırasıyla aşağıdaki komutları terminalde çalıştırın.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt;
+&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="n"&gt;Python35Proje&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;Python35Proje&lt;/span&gt;
+&lt;span class="n"&gt;python3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;venv&lt;/span&gt; &lt;span class="n"&gt;myenv&lt;/span&gt;
+&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="n"&gt;myenv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Şimdi aynı yerde bir dosya açalım ve içine aşağıdaki kodları yazıp çalıştıralım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;platform&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;python_version&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Kodu çalıştırdığınızda eğer benimle aynı adımları izlediyseniz &lt;strong&gt;3.5.3&lt;/strong&gt; yani sanal ortamı kurduğumuz Python sürümü ekrana yazılacaktır.
+Ardından &lt;strong&gt;deactivate&lt;/strong&gt; yazarak sanal ortamdan çıkış yapalım.&lt;/p&gt;
+&lt;p&gt;Şimdi başka bir proje açalım ve bunda başka bir sürüm kullanalım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt;
+&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="n"&gt;Python37Proje&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;Python37Proje&lt;/span&gt;
+&lt;span class="n"&gt;python3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;venv&lt;/span&gt; &lt;span class="n"&gt;myvenv&lt;/span&gt;
+&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="n"&gt;muvenv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Şimdi aynı yerde bir dosya açalım ve içine aşağıdaki kodları yazıp çalıştıralım.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;platform&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;python_version&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Kodu çalıştırdığınızda &lt;strong&gt;3.7.x&lt;/strong&gt; yazacaktır. Yani sanal ortamı kurduğunuz Python3.7 sürümü hangisi ise o yazacaktır. Aynı şekilde &lt;strong&gt;deactivate&lt;/strong&gt; yazarak sanal ortamı kapatabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="python3"></category><category term="venv"></category><category term="soruce code"></category></entry><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
+>>>>>>> 075af0588d0e9b30fe078904bf2cfffa39d79483
 veya web uygulamalarında emoji kullanmanıza olanak sağlayan tatlı bir proje.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Emoji Modülü Kurulumu&lt;/strong&gt;&lt;/p&gt;
