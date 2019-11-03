@@ -1,5 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-08-16T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-11-03T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Poetry ile Python Paketleme ve Bağımlılık Yönetimi</title><link href="https://ilteriskeskin.github.io/poetry.html" rel="alternate"></link><published>2019-11-03T00:00:00+03:00</published><updated>2019-11-03T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-11-03:/poetry.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Python paketleme ve bağımlılık yönetim aracı olan Poetry'i inceleyeceğiz. Aracı
+&lt;a href="https://t.me/flask_turkey"&gt;Flask Türkiye Telegram Grubunda&lt;/a&gt; dile getiren &lt;a href="https://twitter.com/yasarcelepp"&gt;Yaşar Celep'e&lt;/a&gt;
+teşekkür ederim :)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tüm anlatım Ubuntu 19.10 üzerinde gerçekleşecektir. Bir çok GNU/Linux dağıtımında benzer şekilde çalışacaktır.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Poetry Nedir?&lt;/h3&gt;
+&lt;p&gt;Poetry Python'da bağımlılık yönetimi ve paketleme için bir araçtır …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Python paketleme ve bağımlılık yönetim aracı olan Poetry'i inceleyeceğiz. Aracı
+&lt;a href="https://t.me/flask_turkey"&gt;Flask Türkiye Telegram Grubunda&lt;/a&gt; dile getiren &lt;a href="https://twitter.com/yasarcelepp"&gt;Yaşar Celep'e&lt;/a&gt;
+teşekkür ederim :)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tüm anlatım Ubuntu 19.10 üzerinde gerçekleşecektir. Bir çok GNU/Linux dağıtımında benzer şekilde çalışacaktır.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Poetry Nedir?&lt;/h3&gt;
+&lt;p&gt;Poetry Python'da bağımlılık yönetimi ve paketleme için bir araçtır. Projenizin bağlı olduğu kütüphaneleri deklare etmenizi
+sağlar ve sizin için onları yönetir (kurar / günceller).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Poetry Kurulum&lt;/h3&gt;
+&lt;p&gt;Gelelim bu aracın nasıl kurulduğuna. Aracı kurmak aslında olukça basit. Öncelikle sistem gereksinimlerine bakalım.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sistem Gereksinimleri&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python 2.7 or 3.4+&lt;/li&gt;
+&lt;li&gt;Windows, GNU/Linux and OSX&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Yani bilgisayarınızda bir işletim sistemi varsa ve Python yüklüyse herhangi bir sorun olmadan kurulumu gerçekleştirebileceksiniz.&lt;/p&gt;
+&lt;p&gt;Kendi dokümantasyonunda belirtildiği üzere Poetry kurmak için iki yol vardır. Normal bir Python paketi kurar gibi pip ile kurmamız
+mümkün ancak önerilmeyen bir yöntem. Biz önerilen yöntemi takip edeceğiz.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;curl&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sSL&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;raw&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;githubusercontent&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;sdispater&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;get&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Komutu ile bilgisayarımıza Poetry kurmuş olacağız. Bunu kontrol etmek için aşağıdaki komutu çalıştırabiliriz.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;
+&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt; &lt;span class="c1"&gt;--version&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Ekran çıktısı:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Poetry&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;17&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Poetry Kullanımı&lt;/h3&gt;
+&lt;p&gt;Gelin şimdi basit bir örnek ile nasıl kullanacağımıza bakalım. Komutları sırası ile çalıştırın. Benzer çıktılar almıyorsanız bir yerlerde
+hatalar olmuştur. Sorularınızı bana sorabilir ya da adımlarınızı kontrol edebilirsiniz :)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;
+&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;poetry&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;demo&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Şimdi poetry-demo adında bir proje oluşturalım. İçeriği aşağıdaki gibi olacaktır. İçeriğini aşağıdaki gibi görmek için&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;tree&lt;/span&gt; &lt;span class="n"&gt;poetry_demo&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;komutunu çalıştırın. Çalışması için tree uygulamasının kurulmuş olması gerekmektedir.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;demo&lt;/span&gt;
+&lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;poetry_demo&lt;/span&gt;
+&lt;span class="err"&gt;│&lt;/span&gt;   &lt;span class="err"&gt;└──&lt;/span&gt; &lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;pyproject&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;toml&lt;/span&gt;
+&lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;README&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rst&lt;/span&gt;
+&lt;span class="err"&gt;└──&lt;/span&gt; &lt;span class="n"&gt;tests&lt;/span&gt;
+    &lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+    &lt;span class="err"&gt;└──&lt;/span&gt; &lt;span class="n"&gt;test_poetry_demo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;pyproject.toml&lt;/strong&gt; dosyası, burada en önemli olan dosyadır. Bu dosya, projenizi ve bağımlılıklarını düzenleyecektir. Dosyayı açtığınızda
+İçeriği aşağıdaki gibi olmalıdır.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[tool.poetry]&lt;/span&gt;
+&lt;span class="na"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;poetry-demo&amp;quot;&lt;/span&gt;
+&lt;span class="na"&gt;version&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;0.1.0&amp;quot;&lt;/span&gt;
+&lt;span class="na"&gt;description&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="na"&gt;authors&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;[&amp;quot;Ali İlteriş Keskin &amp;lt;aliilteriskeskin@gmail.com&amp;gt;&amp;quot;]&lt;/span&gt;
+
+&lt;span class="k"&gt;[tool.poetry.dependencies]&lt;/span&gt;
+&lt;span class="na"&gt;python&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;^2.7&amp;quot;&lt;/span&gt;
+
+&lt;span class="k"&gt;[tool.poetry.dev-dependencies]&lt;/span&gt;
+&lt;span class="na"&gt;pytest&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;^3.0&amp;quot;&lt;/span&gt;
+
+&lt;span class="k"&gt;[build-system]&lt;/span&gt;
+&lt;span class="na"&gt;requires&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;[&amp;quot;poetry&amp;gt;=0.12&amp;quot;]&lt;/span&gt;
+&lt;span class="na"&gt;build-backend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;poetry.masonry.api&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Bağımlılıkları Belirtme&lt;/h3&gt;
+&lt;p&gt;Aslında çıktı gayet açıklayıcı görünüyor değil mi? Projenize bağımlılıklar eklemek istiyorsanız, bunları &lt;strong&gt;tool.poetry.dependencies&lt;/strong&gt; bölümünde
+belirtmelisiniz. Örneğin:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[tool.poetry.dependencies]&lt;/span&gt;
+&lt;span class="na"&gt;pendulum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;^1.4&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıda yaptığımız şey paket ismini vermek ve paketin sürüm kodunu vermek oldu. Eğer bu bağımlılığı el ile pyproject.toml dosyanıza
+eklemek istemiyorsanız aşağıdaki komutları çalıştırarak ekleme yapabilirsiniz.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;
+&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt; &lt;span class="k"&gt;add&lt;/span&gt; &lt;span class="n"&gt;pendulum&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki komut (&lt;strong&gt;add&lt;/strong&gt;) otomatik olarak uygun bir sürüm kısıtı bulur ve paketi alt bağımlılıklarıyla birlikte yükler.&lt;/p&gt;
+&lt;h3&gt;Sürüm Kısıtlamaları&lt;/h3&gt;
+&lt;p&gt;Örneğimizde, &lt;strong&gt;pendulum&lt;/strong&gt; paketini &lt;strong&gt;^1.4&lt;/strong&gt; sürüm kısıtlamasıyla istiyoruz. Bu, 1.4.0'a eşit veya 2.0.0 değerinden küçük (&amp;gt;=1.4.0 &amp;lt;2.0.0)
+sürümleri anlamına gelir.&lt;/p&gt;
+&lt;p&gt;Sürüm kısıtlamaları ve sürümlerin ilişkileri ile ilgili detaylı bilgi için lütfen &lt;a href="https://poetry.eustace.io/docs/versions/"&gt;okuyunuz.&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Bağımlılıkları Yükleme&lt;/h3&gt;
+&lt;p&gt;Projemize eklediğimiz, gerekli bağımlılıkları yüklemek için aşağıdaki &lt;strong&gt;install&lt;/strong&gt; komutunu çalıştırmamız yeterlidir.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;
+&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;poetry&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;Evet arkadaşlar şimdilik benden bu kadar. Eğer daha detaylı bilgi istiyor iseniz &lt;a href="https://poetry.eustace.io/docs/"&gt;bu adresten&lt;/a&gt; Poetry
+dokümanına ulaşabilirsiniz. Umarım faydalı olmuştur.&lt;/p&gt;
+&lt;p&gt;Herkese iyi çalışmalar :)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Katkılarından dolayı &lt;a href="https://twitter.com/uguryuceee"&gt;Uğur Yüce&lt;/a&gt; arkadaşıma teşekkür ederim. Katkılarını açmak gerekirse sabah kahvaltı hazırladı,
+akşam yemek hazırladı, spor yaptırdı ve en önemlisi çok uygun bir fiyata evini benimle paylaştı.&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category><category term="poetry"></category></entry><entry><title>Python ile Emoji Modülü</title><link href="https://ilteriskeskin.github.io/pythonemoji.html" rel="alternate"></link><published>2019-08-16T00:00:00+03:00</published><updated>2019-08-16T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-16:/pythonemoji.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda eğlenceli bir modül olduğunu düşündüğüm &lt;strong&gt;emoji&lt;/strong&gt; modülünden bahsedeceğim. Python ile yazdığınız konsol
 veya web uygulamalarında emoji kullanmanıza olanak sağlayan tatlı bir proje.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Emoji Modülü Kurulumu&lt;/strong&gt;&lt;/p&gt;
@@ -51,16 +169,16 @@ yazalım.&lt;/p&gt;
 &lt;p&gt;Emoji listelerine &lt;a href="http://www.unicode.org/emoji/charts/full-emoji-list.html"&gt;burdan&lt;/a&gt; ulaşabilirsiniz. Orada yazan isimleri &lt;strong&gt;_&lt;/strong&gt; ile birleştirip
 kullanabilirsiniz.&lt;/p&gt;
 &lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="python3"></category><category term="emoji"></category></entry><entry><title>Flask ile MongoDB Örneği</title><link href="https://ilteriskeskin.github.io/flaskmongodb.html" rel="alternate"></link><published>2019-08-12T00:00:00+03:00</published><updated>2019-08-12T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-12:/flaskmongodb.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz.&lt;/p&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category><category term="emoji"></category></entry><entry><title>Flask ile MongoDB Örneği</title><link href="https://ilteriskeskin.github.io/flaskmongodb.html" rel="alternate"></link><published>2019-08-12T00:00:00+03:00</published><updated>2019-08-12T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-12:/flaskmongodb.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerind gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerinde gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;İlk olarak neyin ne olduğundan bahsedelim. Sonrasında gerekli kurulumları yapalım ve ardından hızlıca kodumuza geçelim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;MongoDB Nedir?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;MongoDB, NoSQL verilerini belge biçiminde saklayıp, analiz edebileceğimiz ölçeklenebilir bir veritabanı teknolojisidir. MongoDB özgür yazılım
 lisansı …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerind gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerinde gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;İlk olarak neyin ne olduğundan bahsedelim. Sonrasında gerekli kurulumları yapalım ve ardından hızlıca kodumuza geçelim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;MongoDB Nedir?&lt;/strong&gt;&lt;/p&gt;
@@ -141,7 +259,7 @@ lisansı ile yayınlanmış açık kaynaklı bir teknolojidir.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Uygulamanızı çalıştırıp deneyin ve MongoDB Atlas'tan collection kısmından eklediğiniz verileri görüp test edebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="flask"></category><category term="mongodb"></category></entry><entry><title>Özgür Bir Projenin Kaynak Kodunda Oynama Yapmak</title><link href="https://ilteriskeskin.github.io/ozgurprojeyekatki.html" rel="alternate"></link><published>2019-06-04T00:00:00+03:00</published><updated>2019-06-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-06-04:/ozgurprojeyekatki.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar. Öncelikle bugün ne yapacağımızı kısaca açıklayayım. Özgür bir projenin kaynak kodlarını bilgisayarımıza indirip kodlarında oynama yapacağız. Bir projeyi ihtiyaçlarımız doğrultusunda nasıl değiştiririz ona bakacağız. Çok küçük bir değişiklik olacak.&lt;/p&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="Flask"></category><category term="flask"></category><category term="mongodb"></category></entry><entry><title>Özgür Bir Projenin Kaynak Kodunda Oynama Yapmak</title><link href="https://ilteriskeskin.github.io/ozgurprojeyekatki.html" rel="alternate"></link><published>2019-06-04T00:00:00+03:00</published><updated>2019-06-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-06-04:/ozgurprojeyekatki.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar. Öncelikle bugün ne yapacağımızı kısaca açıklayayım. Özgür bir projenin kaynak kodlarını bilgisayarımıza indirip kodlarında oynama yapacağız. Bir projeyi ihtiyaçlarımız doğrultusunda nasıl değiştiririz ona bakacağız. Çok küçük bir değişiklik olacak.&lt;/p&gt;
 &lt;p&gt;Bu yazı için &lt;a href="https://github.com/mtoyoda/sl/"&gt;sl&lt;/a&gt; projesini seçtim arkadaşlar. Projenin kaynak kodlarını bilgisayarımıza klonlayarak başlayalım.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Anlatımım Fedora 29 üzerinde gerçekleşecektir ancak …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar. Öncelikle bugün ne yapacağımızı kısaca açıklayayım. Özgür bir projenin kaynak kodlarını bilgisayarımıza indirip kodlarında oynama yapacağız. Bir projeyi ihtiyaçlarımız doğrultusunda nasıl değiştiririz ona bakacağız. Çok küçük bir değişiklik olacak.&lt;/p&gt;
@@ -191,7 +309,7 @@ lisansı ile yayınlanmış açık kaynaklı bir teknolojidir.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Gördüğünüz gibi aslında oldukça basit bir şekilde değişiklik yaptık.&lt;/p&gt;
 &lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="freesoftware"></category></entry><entry><title>Python ile Görüntü İşleme-2</title><link href="https://ilteriskeskin.github.io/pythongoruntuisleme2.html" rel="alternate"></link><published>2019-04-04T00:00:00+03:00</published><updated>2019-04-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-04-04:/pythongoruntuisleme2.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar. &lt;a href="pythongoruntuisleme1.html"&gt;Python İle Görüntü İşleme-1&lt;/a&gt; isimli bir yazı yazmıştım. Bu yazıda Python ile görüntü işlemeye giriş yapmıştık. Bu yazımda ise OpenCV kütüphanesine giriş yapacağız ve biraz daha kullanışlı fonksiyonları göreceğiz. Yazıya başlamadan önce bazı kurulumlar gerekli.&lt;/p&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="News"></category><category term="freesoftware"></category></entry><entry><title>Python ile Görüntü İşleme-2</title><link href="https://ilteriskeskin.github.io/pythongoruntuisleme2.html" rel="alternate"></link><published>2019-04-04T00:00:00+03:00</published><updated>2019-04-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-04-04:/pythongoruntuisleme2.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar. &lt;a href="pythongoruntuisleme1.html"&gt;Python İle Görüntü İşleme-1&lt;/a&gt; isimli bir yazı yazmıştım. Bu yazıda Python ile görüntü işlemeye giriş yapmıştık. Bu yazımda ise OpenCV kütüphanesine giriş yapacağız ve biraz daha kullanışlı fonksiyonları göreceğiz. Yazıya başlamadan önce bazı kurulumlar gerekli.&lt;/p&gt;
 &lt;p&gt;Kurulumları tamamlayarak başlayalım.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;Gereklilikler&lt;/h3&gt;
@@ -285,7 +403,7 @@ Görüntüyü alfa kanalında açmak için cv2.IMREAD_UNCHANGED&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/pyopencv3.png"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="opencv"></category><category term="python3"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Fedora 29 Üzerine OpenCV 4.0.0 Kurulumu</title><link href="https://ilteriskeskin.github.io/opencvfedorakurulum.html" rel="alternate"></link><published>2019-04-01T00:00:00+03:00</published><updated>2019-04-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-04-01:/opencvfedorakurulum.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladığımızı ve ekip içinde yazılım ile ilgilendiğimi daha önce söylemiştim. Görüntü işleme ile uğraşmaya başladım. İlgimi çekmeye başladı
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="OpenCV"></category><category term="opencv"></category><category term="python3"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Fedora 29 Üzerine OpenCV 4.0.0 Kurulumu</title><link href="https://ilteriskeskin.github.io/opencvfedorakurulum.html" rel="alternate"></link><published>2019-04-01T00:00:00+03:00</published><updated>2019-04-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-04-01:/opencvfedorakurulum.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladığımızı ve ekip içinde yazılım ile ilgilendiğimi daha önce söylemiştim. Görüntü işleme ile uğraşmaya başladım. İlgimi çekmeye başladı
 ancak hala web uygulamaları geliştirirken aldığım keyfi görüntü işlemeden alamıyorum :)&lt;/p&gt;
 &lt;p&gt;Kendime bir süre önce Thinkpad x200s almıştım. Neden aldın filan gibi şeyler diyenler şimdi aslında güzel …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladığımızı ve ekip içinde yazılım ile ilgilendiğimi daha önce söylemiştim. Görüntü işleme ile uğraşmaya başladım. İlgimi çekmeye başladı
 ancak hala web uygulamaları geliştirirken aldığım keyfi görüntü işlemeden alamıyorum :)&lt;/p&gt;
@@ -377,7 +495,7 @@ ancak hala web uygulamaları geliştirirken aldığım keyfi görüntü işlemed
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/opencv-fedora.png"&gt;&lt;/p&gt;
 &lt;p&gt;Okuduğunuz için teşekkür ederim :) Bundan sonraki yazım Python ile Görüntü İşleme serisinin 2. yazısı olacak.&lt;/p&gt;
 &lt;p&gt;Herkese iyi çalışmalar :)&lt;/p&gt;
-&lt;hr&gt;</content><category term="opencv"></category><category term="fedora"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Fedora Sisteme Zsh Kurulumu</title><link href="https://ilteriskeskin.github.io/fedorazshkurulum.html" rel="alternate"></link><published>2019-03-31T00:00:00+03:00</published><updated>2019-03-31T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-03-31:/fedorazshkurulum.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Bu yazımda şuanda kullandığım Fedora 29 üzerine zsh kabuğunun kurulumunu anlatacağım.&lt;/p&gt;
+&lt;hr&gt;</content><category term="OpenCV"></category><category term="opencv"></category><category term="fedora"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Fedora Sisteme Zsh Kurulumu</title><link href="https://ilteriskeskin.github.io/fedorazshkurulum.html" rel="alternate"></link><published>2019-03-31T00:00:00+03:00</published><updated>2019-03-31T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-03-31:/fedorazshkurulum.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Bu yazımda şuanda kullandığım Fedora 29 üzerine zsh kabuğunun kurulumunu anlatacağım.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;ZSH Nedir?&lt;/h3&gt;
 &lt;p&gt;Zsh aslında Bash'e göre oldukça yeni bir kabuktur. GNU/Linux ve MacOS sistemlerin terminalinde hazır olarak
@@ -407,7 +525,7 @@ kullanıcıya terminal tarafında epeyce hız ve kolaylık sağlıyor.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes"&gt;Bu adresten&lt;/a&gt; hoşunuza giden bir temanın ismini
 robbyrussell'i sildiğiniz yere yazarak yeni temanızı kullanmaya başlayabilirsiniz.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Eğer benim kullandığım temayı merak ediyorsanız ben &lt;strong&gt;risto&lt;/strong&gt; isimli temayı kullanıyorum.&lt;/p&gt;
-&lt;p&gt;Umarım hoşlanırsınız. Herkese iyi çalışmalar :)&lt;/p&gt;</content><category term="fedora"></category><category term="zsh"></category></entry><entry><title>Python ile Görüntü İşleme-1</title><link href="https://ilteriskeskin.github.io/pythongoruntuisleme1.html" rel="alternate"></link><published>2019-03-10T00:00:00+03:00</published><updated>2019-03-10T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-03-10:/pythongoruntuisleme1.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar. &lt;a href="https://twitter.com/isidentical?lang=tr"&gt;Batuhan Taşkaya&lt;/a&gt;'nın bir
+&lt;p&gt;Umarım hoşlanırsınız. Herkese iyi çalışmalar :)&lt;/p&gt;</content><category term="ZSH"></category><category term="fedora"></category><category term="zsh"></category></entry><entry><title>Python ile Görüntü İşleme-1</title><link href="https://ilteriskeskin.github.io/pythongoruntuisleme1.html" rel="alternate"></link><published>2019-03-10T00:00:00+03:00</published><updated>2019-03-10T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-03-10:/pythongoruntuisleme1.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar. &lt;a href="https://twitter.com/isidentical?lang=tr"&gt;Batuhan Taşkaya&lt;/a&gt;'nın bir
 &lt;a href="https://twitter.com/isidentical/status/1104698057403387904"&gt;tweetinin&lt;/a&gt; altında python ile
 görsel işleme konulu yazı isteği gördüm. Bu yazımda Pillow kütüphanesine giriş yapacağım.&lt;/p&gt;
 &lt;p&gt;Hadi başlayalım.&lt;/p&gt;
@@ -523,7 +641,7 @@ nasıl kaydedeceğinizi biliyorsunuzdur. Bir deneyin bakalım olacak mı? Herkes
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=thk64emxwjo"&gt;Ceylan Ertem - El Adamı&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=2at-8ZbjRXs"&gt;Teoman - Güzel Bir Gün&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=-x9GxGYA7nE"&gt;Yol'a Düş - Mavi Türkü&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=b9QApLJ3TI0"&gt;Norm Ender - Sözler Şerefsiz Oldu&lt;/a&gt;&lt;/p&gt;</content><category term="pillow"></category><category term="python3"></category><category term="image processing"></category><category term="görüntü işleme"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 4</title><link href="https://ilteriskeskin.github.io/pythonserisi4.html" rel="alternate"></link><published>2019-02-15T00:00:00+03:00</published><updated>2019-02-15T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-02-15:/pythonserisi4.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=b9QApLJ3TI0"&gt;Norm Ender - Sözler Şerefsiz Oldu&lt;/a&gt;&lt;/p&gt;</content><category term="OpenCV"></category><category term="pillow"></category><category term="python3"></category><category term="image processing"></category><category term="görüntü işleme"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 4</title><link href="https://ilteriskeskin.github.io/pythonserisi4.html" rel="alternate"></link><published>2019-02-15T00:00:00+03:00</published><updated>2019-02-15T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-02-15:/pythonserisi4.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Önemli Not:&lt;/strong&gt; Bir GNU/Linux dağıtımında Python kabuğunu açmak için terminali açıp içine &lt;strong&gt;python3&lt;/strong&gt; yazıp …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
@@ -591,7 +709,7 @@ takas işlemi oldukça kolay bir şekilde yapıldı.  &lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
 işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim.&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>Python Turtle Modülü ile Doğru Parçası</title><link href="https://ilteriskeskin.github.io/dogruparcasi.html" rel="alternate"></link><published>2019-01-24T00:00:00+03:00</published><updated>2019-01-24T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-01-24:/dogruparcasi.html</id><summary type="html">&lt;p&gt;Herkese merhaba. Bugün noktalar ile bir şeyler yapacağız. Biraz farklı bir konu olacak. Taa ortaokul matematiğine döneceğiz.
+&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category></entry><entry><title>Python Turtle Modülü ile Doğru Parçası</title><link href="https://ilteriskeskin.github.io/dogruparcasi.html" rel="alternate"></link><published>2019-01-24T00:00:00+03:00</published><updated>2019-01-24T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-01-24:/dogruparcasi.html</id><summary type="html">&lt;p&gt;Herkese merhaba. Bugün noktalar ile bir şeyler yapacağız. Biraz farklı bir konu olacak. Taa ortaokul matematiğine döneceğiz.
 İlk olarak kavramların anlamlarına bakrak başlayalım.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Nokta:&lt;/strong&gt; Kalemin defterde veya farklı alanda bıraktığı ize nokta denir. &lt;/p&gt;
@@ -632,7 +750,7 @@ noktalar var. &lt;/p&gt;
 &lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvRG_En3J1XyhnZW9tZXRyaSk&lt;/li&gt;
 &lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvTm9rdGE&lt;/li&gt;
 &lt;li&gt;http://www.wikizero.biz/index.php?q=aHR0cHM6Ly90ci53aWtpcGVkaWEub3JnL3dpa2kvRG8lQzQlOUZydV9wYXIlQzMlQTdhcyVDNCVCMQ&lt;/li&gt;
-&lt;/ul&gt;</content><category term="python3"></category><category term="turtle"></category></entry><entry><title>Görüntü İşleme İle İlgili Kısa Kısa</title><link href="https://ilteriskeskin.github.io/goruntuisleme.html" rel="alternate"></link><published>2019-01-23T00:00:00+03:00</published><updated>2019-01-23T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-01-23:/goruntuisleme.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. &lt;a href="opencvubuntukurulum.html"&gt;Bir önceki yazımda&lt;/a&gt; Teknofest 2019'a hazırlandığımızı ve görüntü işleme üzerine
+&lt;/ul&gt;</content><category term="Python3"></category><category term="python3"></category><category term="turtle"></category></entry><entry><title>Görüntü İşleme İle İlgili Kısa Kısa</title><link href="https://ilteriskeskin.github.io/goruntuisleme.html" rel="alternate"></link><published>2019-01-23T00:00:00+03:00</published><updated>2019-01-23T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-01-23:/goruntuisleme.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. &lt;a href="opencvubuntukurulum.html"&gt;Bir önceki yazımda&lt;/a&gt; Teknofest 2019'a hazırlandığımızı ve görüntü işleme üzerine
 çalıştığımı söylemiştim. Ayrıca OpenCV kütüphanesinin kurulumundan bahsetmiştim. Bu yazımda ise hangi kütüphaneler kullanılıyor,
 ne işe yarıyor bunlardan bahsedeceğim.&lt;/p&gt;
 &lt;p&gt;Hadi başlayalım.&lt;/p&gt;
@@ -686,7 +804,7 @@ ve güzel bir dokümantasyona sahiptir.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=xpjRba5c7-s"&gt;Kahraman Deniz - Suç Mahalli&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=_fw5GJdAbLY"&gt;Pamela - istanbul&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=XFvSd1HDagY"&gt;Teoman - İstanbul'da Sonbahar&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=XwNUspuZWlQ"&gt;sevdadandır dedi annem aldırma&lt;/a&gt;&lt;/p&gt;</content><category term="opencv"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Ubuntu 18.04 Üzerine OpenCV Kurulumu</title><link href="https://ilteriskeskin.github.io/opencvubuntukurulum.html" rel="alternate"></link><published>2018-12-20T00:00:00+03:00</published><updated>2018-12-20T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-12-20:/opencvubuntukurulum.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladık. Ekip içinde ben yazılım kısmıyla ilgileniyorum.
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=XwNUspuZWlQ"&gt;sevdadandır dedi annem aldırma&lt;/a&gt;&lt;/p&gt;</content><category term="OpenCV"></category><category term="opencv"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Ubuntu 18.04 Üzerine OpenCV Kurulumu</title><link href="https://ilteriskeskin.github.io/opencvubuntukurulum.html" rel="alternate"></link><published>2018-12-20T00:00:00+03:00</published><updated>2018-12-20T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-12-20:/opencvubuntukurulum.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladık. Ekip içinde ben yazılım kısmıyla ilgileniyorum.
 Yani görüntü işleme ile epeyce içli dışlı olacağım. Daha önce OpenCV kurmamış arakdaşlar kurulumda zorlanıyorlardı. İlk 
 OpenCV kurulumumumda (bundan 1 yıl önce) resmen ağlamıştım :). 1-2 hafta önce yeniden kurdum. Oldukça sancısız geçti. E 
 durum böyle olunca bir …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba ardakaşlar. Ekipçe TeknoFest 2019'a hazırlanmaya başladık. Ekip içinde ben yazılım kısmıyla ilgileniyorum.
@@ -777,7 +895,7 @@ olun :).&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=ehanblxZeA4"&gt;Adamlar - Koca Yaşlı Şişko Dünya&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=cl4cLEToPfc"&gt;Eddie Vedder - Society - Into The Wild - HD 1080p - Soundtrack - lyrics&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=brRnhthvnKs"&gt;Cem Adrian &amp;amp; Hande Mehan - Sen Benim Şarkılarımsın (Official Audio)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=a4ddJyBkRVo"&gt;Pilli Bebek - Haram Geceler&lt;/a&gt;&lt;/p&gt;</content><category term="opencv"></category><category term="ubuntu"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Django Girls Trabzon</title><link href="https://ilteriskeskin.github.io/djangogirlstrabzon.html" rel="alternate"></link><published>2018-12-11T00:00:00+03:00</published><updated>2018-12-11T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-12-11:/djangogirlstrabzon.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Çok yoğun bir hafta geçirdim. Yorucu ancak çok eğlenceli ve güzeldi. 
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=a4ddJyBkRVo"&gt;Pilli Bebek - Haram Geceler&lt;/a&gt;&lt;/p&gt;</content><category term="OpenCV"></category><category term="opencv"></category><category term="ubuntu"></category><category term="görüntü işleme"></category><category term="image processing"></category></entry><entry><title>Django Girls Trabzon</title><link href="https://ilteriskeskin.github.io/djangogirlstrabzon.html" rel="alternate"></link><published>2018-12-11T00:00:00+03:00</published><updated>2018-12-11T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-12-11:/djangogirlstrabzon.html</id><summary type="html">&lt;p&gt;Merhaba ardakaşlar. Çok yoğun bir hafta geçirdim. Yorucu ancak çok eğlenceli ve güzeldi. 
 &lt;a href="https://github.com/selametsamli"&gt;Selamet&lt;/a&gt; ile EtüBilir 
 (Erzurum Teknik Üniversitesi Bilim ve Fikir Topluluğu) Topluluğunda Python eğitimleri veriyorduk. 
 Ardından &lt;a href="https://djangogirls.org/trabzon/"&gt;Django Girls Trabzon&lt;/a&gt; etkinliğine mentör olarak katıldık.&lt;/p&gt;
@@ -817,7 +935,7 @@ bitirdik. Hatta ilk biz tamamladık :) Mentör arkadaşlar çok iyilerdi. Ben za
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Rgcte2XEgDQ"&gt;Can Bonomo - Hikayem Bitmedi&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=-UQNUpRWS-8"&gt;Burry Soprano - Mary Jane&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=T_VB_HjibHA"&gt;Sansar Salvo - Dum Taka Dum&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=SdTsXt6rSOM"&gt;Sansar Salvo - Gözlerimin İçinde&lt;/a&gt;&lt;/p&gt;</content><category term="python3"></category><category term="django"></category><category term="djangogirls"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 3</title><link href="https://ilteriskeskin.github.io/pythonserisi3.html" rel="alternate"></link><published>2018-11-23T00:00:00+03:00</published><updated>2018-11-23T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-11-23:/pythonserisi3.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=SdTsXt6rSOM"&gt;Sansar Salvo - Gözlerimin İçinde&lt;/a&gt;&lt;/p&gt;</content><category term="Django"></category><category term="python3"></category><category term="django"></category><category term="djangogirls"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 3</title><link href="https://ilteriskeskin.github.io/pythonserisi3.html" rel="alternate"></link><published>2018-11-23T00:00:00+03:00</published><updated>2018-11-23T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-11-23:/pythonserisi3.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un hayatımızı kolaylaştıracak bazı fonksiyonlarından ve özelliklerinden bahsedeceğim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;İlk olarak dosya1.py isimli bir dosya açalım. İçine şu kodları ekleyelim.&lt;/p&gt;
@@ -867,7 +985,7 @@ parametreler ile yuvarlama hassasiyetini arttırıp azalttık.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Burada yazımı sonlandırıyorum. Bundan sonra az bilinen kütüphaneler, yine az kullanılan özellikler ve çokça
 işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekkür ederim.&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>NokulSoft Nedir?</title><link href="https://ilteriskeskin.github.io/nokulsoft.html" rel="alternate"></link><published>2018-11-17T00:00:00+03:00</published><updated>2018-11-17T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-11-17:/nokulsoft.html</id><summary type="html">&lt;h3&gt;Kim Bu NokulSoft?&lt;/h3&gt;
+&lt;p&gt;İyi çalışmalar diliyorum.&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category></entry><entry><title>NokulSoft Nedir?</title><link href="https://ilteriskeskin.github.io/nokulsoft.html" rel="alternate"></link><published>2018-11-17T00:00:00+03:00</published><updated>2018-11-17T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-11-17:/nokulsoft.html</id><summary type="html">&lt;h3&gt;Kim Bu NokulSoft?&lt;/h3&gt;
 &lt;p&gt;NokulSoft bir kimse değil, bir girişim hareketidir. Açık kaynak koldu ve özgür yazılım lisanslı uygulamalar geliştirip bunları
 yayınlar. Detaylı bilgi için &lt;a href="http://nokulsoft.com"&gt;resmi web sitesini&lt;/a&gt; ziyaret edebilirsiniz.&lt;/p&gt;
 &lt;h3&gt;Neler Yaptı?&lt;/h3&gt;
@@ -879,7 +997,7 @@ yayınlar. Detaylı bilgi için &lt;a href="http://nokulsoft.com"&gt;resmi web s
 ise &lt;a href="https://github.com/ilteriskeskin/NokulSoft"&gt;GitHub Repomuza&lt;/a&gt; bakabilirsiniz.&lt;/p&gt;
 &lt;p&gt;Yaptığımız uygulamalara isteğinize bağlı olarak güncelleme verebilir, istediğiniz uygulamaları yapıp yayına alabiliriz. İsteğe bağlı
 güncelleme verme konusunu biraz daha açmak gerekirse uygulamalarımızda eksik gördüğünüz noktaları geliştirip güncelleyebiliriz.&lt;/p&gt;
-&lt;p&gt;Okuduğunuz için teşekkür ederim :)&lt;/p&gt;</content><category term="Android"></category><category term="NokulSoft"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 2 - Turtle Modülü</title><link href="https://ilteriskeskin.github.io/pythonserisi2.html" rel="alternate"></link><published>2018-11-01T00:00:00+03:00</published><updated>2018-11-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-11-01:/pythonserisi2.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
+&lt;p&gt;Okuduğunuz için teşekkür ederim :)&lt;/p&gt;</content><category term="News"></category><category term="Android"></category><category term="NokulSoft"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 2 - Turtle Modülü</title><link href="https://ilteriskeskin.github.io/pythonserisi2.html" rel="alternate"></link><published>2018-11-01T00:00:00+03:00</published><updated>2018-11-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-11-01:/pythonserisi2.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Bu yazımda ise Python'un Turtle modülünden bahsedeceğim. çocuklara Python öğretmek istediğinizde siyah
 ekran sıkıcı geldiğinde ortama biraz renk ve eğlence katması açısından oldukça hoş bir modül …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba, yeni bir &lt;a href="pythonserisi1.html"&gt;yazı&lt;/a&gt; serisine başlama kararı almıştım. Bu seride Python'da oldukça
@@ -981,7 +1099,7 @@ işe yarayan kısayollar ile serilere devam edeceğim. Okuduğunuz için teşekk
 &lt;a href="https://www.youtube.com/watch?v=PC78PmiYob0"&gt;Adamlar - Eski Dostum Tankla Gelmiş&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Kaynak&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.halitalptekin.com/python-turtle-modulu.html"&gt;Halit Alptekin&lt;/a&gt;
-&lt;a href="https://docs.python.org/3/library/turtle.html"&gt;Python3 Docs&lt;/a&gt;&lt;/p&gt;</content><category term="python3"></category><category term="tutle"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 1</title><link href="https://ilteriskeskin.github.io/pythonserisi1.html" rel="alternate"></link><published>2018-10-28T00:00:00+03:00</published><updated>2018-10-28T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-10-28:/pythonserisi1.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
+&lt;a href="https://docs.python.org/3/library/turtle.html"&gt;Python3 Docs&lt;/a&gt;&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category><category term="tutle"></category></entry><entry><title>Python'da İşe Yarayan Yöntemler 1</title><link href="https://ilteriskeskin.github.io/pythonserisi1.html" rel="alternate"></link><published>2018-10-28T00:00:00+03:00</published><updated>2018-10-28T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-10-28:/pythonserisi1.html</id><summary type="html">&lt;p&gt;Merhaba, yeni bir yazı serisine başlama kararı aldım. Bu seride Python'da oldukça
 işe yarayan bazı özelliklere değineceğim. Bu özelliklerin kodlarını ve ekran görüntülerini paylaşacağım.&lt;/p&gt;
 &lt;p&gt;Kahvenizi hazırlayın, masanıza oturun ve hazırsanız başlayalım :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt;
@@ -1079,7 +1197,7 @@ serilere devam edeceğim. Okuduğunuz için teşekkür ederim. &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=BqJ-4ePe_Pk"&gt;Cem Karaca - Kerkük Zindanı&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=9KkAtcPku2k"&gt;Cem Karaca - Tamirci Çırağı&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=-dlJ1S4GHM8"&gt;Sagopa Kajmer &amp;amp; Bergen - Affetmem&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=dcEbtq4ezXk"&gt;DJ Tarkan ft. Sagopa Kajmer - Oldu Olanlar&lt;/a&gt;&lt;/p&gt;</content><category term="python3"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt-Giriş Uygulaması</title><link href="https://ilteriskeskin.github.io/flaskapp.html" rel="alternate"></link><published>2018-10-26T00:00:00+03:00</published><updated>2018-10-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-10-26:/flaskapp.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt ve Giriş Sayfası Oluşturma&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=dcEbtq4ezXk"&gt;DJ Tarkan ft. Sagopa Kajmer - Oldu Olanlar&lt;/a&gt;&lt;/p&gt;</content><category term="Python3"></category><category term="python3"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt-Giriş Uygulaması</title><link href="https://ilteriskeskin.github.io/flaskapp.html" rel="alternate"></link><published>2018-10-26T00:00:00+03:00</published><updated>2018-10-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-10-26:/flaskapp.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt ve Giriş Sayfası Oluşturma&lt;/h3&gt;
 &lt;p&gt;Herkese merhaba. &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı).
 Oluşturacağım küçük web projelerini flask ile yapmayı tercih ediyorum. Ancak daha karmaşık projeleri
 küçük küçük kütüphaneler kurarak kolayca yapmanız mümkün.&lt;/p&gt;
@@ -1188,7 +1306,7 @@ uygulaması olacak.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/kayit.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/giris.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/dashboard.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Çıktılar böyle ise sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="flask"></category><category term="sqlalchemy"></category><category term="python3"></category></entry><entry><title>Pardus 17.3 Deneyimlerim</title><link href="https://ilteriskeskin.github.io/pardus.html" rel="alternate"></link><published>2018-08-28T00:00:00+03:00</published><updated>2018-08-28T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-28:/pardus.html</id><summary type="html">&lt;h3&gt;Pardus Nedir?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Çıktılar böyle ise sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="Flask"></category><category term="flask"></category><category term="sqlalchemy"></category><category term="python3"></category></entry><entry><title>Pardus 17.3 Deneyimlerim</title><link href="https://ilteriskeskin.github.io/pardus.html" rel="alternate"></link><published>2018-08-28T00:00:00+03:00</published><updated>2018-08-28T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-28:/pardus.html</id><summary type="html">&lt;h3&gt;Pardus Nedir?&lt;/h3&gt;
 &lt;p&gt;Herkese merhaba. Bu yazımda Pardus kullanım deneyimlerimi paylaşacağım. Öncesinde Pardus ne bundan bahsedelim.
 "Pardus, TÜBİTAK tarafından geliştirilen bir GNU/Linux dağıtımı ve açık kaynak yaygınlaştırma projesidir."
 &lt;a href="https://www.pardus.org.tr/Faq_quare/pardus-nedir/"&gt;bknz.&lt;/a&gt;&lt;/p&gt;
@@ -1230,7 +1348,7 @@ olduğunu, son kullanıcı için olmadığını söylese bile son kullanıcı i�
 ise Pardus kullanmayın ancak bir GNU/Linux dağıtımı kullanacağım hangisini kurayım diyorsanız bence Pardus mantıklı bir
 seçim olacaktır.&lt;/p&gt;
 &lt;p&gt;Son olarak şöyle bir ekran görüntüsü bırakayım. Herkese iyi çalışmalar :)&lt;/p&gt;
-&lt;p&gt;&lt;img alt="IMG 1" src="../images/pardus.png"&gt;&lt;/p&gt;</content><category term="pardus"></category><category term="GNU/Linux"></category></entry><entry><title>Kotlin ile Activityler Arası Geçiş</title><link href="https://ilteriskeskin.github.io/kotlinactivity.html" rel="alternate"></link><published>2018-08-27T00:00:00+03:00</published><updated>2018-08-27T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-27:/kotlinactivity.html</id><summary type="html">&lt;h3&gt;Kotlin ile Activityler Arası Geçiş&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="IMG 1" src="../images/pardus.png"&gt;&lt;/p&gt;</content><category term="Pardus"></category><category term="pardus"></category><category term="GNU/Linux"></category></entry><entry><title>Kotlin ile Activityler Arası Geçiş</title><link href="https://ilteriskeskin.github.io/kotlinactivity.html" rel="alternate"></link><published>2018-08-27T00:00:00+03:00</published><updated>2018-08-27T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-27:/kotlinactivity.html</id><summary type="html">&lt;h3&gt;Kotlin ile Activityler Arası Geçiş&lt;/h3&gt;
 &lt;p&gt;Merhaba arkadaşlar, bu yazımızda Google'den destek almaya başlayan(uzunca bir süre oldu)
 Kotlin programlama dili ile iki adet activity arası geçiş yapmayı öğreneceğiz. &lt;/p&gt;
 &lt;p&gt;Bugün yapmayı öğreneceğimiz olay çok basit ama sıkça kullanılan, oldukça gerekli bir konu. Hazırsak hadi başlayalım :)&lt;/p&gt;
@@ -1256,7 +1374,7 @@ varsayıyorum. Activitylerin içine birer buton ekleyin ve onclick metotlarını
 
 
 &lt;p&gt;Kodlar bu şekilde olacak arkadaşlar. İki fonksiyondada intent adlı bir sabitimiz var bunlar nasıl karışmıyor? diye düşünecek olursanız, her fonksiyonun etki alanı(scope) kendi içindedir.&lt;/p&gt;
-&lt;p&gt;Bu şekilde basit bir activity geçiş programı yazmanız mümkündür. İyi çalışmalar :)&lt;/p&gt;</content><category term="kotlin"></category><category term="android"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt Uygulaması</title><link href="https://ilteriskeskin.github.io/flaskkayit.html" rel="alternate"></link><published>2018-08-21T00:00:00+03:00</published><updated>2018-08-21T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-21:/flaskkayit.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt Sayfası Oluşturma&lt;/h3&gt;
+&lt;p&gt;Bu şekilde basit bir activity geçiş programı yazmanız mümkündür. İyi çalışmalar :)&lt;/p&gt;</content><category term="Android"></category><category term="kotlin"></category><category term="android"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt Uygulaması</title><link href="https://ilteriskeskin.github.io/flaskkayit.html" rel="alternate"></link><published>2018-08-21T00:00:00+03:00</published><updated>2018-08-21T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-21:/flaskkayit.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt Sayfası Oluşturma&lt;/h3&gt;
 &lt;p&gt;Öncelikle herkese iyi bayramlar. Bayramın ilk günü beklediğimden daha az yoğun geçiyordu bende fırsat
 bulmuşken bir yazı yazayım dedim.
 &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı).
@@ -1324,7 +1442,7 @@ gelin başlayalım.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/sqlitebrowser_yazi.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sqlitebrowser adlı program yardımıyla oluşan veritabanımızı açalım ve içine bakalım.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/db_yazi.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Bu şekilde kullanıcı adınız ve parolanız kaydoldu ise programınız sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="python3"></category><category term="flask"></category><category term="sqlalchemy"></category></entry><entry><title>Neden Git?</title><link href="https://ilteriskeskin.github.io/nedengit.html" rel="alternate"></link><published>2018-08-05T00:00:00+03:00</published><updated>2018-08-05T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-05:/nedengit.html</id><summary type="html">&lt;h3&gt;Neden Git Kullanıyorum?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bu şekilde kullanıcı adınız ve parolanız kaydoldu ise programınız sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="Flask"></category><category term="python3"></category><category term="flask"></category><category term="sqlalchemy"></category></entry><entry><title>Neden Git?</title><link href="https://ilteriskeskin.github.io/nedengit.html" rel="alternate"></link><published>2018-08-05T00:00:00+03:00</published><updated>2018-08-05T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-05:/nedengit.html</id><summary type="html">&lt;h3&gt;Neden Git Kullanıyorum?&lt;/h3&gt;
 &lt;p&gt;Git teknolojisini oldukça sık kullanıyorum. Hatta neredeyse her gün
 kullanıyorum. Git'in ne olduğu ile ilgili &lt;a href="gitnedir.html"&gt;yazıma&lt;/a&gt; şuradan okuyabilirsiniz. Peki neden kullanıyorum? &lt;/p&gt;
 &lt;p&gt;Öncelikle şundan bahsedeyim. Kullandığım sistemi ayda 1-2 kere değiştiren bir insanım.
@@ -1346,7 +1464,7 @@ açtığımda yaptığım tek şey şu oluyor:&lt;/p&gt;
 &lt;p&gt;Bir diğer olay ise şu:&lt;/p&gt;
 &lt;p&gt;Takım halinde proje geliştiriyorsanız Git'in çokça faydasını göreceksiniz. Aynı proje üzerinde çalışmanız oldukça kolaydır. Özgürdür, hızlıdır, ücretsizdir. İster bir arayüz yardımı ile ister bir terminal ekranında kullanabilirsiniz.&lt;/p&gt;
 &lt;p&gt;Git kullanın, kullandırtın.&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar dilerim :)&lt;/p&gt;</content><category term="git"></category></entry><entry><title>Git Nedir?</title><link href="https://ilteriskeskin.github.io/gitnedir.html" rel="alternate"></link><published>2018-08-04T00:00:00+03:00</published><updated>2018-08-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-04:/gitnedir.html</id><summary type="html">&lt;h3&gt;Git Nedir?&lt;/h3&gt;
+&lt;p&gt;Herkese iyi çalışmalar dilerim :)&lt;/p&gt;</content><category term="Git"></category><category term="git"></category></entry><entry><title>Git Nedir?</title><link href="https://ilteriskeskin.github.io/gitnedir.html" rel="alternate"></link><published>2018-08-04T00:00:00+03:00</published><updated>2018-08-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-04:/gitnedir.html</id><summary type="html">&lt;h3&gt;Git Nedir?&lt;/h3&gt;
 &lt;p&gt;Herkese merhaba. Bu yazımda Git’in ne olduğundan bahsedeceğim. &lt;strong&gt;Git Dağıtık Versiyon Kontrol ve Kod Yönetim Sistemidir.&lt;/strong&gt; 2005 yılında Linus Torvalds tarafından ortaya çıkarılmıştır.&lt;/p&gt;
 &lt;h4&gt;Versiyon Kontrol Sistemi Nedir?&lt;/h4&gt;
 &lt;p&gt;Projenizi geliştirirken yaptığınız değişiklikleri adım adım kaydedebildiğiniz ve isterseniz bunu internet üzerinde uzak bir depoda saklayabileceğiniz bir sistemdir.&lt;/p&gt;
@@ -1365,7 +1483,7 @@ açtığımda yaptığım tek şey şu oluyor:&lt;/p&gt;
 
 &lt;p&gt;kendi sisteminize uygun olanı yazmanız yeterli olacaktır. Kendi sunucunuzu uzak depo olarak kullanabilirsiniz ancak sunucunuz yok ise bunun için popüler sistemler mevcut. Bunlardan bazıları GitLab, GitHub, Bitbucket…&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Neden Git? sorusunu soruyor iseniz &lt;a href="nedengit.html"&gt;şöyle&lt;/a&gt; buyrun.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar :)&lt;/p&gt;</content><category term="git"></category></entry><entry><title>Neden Jekyll?</title><link href="https://ilteriskeskin.github.io/nedenjekyll.html" rel="alternate"></link><published>2018-08-01T00:00:00+03:00</published><updated>2018-08-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-01:/nedenjekyll.html</id><summary type="html">&lt;h3&gt;Neden Jekyll Tercih Ettim?&lt;/h3&gt;
+&lt;p&gt;Herkese iyi çalışmalar :)&lt;/p&gt;</content><category term="Git"></category><category term="git"></category></entry><entry><title>Neden Jekyll?</title><link href="https://ilteriskeskin.github.io/nedenjekyll.html" rel="alternate"></link><published>2018-08-01T00:00:00+03:00</published><updated>2018-08-01T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-01:/nedenjekyll.html</id><summary type="html">&lt;h3&gt;Neden Jekyll Tercih Ettim?&lt;/h3&gt;
 &lt;p&gt;Öncelikle Jekyll tercihimin nedenlerinden biri &lt;a href="newblog.html"&gt;önceki yazımda&lt;/a&gt; bahsettiğim
 statik site oluşturucuların listelendiği bir adresten bir çoğunu incelemem. Bana kullanım, tema ve özelleştirme konusunda daha kolay ve güzel geldi. Diğer bir etken popüler olması.&lt;/p&gt;
 &lt;p&gt;Ayrıca Jekyll &lt;a href="http://ozgurlisanslar.org.tr/mit/"&gt;MIT&lt;/a&gt; lisansı ile lisanslanmıştır. Bu da tercih
@@ -1385,7 +1503,7 @@ dağıtımı olan Fedora'yı kullanıyorum ve kurulum konusunda pek bir sıkınt
 &lt;p&gt;Öncelikle şunu belirteyim ben uzun süredir kullanmıyorum. Hatta daha 2 gün oldu sanırım kullanmaya başlayalı. Kendi sayfamda eksiklerim var. Mesela okuyucu yorumu gibi. Ancak zamanla halledeceğim. Bunlara rağmen oldukça memnunum. GitHub Pages ile ilişkili olması beni sunucu ve alan adı masrafından kurtarmış olması oldukça memnun edici :) Yükleme(Deploy) aşamasının yalnızca GitHub'a push edilmekten ibaret olmasıda ayrıca tatmin edici. &lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Bu yazımızdan bu kadar arkadaşlar. Umarım faydalı olmuştur. Zamanla blogumda teknik yazılar paylaşmaya başlayacağım. Ancak şu sıralar projelerden pek vakit bulamıyorum.&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar :)&lt;/p&gt;</content><category term="jekyll"></category><category term="blog"></category><category term="github"></category></entry><entry><title>Yeni Blogum Hakkında</title><link href="https://ilteriskeskin.github.io/newblog.html" rel="alternate"></link><published>2018-07-30T00:00:00+03:00</published><updated>2018-07-30T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-07-30:/newblog.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Yeni blogum ile ilgili bilgilendirme yazısı, merak etmeyen için sıkıcı olabilir :)&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar :)&lt;/p&gt;</content><category term="Jekyll"></category><category term="jekyll"></category><category term="blog"></category><category term="github"></category></entry><entry><title>Yeni Blogum Hakkında</title><link href="https://ilteriskeskin.github.io/newblog.html" rel="alternate"></link><published>2018-07-30T00:00:00+03:00</published><updated>2018-07-30T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-07-30:/newblog.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Yeni blogum ile ilgili bilgilendirme yazısı, merak etmeyen için sıkıcı olabilir :)&lt;/p&gt;
 &lt;p&gt;Merhaba arkadaşlar. Benim kim olduğum, neler yaptığım gibi konulara &lt;a href="about.html"&gt;hakkımda&lt;/a&gt; kısmından 
 ulaşabilirsiniz. Bu yazımda (bu blog üzerindeki ilk yazım) neden yeni blog açtığımdan bahsedeceğim.
 Aslında yeni bir blog açmadım. Bu güne kadar zaten &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; kullananıyordum.
@@ -1401,4 +1519,4 @@ başlamalıydı.&lt;/p&gt;
 dağıtımı &lt;a href="https://apps.fedoraproject.org/"&gt;Fedora&lt;/a&gt; ve pek Fedoraya uygun kaynak yok. Biraz sıkıntılı ve sancılı bir
 kurulum sürecinden sonra düzenlemelere başladım. Şimdi ise karşınızdayım. Fotoğraflar ve içerik daha düzgün hale getirilecek
 ama bir süre sıkın dişinizi :)&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar.&lt;/p&gt;</content><category term="jekyll"></category><category term="blog"></category></entry></feed>
+&lt;p&gt;Herkese iyi çalışmalar.&lt;/p&gt;</content><category term="News"></category><category term="jekyll"></category><category term="blog"></category></entry></feed>

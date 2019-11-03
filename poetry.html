@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="https://ilteriskeskin.github.io/theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://ilteriskeskin.github.io/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="https://ilteriskeskin.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://ilteriskeskin.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://ilteriskeskin.github.io/theme/font-awesome/css/solid.css">
+
+    <link href="https://ilteriskeskin.github.io/static/custom.css" rel="stylesheet">
+
+    <link href="https://ilteriskeskin.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ali İlteriş Keskin Kişisel Blog Atom">
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-123219075-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+<meta name="author" content="Ali İlteriş Keskin" />
+<meta name="description" content="Merhaba arkadaşlar, bu yazımda Python paketleme ve bağımlılık yönetim aracı olan Poetry&#39;i inceleyeceğiz. Aracı Flask Türkiye Telegram Grubunda dile getiren Yaşar Celep&#39;e teşekkür ederim :) Tüm anlatım Ubuntu 19.10 üzerinde gerçekleşecektir. Bir çok GNU/Linux dağıtımında benzer şekilde çalışacaktır. Poetry Nedir? Poetry Python&#39;da bağımlılık yönetimi ve paketleme için bir araçtır …" />
+<meta name="keywords" content="python3, poetry">
+
+<meta property="og:site_name" content="Ali İlteriş Keskin Kişisel Blog"/>
+<meta property="og:title" content="Poetry ile Python Paketleme ve Bağımlılık Yönetimi"/>
+<meta property="og:description" content="Merhaba arkadaşlar, bu yazımda Python paketleme ve bağımlılık yönetim aracı olan Poetry&#39;i inceleyeceğiz. Aracı Flask Türkiye Telegram Grubunda dile getiren Yaşar Celep&#39;e teşekkür ederim :) Tüm anlatım Ubuntu 19.10 üzerinde gerçekleşecektir. Bir çok GNU/Linux dağıtımında benzer şekilde çalışacaktır. Poetry Nedir? Poetry Python&#39;da bağımlılık yönetimi ve paketleme için bir araçtır …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://ilteriskeskin.github.io/poetry.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-11-03 00:00:00+03:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://ilteriskeskin.github.io/author/ali-ilteris-keskin.html">
+<meta property="article:section" content="Python3"/>
+<meta property="article:tag" content="python3"/>
+<meta property="article:tag" content="poetry"/>
+<meta property="og:image" content="">
+
+  <title>Ali İlteriş Keskin Kişisel Blog &ndash; Poetry ile Python Paketleme ve Bağımlılık Yönetimi</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://ilteriskeskin.github.io">
+        <img src="https://ilteriskeskin.github.io/theme/img/profile.png" alt="" title="">
+      </a>
+      <h1><a href="https://ilteriskeskin.github.io"></a></h1>
+
+<p>Freelancer Software Developer         Python/Django && Python/Flask</p>
+      <nav>
+        <ul class="list">
+          <li><a href="https://ilteriskeskin.github.io/pages/about.html#about">Hakkında</a></li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-github" href="https://github.com/ilteriskeskin" target="_blank">
+            <i class="fab fa-github">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/ilteriskeskin" target="_blank">
+            <i class="fab fa-twitter">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/aliilteriskeskin/" target="_blank">
+            <i class="fab fa-linkedin">
+            </i>
+          </a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://ilteriskeskin.github.io">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://ilteriskeskin.github.io/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="poetry">Poetry ile Python Paketleme ve Bağımlılık Yönetimi</h1>
+    <p>
+          Posted on Paz 03 Kasım 2019 in <a href="https://ilteriskeskin.github.io/category/python3.html">Python3</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Merhaba arkadaşlar, bu yazımda Python paketleme ve bağımlılık yönetim aracı olan Poetry'i inceleyeceğiz. Aracı
+<a href="https://t.me/flask_turkey">Flask Türkiye Telegram Grubunda</a> dile getiren <a href="https://twitter.com/yasarcelepp">Yaşar Celep'e</a>
+teşekkür ederim :)</p>
+<p><strong>Tüm anlatım Ubuntu 19.10 üzerinde gerçekleşecektir. Bir çok GNU/Linux dağıtımında benzer şekilde çalışacaktır.</strong></p>
+<hr>
+<h3>Poetry Nedir?</h3>
+<p>Poetry Python'da bağımlılık yönetimi ve paketleme için bir araçtır. Projenizin bağlı olduğu kütüphaneleri deklare etmenizi
+sağlar ve sizin için onları yönetir (kurar / günceller).</p>
+<hr>
+<h3>Poetry Kurulum</h3>
+<p>Gelelim bu aracın nasıl kurulduğuna. Aracı kurmak aslında olukça basit. Öncelikle sistem gereksinimlerine bakalım.</p>
+<p><strong>Sistem Gereksinimleri</strong></p>
+<ul>
+<li>Python 2.7 or 3.4+</li>
+<li>Windows, GNU/Linux and OSX</li>
+</ul>
+<p>Yani bilgisayarınızda bir işletim sistemi varsa ve Python yüklüyse herhangi bir sorun olmadan kurulumu gerçekleştirebileceksiniz.</p>
+<p>Kendi dokümantasyonunda belirtildiği üzere Poetry kurmak için iki yol vardır. Normal bir Python paketi kurar gibi pip ile kurmamız
+mümkün ancak önerilmeyen bir yöntem. Biz önerilen yöntemi takip edeceğiz.</p>
+<div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">sSL</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">sdispater</span><span class="o">/</span><span class="n">poetry</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="k">get</span><span class="o">-</span><span class="n">poetry</span><span class="p">.</span><span class="n">py</span> <span class="o">|</span> <span class="n">python</span>
+</pre></div>
+
+
+<p>Komutu ile bilgisayarımıza Poetry kurmuş olacağız. Bunu kontrol etmek için aşağıdaki komutu çalıştırabiliriz.</p>
+<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="p">.</span><span class="n">poetry</span><span class="o">/</span><span class="n">bin</span>
+<span class="p">.</span><span class="o">/</span><span class="n">poetry</span> <span class="c1">--version</span>
+</pre></div>
+
+
+<p><strong>Ekran çıktısı:</strong></p>
+<div class="highlight"><pre><span></span><span class="n">Poetry</span> <span class="mi">0</span><span class="p">.</span><span class="mi">12</span><span class="p">.</span><span class="mi">17</span>
+</pre></div>
+
+
+<h3>Poetry Kullanımı</h3>
+<p>Gelin şimdi basit bir örnek ile nasıl kullanacağımıza bakalım. Komutları sırası ile çalıştırın. Benzer çıktılar almıyorsanız bir yerlerde
+hatalar olmuştur. Sorularınızı bana sorabilir ya da adımlarınızı kontrol edebilirsiniz :)</p>
+<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="p">.</span><span class="n">poetry</span><span class="o">/</span><span class="n">bin</span>
+<span class="p">.</span><span class="o">/</span><span class="n">poetry</span> <span class="k">new</span> <span class="n">poetry</span><span class="o">-</span><span class="n">demo</span>
+</pre></div>
+
+
+<p>Şimdi poetry-demo adında bir proje oluşturalım. İçeriği aşağıdaki gibi olacaktır. İçeriğini aşağıdaki gibi görmek için</p>
+<div class="highlight"><pre><span></span><span class="n">tree</span> <span class="n">poetry_demo</span>
+</pre></div>
+
+
+<p>komutunu çalıştırın. Çalışması için tree uygulamasının kurulmuş olması gerekmektedir.</p>
+<div class="highlight"><pre><span></span><span class="n">poetry</span><span class="o">-</span><span class="n">demo</span>
+<span class="err">├──</span> <span class="n">poetry_demo</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">__init__</span><span class="p">.</span><span class="n">py</span>
+<span class="err">├──</span> <span class="n">pyproject</span><span class="p">.</span><span class="n">toml</span>
+<span class="err">├──</span> <span class="n">README</span><span class="p">.</span><span class="n">rst</span>
+<span class="err">└──</span> <span class="n">tests</span>
+    <span class="err">├──</span> <span class="n">__init__</span><span class="p">.</span><span class="n">py</span>
+    <span class="err">└──</span> <span class="n">test_poetry_demo</span><span class="p">.</span><span class="n">py</span>
+</pre></div>
+
+
+<p><strong>pyproject.toml</strong> dosyası, burada en önemli olan dosyadır. Bu dosya, projenizi ve bağımlılıklarını düzenleyecektir. Dosyayı açtığınızda
+İçeriği aşağıdaki gibi olmalıdır.</p>
+<div class="highlight"><pre><span></span><span class="k">[tool.poetry]</span>
+<span class="na">name</span> <span class="o">=</span> <span class="s">&quot;poetry-demo&quot;</span>
+<span class="na">version</span> <span class="o">=</span> <span class="s">&quot;0.1.0&quot;</span>
+<span class="na">description</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+<span class="na">authors</span> <span class="o">=</span> <span class="s">[&quot;Ali İlteriş Keskin &lt;aliilteriskeskin@gmail.com&gt;&quot;]</span>
+
+<span class="k">[tool.poetry.dependencies]</span>
+<span class="na">python</span> <span class="o">=</span> <span class="s">&quot;^2.7&quot;</span>
+
+<span class="k">[tool.poetry.dev-dependencies]</span>
+<span class="na">pytest</span> <span class="o">=</span> <span class="s">&quot;^3.0&quot;</span>
+
+<span class="k">[build-system]</span>
+<span class="na">requires</span> <span class="o">=</span> <span class="s">[&quot;poetry&gt;=0.12&quot;]</span>
+<span class="na">build-backend</span> <span class="o">=</span> <span class="s">&quot;poetry.masonry.api&quot;</span>
+</pre></div>
+
+
+<h3>Bağımlılıkları Belirtme</h3>
+<p>Aslında çıktı gayet açıklayıcı görünüyor değil mi? Projenize bağımlılıklar eklemek istiyorsanız, bunları <strong>tool.poetry.dependencies</strong> bölümünde
+belirtmelisiniz. Örneğin:</p>
+<div class="highlight"><pre><span></span><span class="k">[tool.poetry.dependencies]</span>
+<span class="na">pendulum</span> <span class="o">=</span> <span class="s">&quot;^1.4&quot;</span>
+</pre></div>
+
+
+<p>Yukarıda yaptığımız şey paket ismini vermek ve paketin sürüm kodunu vermek oldu. Eğer bu bağımlılığı el ile pyproject.toml dosyanıza
+eklemek istemiyorsanız aşağıdaki komutları çalıştırarak ekleme yapabilirsiniz.</p>
+<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="p">.</span><span class="n">poetry</span><span class="o">/</span><span class="n">bin</span>
+<span class="p">.</span><span class="o">/</span><span class="n">poetry</span> <span class="k">add</span> <span class="n">pendulum</span>
+</pre></div>
+
+
+<p>Yukarıdaki komut (<strong>add</strong>) otomatik olarak uygun bir sürüm kısıtı bulur ve paketi alt bağımlılıklarıyla birlikte yükler.</p>
+<h3>Sürüm Kısıtlamaları</h3>
+<p>Örneğimizde, <strong>pendulum</strong> paketini <strong>^1.4</strong> sürüm kısıtlamasıyla istiyoruz. Bu, 1.4.0'a eşit veya 2.0.0 değerinden küçük (&gt;=1.4.0 &lt;2.0.0)
+sürümleri anlamına gelir.</p>
+<p>Sürüm kısıtlamaları ve sürümlerin ilişkileri ile ilgili detaylı bilgi için lütfen <a href="https://poetry.eustace.io/docs/versions/">okuyunuz.</a></p>
+<h3>Bağımlılıkları Yükleme</h3>
+<p>Projemize eklediğimiz, gerekli bağımlılıkları yüklemek için aşağıdaki <strong>install</strong> komutunu çalıştırmamız yeterlidir.</p>
+<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="p">.</span><span class="n">poetry</span><span class="o">/</span><span class="n">bin</span>
+<span class="p">.</span><span class="o">/</span><span class="n">poetry</span> <span class="n">install</span>
+</pre></div>
+
+
+<hr>
+<p>Evet arkadaşlar şimdilik benden bu kadar. Eğer daha detaylı bilgi istiyor iseniz <a href="https://poetry.eustace.io/docs/">bu adresten</a> Poetry
+dokümanına ulaşabilirsiniz. Umarım faydalı olmuştur.</p>
+<p>Herkese iyi çalışmalar :)</p>
+<p><strong>Not:</strong></p>
+<p>Katkılarından dolayı <a href="https://twitter.com/uguryuceee">Uğur Yüce</a> arkadaşıma teşekkür ederim. Katkılarını açmak gerekirse sabah kahvaltı hazırladı,
+akşam yemek hazırladı, spor yaptırdı ve en önemlisi çok uygun bir fiyata evini benimle paylaştı.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://ilteriskeskin.github.io/tag/python3.html">python3</a>
+      <a href="https://ilteriskeskin.github.io/tag/poetry.html">poetry</a>
+    </p>
+  </div>
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'ilteriskesk';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Ali İlteriş Keskin Kişisel Blog ",
+  "url" : "https://ilteriskeskin.github.io",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>

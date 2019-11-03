@@ -21,7 +21,7 @@ açtığımda yaptığım tek şey şu oluyor:&lt;/p&gt;
 &lt;p&gt;Bir diğer olay ise şu:&lt;/p&gt;
 &lt;p&gt;Takım halinde proje geliştiriyorsanız Git'in çokça faydasını göreceksiniz. Aynı proje üzerinde çalışmanız oldukça kolaydır. Özgürdür, hızlıdır, ücretsizdir. İster bir arayüz yardımı ile ister bir terminal ekranında kullanabilirsiniz.&lt;/p&gt;
 &lt;p&gt;Git kullanın, kullandırtın.&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar dilerim :)&lt;/p&gt;</content><category term="git"></category></entry><entry><title>Git Nedir?</title><link href="https://ilteriskeskin.github.io/gitnedir.html" rel="alternate"></link><published>2018-08-04T00:00:00+03:00</published><updated>2018-08-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-04:/gitnedir.html</id><summary type="html">&lt;h3&gt;Git Nedir?&lt;/h3&gt;
+&lt;p&gt;Herkese iyi çalışmalar dilerim :)&lt;/p&gt;</content><category term="Git"></category><category term="git"></category></entry><entry><title>Git Nedir?</title><link href="https://ilteriskeskin.github.io/gitnedir.html" rel="alternate"></link><published>2018-08-04T00:00:00+03:00</published><updated>2018-08-04T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-04:/gitnedir.html</id><summary type="html">&lt;h3&gt;Git Nedir?&lt;/h3&gt;
 &lt;p&gt;Herkese merhaba. Bu yazımda Git’in ne olduğundan bahsedeceğim. &lt;strong&gt;Git Dağıtık Versiyon Kontrol ve Kod Yönetim Sistemidir.&lt;/strong&gt; 2005 yılında Linus Torvalds tarafından ortaya çıkarılmıştır.&lt;/p&gt;
 &lt;h4&gt;Versiyon Kontrol Sistemi Nedir?&lt;/h4&gt;
 &lt;p&gt;Projenizi geliştirirken yaptığınız değişiklikleri adım adım kaydedebildiğiniz ve isterseniz bunu internet üzerinde uzak bir depoda saklayabileceğiniz bir sistemdir.&lt;/p&gt;
@@ -40,4 +40,4 @@ açtığımda yaptığım tek şey şu oluyor:&lt;/p&gt;
 
 &lt;p&gt;kendi sisteminize uygun olanı yazmanız yeterli olacaktır. Kendi sunucunuzu uzak depo olarak kullanabilirsiniz ancak sunucunuz yok ise bunun için popüler sistemler mevcut. Bunlardan bazıları GitLab, GitHub, Bitbucket…&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Neden Git? sorusunu soruyor iseniz &lt;a href="nedengit.html"&gt;şöyle&lt;/a&gt; buyrun.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar :)&lt;/p&gt;</content><category term="git"></category></entry></feed>
+&lt;p&gt;Herkese iyi çalışmalar :)&lt;/p&gt;</content><category term="Git"></category><category term="git"></category></entry></feed>

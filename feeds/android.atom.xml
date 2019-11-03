@@ -25,4 +25,4 @@ varsayıyorum. Activitylerin içine birer buton ekleyin ve onclick metotlarını
 
 
 &lt;p&gt;Kodlar bu şekilde olacak arkadaşlar. İki fonksiyondada intent adlı bir sabitimiz var bunlar nasıl karışmıyor? diye düşünecek olursanız, her fonksiyonun etki alanı(scope) kendi içindedir.&lt;/p&gt;
-&lt;p&gt;Bu şekilde basit bir activity geçiş programı yazmanız mümkündür. İyi çalışmalar :)&lt;/p&gt;</content><category term="kotlin"></category><category term="android"></category></entry></feed>
+&lt;p&gt;Bu şekilde basit bir activity geçiş programı yazmanız mümkündür. İyi çalışmalar :)&lt;/p&gt;</content><category term="Android"></category><category term="kotlin"></category><category term="android"></category></entry></feed>

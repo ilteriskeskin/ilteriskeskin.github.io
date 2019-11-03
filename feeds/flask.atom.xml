@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Ali İlteriş Keskin Kişisel Blog - Flask</title><link href="https://ilteriskeskin.github.io/" rel="alternate"></link><link href="https://ilteriskeskin.github.io/feeds/flask.atom.xml" rel="self"></link><id>https://ilteriskeskin.github.io/</id><updated>2019-08-12T00:00:00+03:00</updated><subtitle>Freelancer Software Developer         Python/Django &amp;&amp; Python/Flask</subtitle><entry><title>Flask ile MongoDB Örneği</title><link href="https://ilteriskeskin.github.io/flaskmongodb.html" rel="alternate"></link><published>2019-08-12T00:00:00+03:00</published><updated>2019-08-12T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2019-08-12:/flaskmongodb.html</id><summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerind gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerinde gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;İlk olarak neyin ne olduğundan bahsedelim. Sonrasında gerekli kurulumları yapalım ve ardından hızlıca kodumuza geçelim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;MongoDB Nedir?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;MongoDB, NoSQL verilerini belge biçiminde saklayıp, analiz edebileceğimiz ölçeklenebilir bir veritabanı teknolojisidir. MongoDB özgür yazılım
 lisansı …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda Flask ve MongoDB kullanarak veritabanına bilgi ekleyeceğiz.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerind gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anlatımım Ubuntu 19.04 üzerinde gerçekleşecektir&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;İlk olarak neyin ne olduğundan bahsedelim. Sonrasında gerekli kurulumları yapalım ve ardından hızlıca kodumuza geçelim.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;MongoDB Nedir?&lt;/strong&gt;&lt;/p&gt;
@@ -89,7 +89,7 @@ lisansı ile yayınlanmış açık kaynaklı bir teknolojidir.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Uygulamanızı çalıştırıp deneyin ve MongoDB Atlas'tan collection kısmından eklediğiniz verileri görüp test edebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Bu yazımızı burada sonlandıralım arkadaşlar. Umarım faydalı olmuştur.&lt;/p&gt;
-&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="flask"></category><category term="mongodb"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt-Giriş Uygulaması</title><link href="https://ilteriskeskin.github.io/flaskapp.html" rel="alternate"></link><published>2018-10-26T00:00:00+03:00</published><updated>2018-10-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-10-26:/flaskapp.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt ve Giriş Sayfası Oluşturma&lt;/h3&gt;
+&lt;p&gt;Herkese iyi çalışmalar diliyorum :)&lt;/p&gt;</content><category term="Flask"></category><category term="flask"></category><category term="mongodb"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt-Giriş Uygulaması</title><link href="https://ilteriskeskin.github.io/flaskapp.html" rel="alternate"></link><published>2018-10-26T00:00:00+03:00</published><updated>2018-10-26T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-10-26:/flaskapp.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt ve Giriş Sayfası Oluşturma&lt;/h3&gt;
 &lt;p&gt;Herkese merhaba. &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı).
 Oluşturacağım küçük web projelerini flask ile yapmayı tercih ediyorum. Ancak daha karmaşık projeleri
 küçük küçük kütüphaneler kurarak kolayca yapmanız mümkün.&lt;/p&gt;
@@ -198,7 +198,7 @@ uygulaması olacak.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/kayit.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/giris.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/dashboard.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Çıktılar böyle ise sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="flask"></category><category term="sqlalchemy"></category><category term="python3"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt Uygulaması</title><link href="https://ilteriskeskin.github.io/flaskkayit.html" rel="alternate"></link><published>2018-08-21T00:00:00+03:00</published><updated>2018-08-21T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-21:/flaskkayit.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt Sayfası Oluşturma&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Çıktılar böyle ise sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="Flask"></category><category term="flask"></category><category term="sqlalchemy"></category><category term="python3"></category></entry><entry><title>Flask ve SQLAlchemy ile Kayıt Uygulaması</title><link href="https://ilteriskeskin.github.io/flaskkayit.html" rel="alternate"></link><published>2018-08-21T00:00:00+03:00</published><updated>2018-08-21T00:00:00+03:00</updated><author><name>Ali İlteriş Keskin</name></author><id>tag:ilteriskeskin.github.io,2018-08-21:/flaskkayit.html</id><summary type="html">&lt;h3&gt;Flask ve SQLAlchemy Kullanarak Basit Bir Kullanıcı Kayıt Sayfası Oluşturma&lt;/h3&gt;
 &lt;p&gt;Öncelikle herkese iyi bayramlar. Bayramın ilk günü beklediğimden daha az yoğun geçiyordu bende fırsat
 bulmuşken bir yazı yazayım dedim.
 &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; bildiğiniz gibi python ile yazılmış bir microframework (mikro çatı).
@@ -266,4 +266,4 @@ gelin başlayalım.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/sqlitebrowser_yazi.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sqlitebrowser adlı program yardımıyla oluşan veritabanımızı açalım ve içine bakalım.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="IMG 1" src="../images/db_yazi.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Bu şekilde kullanıcı adınız ve parolanız kaydoldu ise programınız sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="python3"></category><category term="flask"></category><category term="sqlalchemy"></category></entry></feed>
+&lt;p&gt;&lt;strong&gt;Bu şekilde kullanıcı adınız ve parolanız kaydoldu ise programınız sorunsuz bir şekilde çalışıyor.&lt;/strong&gt;&lt;/p&gt;</content><category term="Flask"></category><category term="python3"></category><category term="flask"></category><category term="sqlalchemy"></category></entry></feed>
