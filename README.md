@@ -1,18 +1,14 @@
-# vue-blog
+#Speedometer PWA
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+```
+npm start (http://localhost:3333)
+npm run prod
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Deploy:
+- create remote `gh-pages`
+- `git clone <project> --branch gh-pages public`
+- `npm run deploy`
+
+Based on:
+- [Brunch + React + Babel/ES6 skeleton](https://github.com/brunch/with-react)
