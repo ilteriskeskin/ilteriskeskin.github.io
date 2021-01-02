@@ -1,18 +1,18 @@
 [
   
   {
-    "title": "Test Blog Post",
-    "url": "/posts/test1/",
-    "categories": "Blogging",
-    "tags": "test",
-    "date": "2021-01-02 00:00:00 +0300",
+    "title": "GNU/Linux Sistemlerde Dosya ve Dizin Yapısı",
+    "url": "/posts/gnu-linux-dosya-dizin-yapisi/",
+    "categories": "GNU/Linux",
+    "tags": "gnu/linux, linux",
+    "date": "2021-01-02 22:48:00 +0300",
     
 
 
 
 
 
-    "snippet": "Lorem IpsumLorem Ipsum De uzattı eve doğru dergi orta camisi. Ekşili çorba gidecekmiş bilgiyasayarı öyle ki bilgiyasayarı dergi koyun bahar bahar öyle ki. Mıknatıslı okuma sayfası anlamsız gül çobanın anlamsız. Bilgiyasayarı bahar ama ona doğru sinema gül telefonu masaya doğru sıradanlıktan koyun..."
+    "snippet": "Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır./ (Root-Kök) DiziniDiğer tüm dizinleri kapsayan, en büyük ebeveyn dizin / (root) dizin..."
   }
   
 ]

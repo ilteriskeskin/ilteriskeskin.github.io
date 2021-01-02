@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim.  Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-01-02T21:16:55+03:00</updated>
+  <updated>2021-01-02T22:58:46+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -19,21 +19,21 @@
 
   
   <entry>
-    <title>Test Blog Post</title>
-    <link href="https://ilteriskeskin.github.io/posts/test1/" rel="alternate" type="text/html" title="Test Blog Post" />
-    <published>2021-01-02T00:00:00+03:00</published>
+    <title>GNU/Linux Sistemlerde Dosya ve Dizin Yapısı</title>
+    <link href="https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" rel="alternate" type="text/html" title="GNU/Linux Sistemlerde Dosya ve Dizin Yapısı" />
+    <published>2021-01-02T22:48:00+03:00</published>
   
-    <updated>2021-01-02T00:00:00+03:00</updated>
+    <updated>2021-01-02T22:48:00+03:00</updated>
   
-    <id>https://ilteriskeskin.github.io/posts/test1/</id>
-    <content src="https://ilteriskeskin.github.io/posts/test1/" />
+    <id>https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/</id>
+    <content src="https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" />
     <author>
       <name>Ali İlteriş Keskin</name>
     </author>
 
   
     
-    <category term="Blogging" />
+    <category term="GNU/Linux" />
     
   
 
@@ -45,9 +45,15 @@
 
 
 
-      Lorem Ipsum
+      Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır.
 
-Lorem Ipsum De uzattı eve doğru dergi orta camisi. Ekşili çorba gidecekmiş bilgiyasayarı öyle ki bilgiyasayarı dergi koyun bahar bahar öyle ki. Mıknatıslı okuma sayfası anlamsız gül çobanın anlamsız. Bilgiyasayarı bahar ama ona doğru sinema gül telefonu masaya doğru sıradanlıktan koyun. Ötekinden dolayı patlıcan yapacakmış çünkü yazın dışarı çıktılar uzattı gazete koşuyorlar gülüyo...
+
+
+
+
+/ (Root-Kök) Dizini
+
+Diğer tüm dizinleri kapsayan, en büyük ebeveyn dizin / (root) dizinidir. Altında 15-16 dizin bulunur. / (root) dizininin silinmesi tüm sisteminizin silinmesi d...
     </summary>
   
 

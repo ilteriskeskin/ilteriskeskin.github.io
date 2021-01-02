@@ -21,25 +21,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="test" />
+<meta property="og:title" content="GNU/Linux Sistemlerde Dosya ve Dizin Yapısı" />
 <meta name="author" content="Ali İlteriş Keskin" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<meta property="og:description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<link rel="canonical" href="https://ilteriskeskin.github.io/tags/test/" />
-<meta property="og:url" content="https://ilteriskeskin.github.io/tags/test/" />
+<meta name="description" content="Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır." />
+<meta property="og:description" content="Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır." />
+<link rel="canonical" href="https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" />
+<meta property="og:url" content="https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-02T22:48:00+03:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="test" />
+<meta property="twitter:title" content="GNU/Linux Sistemlerde Dosya ve Dizin Yapısı" />
 <meta name="twitter:site" content="@ilteriskeskin" />
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://ilteriskeskin.github.io/tags/test/","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"headline":"test","description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/","headline":"GNU/Linux Sistemlerde Dosya ve Dizin Yapısı","dateModified":"2021-01-02T22:48:00+03:00","datePublished":"2021-01-02T22:48:00+03:00","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/"},"description":"Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>test | Ali İlteriş Keskin
+  <title>GNU/Linux Sistemlerde Dosya ve Dizin Yapısı | Ali İlteriş Keskin
   </title>
 
   <!--
@@ -115,9 +117,11 @@
 
 
 
-<link rel="preload" href="/assets/css/category-tag.css" as="style">
-<link rel="stylesheet" href="/assets/css/category-tag.css">
+<link rel="preload" href="/assets/css/post.css" as="style">
+<link rel="stylesheet" href="/assets/css/post.css">
 
+
+  
 
 
 
@@ -140,7 +144,7 @@
 
 
 
-<script async src="/assets/js/page.min.js"></script>
+<script async src="/assets/js/post.min.js"></script>
 
 
 
@@ -449,22 +453,14 @@
         
         <span>
           <a href="/">
-            Home
-          </a>
-        </span>
-        
-      
-        
-        <span>
-          <a href="/tabs/tags/">
-            Tags
+            Posts
           </a>
         </span>
         
       
 
       
-        <span>test</span>
+        <span>GNU/Linux Sistemlerde Dosya ve Dizin Yapısı</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -472,7 +468,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -515,29 +511,284 @@
 
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
+
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
+
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+      <h1 data-toc-skip>GNU/Linux Sistemlerde Dosya ve Dizin Yapısı</h1>
+
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sat, Jan  2, 2021, 10:48 PM +0300"
+  >
+
+  
+  
+
+  
+    Jan  2
+  
+
+  <i class="unloaded">2021-01-02T22:48:00+03:00</i>
+
+</span>
+          by
+          <span class="author">
+            Ali İlteriş Keskin
+          </span>
+        </div>
+
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="367 words">2 min</span>
+
+
+          <!-- page views -->
+          
+
+        </div>
+
+      </div> <!-- .post-meta -->
+
+      <div class="post-content">
+
+        <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+        
+          
+          <p>Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır.</p>
+
+<hr />
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/linux_files.png" alt="upload-image" /></p>
+
+<h2 id="-root-kök-dizini"><strong>/ (Root-Kök) Dizini</strong></h2>
+
+<p>Diğer tüm dizinleri kapsayan, en büyük ebeveyn dizin / (root) dizinidir. Altında 15-16 dizin bulunur. / (root) dizininin silinmesi tüm sisteminizin silinmesi demektir.</p>
+
+<h2 id="bin-dizini"><strong>/bin Dizini</strong></h2>
+
+<p>bin ismi binary (ikili) nin kısaltmasından gelir. Burada çalıştırılabilir komutların derlenmiş (binary yapısında) halleri bulunur. Sistem için kritik önem taşır ve silinmesi durumunda sisteme herhangi bir komut verilemez.</p>
+
+<h2 id="boot-dizini"><strong>/boot Dizini</strong></h2>
+
+<p>Açılış dosyalarını ve Kerneli (Kernel’in ne olduğundan başka bir yazıda bahsedeceğim) barındırır. Silinmesi durumunda sistem çalışmaz hale gelir.</p>
+
+<h2 id="dev-dizini"><strong>/dev Dizini</strong></h2>
+
+<p>dev ismi Devices yani Cihazlar kelimesinin kısaltmasından gelir. Sisteme bağlı cihazların dosyalarının bulunduğu yerdir. Her cihazın bir numarası vardır. Bu numaralar rastgele değil daha önceden belirlenen ve yeni cihazlar çıktıkça güncellenen devices.txt ye göre verilir. Ayrıntılı bilgi için bu adrese bakabilirsiniz.</p>
+
+<h2 id="etc-dizini"><strong>/etc Dizini</strong></h2>
+
+<p>Sistem ayar dosyalarının bulunduğu dizindir. Herhangi bir ayar yapılacağı zaman genelde bu dizin altında değişiklikler yaparız.</p>
+
+<h2 id="home-dizini"><strong>/home Dizini</strong></h2>
+
+<p>Kullanıcıların ev dizinlerinin tutulduğu dizindir. İçindeki bir dizinin silinmesi durumunda silinen dizinin sahibi olan kullanıcı dosyalarını kaybetmiş olur. Geri döndürülmesi mümkündür ancak biraz uğraştırıcıdır.</p>
+
+<h2 id="lib-dizini"><strong>/lib Dizini</strong></h2>
+
+<p>Kütüphane ve Kernel Modüllerinin tutulduğu dizindir. Silinmesi durumunda sistem çalışmaz hale gelebilir.</p>
+
+<h2 id="mnt-dizini"><strong>/mnt Dizini</strong></h2>
+
+<p>Geçici mount edilmiş dosya sistemlerinin mount edildiği dizindir.</p>
+
+<h2 id="media-dizini"><strong>/media Dizini</strong></h2>
+
+<p>Çıkarılabilir medya cihazlarının mount edildiği dizindir.</p>
+
+<h2 id="opt-dizini"><strong>/opt Dizini</strong></h2>
+
+<p>Kendi kütüphane dosyaları ile gelen uygulamaların kütüphane dosyalarının saklandığı dizindir. Silinmesi halinde yüklü uygulamaların bazıları hata verebilir.</p>
+
+<h2 id="sbin-dizini"><strong>/sbin Dizini</strong></h2>
+
+<p>Sistem çalıştırılabilir dosyalarının saklandığı dizindir.</p>
+
+<h2 id="srv-dizini"><strong>/srv Dizini</strong></h2>
+
+<p>srv services kelimesinin kısaltmasından gelir. Sistem tarafından sunulan servis dosyalarının bulunduğu dizindir.</p>
+
+<h2 id="tmp-dizini"><strong>/tmp Dizini</strong></h2>
+
+<p>Geçici dosyaların bulunduğu dizindir. Bu dizinde root haricindeki her kullanıcı sadece kendi dosyalarında değişiklik hakkına sahiptir.</p>
+
+<h2 id="usr-dizini"><strong>/usr Dizini</strong></h2>
+
+<p>Çalıştırılabilir dosyalar, kütüphaneler , dökümantasyonlar ve kaynak kodları içerebilen dizindir. Kullanıcı uygulamalarının depolandığı dizindir.</p>
+
+<h2 id="var-dizini"><strong>/var Dizini</strong></h2>
+
+<p>Variable yani değişken sözcüğünün kısaltmasından adını almıştır. Loglar gibi sürekli içindeki bilgilerin güncelleneceği dosyaların bulunmasının amaçlandığı dizindir.</p>
+
+<h2 id="root-dizini"><strong>/root Dizini</strong></h2>
+
+<p>/ (root) dizini ile karıştırılmamalıdır. Root (En Yetkin) Kullanıcısının ev  dizinidir.</p>
+
+<h2 id="proc-dizini"><strong>/proc Dizini</strong></h2>
+
+<p>Sistem ile ilgili bilgileri alabileceğimiz dosyaların bulunduğu dizindir. Dizinin içi aslında boştur. Sistem çalıştığı zaman sistemin özellikleri dosya olarak görünür.</p>
+
+<h2 id="lostfound-dizini"><strong>/lost+found Dizini</strong></h2>
+
+<p>Sistemde kaybolan dosyaların tutulduğu dizindir. Herhangi bir sebepten dosyanız kaybolursa bu dizine bakmakta fayda var.</p>
+
+<!-- In [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/), the image files of [Favicons](https://www.favicon-generator.org/about/) are placed in `assets/img/favicons/`. You may need to replace them with your own. So let's see how to customize these Favicons.
+
+With a square image (PNG, JPG or GIF) in hand, open the site [*Favicon & App Icon Generator*](https://www.favicon-generator.org/) and upload your original image.
+
+![upload-image](/assets/img/sample/upload-image.png)
+
+Click button <kbd>Create Favicon</kbd> and wait a moment for the website to generate the icons of various sizes automatically.
+
+![download-icons](/assets/img/sample/download-icons.png){: width="600"}
+
+Download the generated package, unzip and delete the following two from the extracted files:
+
+- browserconfig.xml
+- manifest.json
+ 
+Now, copy the remaining image files (`.PNG` and `.ICO`) from the extracted `.zip` file to cover the original files in the folder `assets/img/favicons/`.
+
+The following table helps you understand the changes to the icon file:
+
+> ✓ means keep, ✗ means delete.
+
+| File(s)             | From Favicon & App Icon Generator | From Chirpy |
+| ------------------- | :-------------------------------: | :---------: |
+| `*.PNG`             |                 ✓                 |      ✗      |
+| `*.ICO`             |                 ✓                 |      ✗      |
+| `browserconfig.xml` |                 ✗                 |      ✓      |
+| `manifest.json`     |                 ✗                 |      ✓      |
+
+
+The next time you build the site, the icon will be replaced with a customized edition. -->
+
+        
+      </div>
+
+      <div class="post-tail-wrapper text-muted">
+
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/gnu-linux/'>GNU/Linux</a>
+        </div>
+        
+
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/gnu-linux/"
+            class="post-tag no-text-decoration" >gnu/linux</a>
+          
+          <a href="/tags/linux/"
+            class="post-tag no-text-decoration" >linux</a>
+          
+          </div>
+        
+
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
+
+          <!--
+ Post sharing snippet
+
+ v2.1
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
-      <div id="page-tag">
-  <h1 class="pl-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    test
-    <span class="lead text-muted pl-2">1</span>
-  </h1>
-  <ul class="post-content pl-0">
     
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="/posts/test1/">Test Blog Post</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">Jan  2, 2021</span>
-    </li>
-    
-  </ul>
-</div>
 
     
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
+      
+        <a href="https://twitter.com/intent/tweet?text=GNU/Linux Sistemlerde Dosya ve Dizin Yapısı - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+    
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=GNU/Linux Sistemlerde Dosya ve Dizin Yapısı - Ali İlteriş Keskin&u=https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://telegram.me/share?text=GNU/Linux Sistemlerde Dosya ve Dizin Yapısı - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
+      
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" data-toggle="tooltip" data-placement="top"
+          title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin">
+          <i class="fa-fw fab fa-linkedin"></i>
+        </a>
+    
+
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
+
+  </span>
+</div>
+
+
+        </div><!-- .post-tail-bottom -->
+
+      </div><!-- div.post-tail -->
+
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
+
+  
+
+  
 
   <!--
   The Pannel on right side (Desktop views)
@@ -593,6 +844,22 @@
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
 
 
   
@@ -602,7 +869,10 @@
 
       
         
-        <a class="post-tag" href="/tags/test/">test</a>
+        <a class="post-tag" href="/tags/gnu-linux/">gnu/linux</a>
+      
+        
+        <a class="post-tag" href="/tags/linux/">linux</a>
       
 
       </div>
@@ -615,9 +885,132 @@
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+
+ v2.0
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+
+  v2.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
+  
+
+  
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
+  
+
 </div>
 
+    
+      <!--
+  The Disqus lazy loading.
+  Powered by: https://osvaldas.info/lazy-loading-disqus-comments
+  v2.0
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2019 Cotes Chung
+  MIT License
+-->
 
+<div id="disqus" class="pt-2 pb-2">
+  <p class="font-italic text-center text-muted small">
+    Comments powered by <a href="https://disqus.com/">Disqus</a>.
+  </p>
+</div>
+
+<script src="/assets/js/lib/jquery.disqusloader.min.js"></script>
+<script>
+  var options = {
+    scriptUrl: '//ilteriskesk.disqus.com/embed.js',
+
+    disqusConfig: function() {
+      this.page.url = 'https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/';
+      this.page.identifier = '/posts/gnu-linux-dosya-dizin-yapisi/';
+    }
+  };
+
+  $.disqusLoader('#disqus', options);
+</script>
+    
+
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
+
+<!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('#post-wrapper img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 
@@ -695,11 +1088,30 @@
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
 
 
       
         
-        <a class="post-tag" href="/tags/test/">test</a>
+        <a class="post-tag" href="/tags/gnu-linux/">gnu/linux</a>
+      
+        
+        <a class="post-tag" href="/tags/linux/">linux</a>
       
 
     </div>
