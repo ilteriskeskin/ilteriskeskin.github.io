@@ -1,21 +1,57 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://0.0.0.0:4000</id>
+  <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
-  <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2021-01-02T01:03:09+08:00</updated>
+  <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim.  Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
+  <updated>2021-01-02T21:16:55+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
-    <uri>http://0.0.0.0:4000</uri>
+    <uri>https://ilteriskeskin.github.io</uri>
   </author>
   <link href="/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://0.0.0.0:4000" rel="alternate" type="text/html" />
+  <link href="https://ilteriskeskin.github.io" rel="alternate" type="text/html" />
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <rights> © 2021 Ali İlteriş Keskin </rights>
-  <icon>/my-blog/assets/img/favicons/favicon.ico</icon>
-  <logo>/my-blog/assets/img/favicons/favicon-96x96.png</logo>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Test Blog Post</title>
+    <link href="https://ilteriskeskin.github.io/posts/test1/" rel="alternate" type="text/html" title="Test Blog Post" />
+    <published>2021-01-02T00:00:00+03:00</published>
+  
+    <updated>2021-01-02T00:00:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/test1/</id>
+    <content src="https://ilteriskeskin.github.io/posts/test1/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Lorem Ipsum
+
+Lorem Ipsum De uzattı eve doğru dergi orta camisi. Ekşili çorba gidecekmiş bilgiyasayarı öyle ki bilgiyasayarı dergi koyun bahar bahar öyle ki. Mıknatıslı okuma sayfası anlamsız gül çobanın anlamsız. Bilgiyasayarı bahar ama ona doğru sinema gül telefonu masaya doğru sıradanlıktan koyun. Ötekinden dolayı patlıcan yapacakmış çünkü yazın dışarı çıktılar uzattı gazete koşuyorlar gülüyo...
+    </summary>
+  
+
+  </entry>
 
 </feed>
 
