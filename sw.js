@@ -1,15 +1,6 @@
----
-layout: compress
+self.importScripts('/assets/js/data/cache-list.js');
 
-# Chirpy v2.2
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2020 Cotes Chung
-# MIT Licensed
----
-
-self.importScripts('{{ "/assets/js/data/cache-list.js" | relative_url }}');
-
-var cacheName = 'chirpy-{{ "now" | date: "%Y%m%d.%H%M" }}';
+var cacheName = 'chirpy-20210102.2116';
 
 
 function isExcluded(url) {
@@ -63,3 +54,4 @@ self.addEventListener('activate', (e) => {
     })
   );
 });
+
