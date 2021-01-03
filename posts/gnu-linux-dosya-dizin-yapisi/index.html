@@ -4,6 +4,8 @@
 
 <html lang="en" 
   
+    mode="dark"
+  
 >
 
   <!--
@@ -37,7 +39,7 @@
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/","headline":"GNU/Linux Sistemlerde Dosya ve Dizin Yapısı","dateModified":"2021-01-02T22:48:00+03:00","datePublished":"2021-01-02T22:48:00+03:00","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/"},"description":"Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/","headline":"GNU/Linux Sistemlerde Dosya ve Dizin Yapısı","dateModified":"2021-01-02T22:48:00+03:00","datePublished":"2021-01-02T22:48:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -121,6 +123,9 @@
 <link rel="stylesheet" href="/assets/css/post.css">
 
 
+  
+    <link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" />
   
 
 
@@ -232,7 +237,7 @@
 
       
       <a href="https://github.com/ilteriskeskin" aria-label="github"
-        class="order-3"
+        
         target="_blank" rel="noopener">
         <i class="fab fa-github-alt"></i>
       </a>
@@ -243,7 +248,7 @@
 
       
       <a href="https://twitter.com/ilteriskeskin" aria-label="twitter"
-        class="order-4"
+        
         target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -255,7 +260,7 @@
       
       <a href="
           javascript:location.href = 'mailto:' + ['aliilteriskeskin','gmail.com'].join('@')" aria-label="email"
-        class="order-5"
+        
         >
         <i class="fas fa-envelope"></i>
       </a>
@@ -266,7 +271,7 @@
 
       
       <a href="https://www.linkedin.com/in/aliilteriskeskin/" aria-label="linkedin"
-        class="order-6"
+        
         target="_blank" rel="noopener">
         <i class="fab fa-linkedin"></i>
       </a>
@@ -274,164 +279,6 @@
 
     
 
-    
-      
-        <span class="icon-border order-2"></span>
-      
-
-      <span id="mode-toggle-wrapper" class="order-1">
-        <!--
-  Switch the mode between dark and light.
-
-  v2.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-
-<i class="mode-toggle fas fa-adjust"></i>
-
-<script type="text/javascript">
-
-  class ModeToggle {
-    static get MODE_KEY() { return "mode"; }
-    static get DARK_MODE() { return "dark"; }
-    static get LIGHT_MODE() { return "light"; }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      var self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addListener(function() {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.updateMermaid();
-      });
-
-    } /* constructor() */
-
-
-    setDark() {
-      $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      $('html').removeAttr(ModeToggle.MODE_KEY);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); }
-
-    get isSysDarkPrefer() { return this.sysDarkPrefers.matches; }
-
-    get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; }
-
-    get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; }
-
-    get hasMode() { return this.mode != null; }
-
-    get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode
-        || (!this.hasMode && this.isSysDarkPrefer) ) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    updateMermaid() {
-      if (typeof mermaid !== "undefined") {
-        let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default");
-        let config = { theme: expectedTheme };
-
-        /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */
-        $(".mermaid").each(function() {
-          let svgCode = $(this).prev().children().html();
-          $(this).removeAttr("data-processed");
-          $(this).html(svgCode);
-        });
-
-        mermaid.initialize(config);
-        mermaid.init(undefined, ".mermaid");
-      }
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.updateMermaid();
-
-    } /* flipMode() */
-
-  } /* ModeToggle */
-
-  let toggle = new ModeToggle();
-
-  $(".mode-toggle").click(function() {
-
-    toggle.flipMode();
-
-  });
-
-</script>
-
-      </span>
     
 
   </div> <!-- .sidebar-bottom -->
@@ -475,7 +322,7 @@
     <span id="search-wrapper" class="align-items-center">
       <i class="fas fa-search fa-fw"></i>
       <input class="form-control" id="search-input" type="search"
-        aria-label="search" placeholder="Search...">
+        aria-label="search" placeholder="Arama...">
       <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
     </span>
     <span id="search-cancel" >Cancel</span>
@@ -660,37 +507,6 @@
 
 <p>Sistemde kaybolan dosyaların tutulduğu dizindir. Herhangi bir sebepten dosyanız kaybolursa bu dizine bakmakta fayda var.</p>
 
-<!-- In [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/), the image files of [Favicons](https://www.favicon-generator.org/about/) are placed in `assets/img/favicons/`. You may need to replace them with your own. So let's see how to customize these Favicons.
-
-With a square image (PNG, JPG or GIF) in hand, open the site [*Favicon & App Icon Generator*](https://www.favicon-generator.org/) and upload your original image.
-
-![upload-image](/assets/img/sample/upload-image.png)
-
-Click button <kbd>Create Favicon</kbd> and wait a moment for the website to generate the icons of various sizes automatically.
-
-![download-icons](/assets/img/sample/download-icons.png){: width="600"}
-
-Download the generated package, unzip and delete the following two from the extracted files:
-
-- browserconfig.xml
-- manifest.json
- 
-Now, copy the remaining image files (`.PNG` and `.ICO`) from the extracted `.zip` file to cover the original files in the folder `assets/img/favicons/`.
-
-The following table helps you understand the changes to the icon file:
-
-> ✓ means keep, ✗ means delete.
-
-| File(s)             | From Favicon & App Icon Generator | From Chirpy |
-| ------------------- | :-------------------------------: | :---------: |
-| `*.PNG`             |                 ✓                 |      ✗      |
-| `*.ICO`             |                 ✓                 |      ✗      |
-| `browserconfig.xml` |                 ✗                 |      ✓      |
-| `manifest.json`     |                 ✗                 |      ✓      |
-
-
-The next time you build the site, the icon will be replaced with a customized edition. -->
-
         
       </div>
 
@@ -712,9 +528,6 @@ The next time you build the site, the icon will be replaced with a customized ed
           
           <a href="/tags/gnu-linux/"
             class="post-tag no-text-decoration" >gnu/linux</a>
-          
-          <a href="/tags/linux/"
-            class="post-tag no-text-decoration" >linux</a>
           
           </div>
         
@@ -840,10 +653,239 @@ The next time you build the site, the icon will be replaced with a customized ed
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -864,7 +906,7 @@ The next time you build the site, the icon will be replaced with a customized ed
 
   
     <div id="access-tags">
-      <span>Trending Tags</span>
+      <span>Trend Etiketler</span>
       <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
 
       
@@ -872,7 +914,25 @@ The next time you build the site, the icon will be replaced with a customized ed
         <a class="post-tag" href="/tags/gnu-linux/">gnu/linux</a>
       
         
-        <a class="post-tag" href="/tags/linux/">linux</a>
+        <a class="post-tag" href="/tags/backend/">backend</a>
+      
+        
+        <a class="post-tag" href="/tags/django/">django</a>
+      
+        
+        <a class="post-tag" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag" href="/tags/opencv/">opencv</a>
+      
+        
+        <a class="post-tag" href="/tags/python/">python</a>
+      
+        
+        <a class="post-tag" href="/tags/ubuntu/">ubuntu</a>
+      
+        
+        <a class="post-tag" href="/tags/usenet/">usenet</a>
       
 
       </div>
@@ -880,6 +940,11 @@ The next time you build the site, the icon will be replaced with a customized ed
   
   </div> <!-- .access -->
 
+  
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">İçindekiler</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
   
 
 </div> <!-- #panel-wrapper -->
@@ -920,6 +985,58 @@ The next time you build the site, the icon will be replaced with a customized ed
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
 
 
 
@@ -935,10 +1052,169 @@ The next time you build the site, the icon will be replaced with a customized ed
     
     
   
+    
+    
+      
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+          
 
 
 
 
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Daha Fazla Okuma</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/neden-gnu-linux/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Jul  5, 2017
+  
+
+  <i class="unloaded">2017-07-05T11:39:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Neden GNU/Linux?</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+
+“Hızlı, güvenilir, ücretsiz” Bu sözleri GNU/Linux kullananlardan duymuşsunuzdur muhtemelen. Bunlar doğru ancak biraz daha açalım bu konuyu. Neden GNU/Linux kullanayım?
+
+GNU/Linux Özgürdür
+
+Bu bel...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/ubuntu-opencv-kurulum/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Jun  3, 2018
+  
+
+  <i class="unloaded">2018-06-03T23:30:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Ubuntu 17.10 Üzerine OpenCV Kurulumu</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+
+Herkese merhaba arkadaşlar. Bu yazımda Ubuntu’nun şuanki en güncel sürümüne opencv kütüphanesinin kurulumunu anlatacağım. Kendime kurmaya çalıştım ama çoğu kaynak eski olduğu için kütüphane hatal...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/usenet-nedir/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Mar 13, 2018
+  
+
+  <i class="unloaded">2018-03-13T12:33:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Usenet (User’s Network) Nedir?</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+
+User’s Network’un kısaltmasıdır. News diye de anılır. 1979 senesinden beri kullanılmaka olan Usenet, dünyanın en eski yaygın ve heterojen grup iletişim sistemlerinden biridir.
+
+Usenet Dünya çapın...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
 
 
 
@@ -953,9 +1229,9 @@ The next time you build the site, the icon will be replaced with a customized ed
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <span class="btn btn-outline-primary disabled">
-    <p>-</p>
-  </span>
+  <a href="/posts/ubuntu-opencv-kurulum/" class="btn btn-outline-primary">
+    <p>Ubuntu 17.10 Üzerine OpenCV Kurulumu</p>
+  </a>
   
 
   
@@ -1061,7 +1337,7 @@ The next time you build the site, the icon will be replaced with a customized ed
 <div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
   <div class="col-12 col-xl-11 post-content">
     <div id="search-hints">
-      <h4 class="text-muted mb-4">Trending Tags</h4>
+      <h4 class="text-muted mb-4">Trend Etiketler</h4>
 
       
 
@@ -1084,10 +1360,239 @@ The next time you build the site, the icon will be replaced with a customized ed
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1111,7 +1616,25 @@ The next time you build the site, the icon will be replaced with a customized ed
         <a class="post-tag" href="/tags/gnu-linux/">gnu/linux</a>
       
         
-        <a class="post-tag" href="/tags/linux/">linux</a>
+        <a class="post-tag" href="/tags/backend/">backend</a>
+      
+        
+        <a class="post-tag" href="/tags/django/">django</a>
+      
+        
+        <a class="post-tag" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag" href="/tags/opencv/">opencv</a>
+      
+        
+        <a class="post-tag" href="/tags/python/">python</a>
+      
+        
+        <a class="post-tag" href="/tags/ubuntu/">ubuntu</a>
+      
+        
+        <a class="post-tag" href="/tags/usenet/">usenet</a>
       
 
     </div>

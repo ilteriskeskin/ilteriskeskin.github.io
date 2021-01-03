@@ -4,6 +4,8 @@
 
 <html lang="en" 
   
+    mode="dark"
+  
 >
 
   <!--
@@ -30,14 +32,14 @@
 <meta property="og:url" content="https://ilteriskeskin.github.io/tabs/tags/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-02T23:06:32+03:00" />
+<meta property="article:published_time" content="2021-01-03T20:06:19+03:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Tagler" />
 <meta name="twitter:site" content="@ilteriskeskin" />
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://ilteriskeskin.github.io/tabs/tags/","headline":"Tagler","dateModified":"2021-01-02T23:06:32+03:00","datePublished":"2021-01-02T23:06:32+03:00","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/tabs/tags/"},"description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://ilteriskeskin.github.io/tabs/tags/","headline":"Tagler","dateModified":"2021-01-03T20:06:19+03:00","datePublished":"2021-01-03T20:06:19+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/tabs/tags/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -230,7 +232,7 @@
 
       
       <a href="https://github.com/ilteriskeskin" aria-label="github"
-        class="order-3"
+        
         target="_blank" rel="noopener">
         <i class="fab fa-github-alt"></i>
       </a>
@@ -241,7 +243,7 @@
 
       
       <a href="https://twitter.com/ilteriskeskin" aria-label="twitter"
-        class="order-4"
+        
         target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -253,7 +255,7 @@
       
       <a href="
           javascript:location.href = 'mailto:' + ['aliilteriskeskin','gmail.com'].join('@')" aria-label="email"
-        class="order-5"
+        
         >
         <i class="fas fa-envelope"></i>
       </a>
@@ -264,7 +266,7 @@
 
       
       <a href="https://www.linkedin.com/in/aliilteriskeskin/" aria-label="linkedin"
-        class="order-6"
+        
         target="_blank" rel="noopener">
         <i class="fab fa-linkedin"></i>
       </a>
@@ -272,164 +274,6 @@
 
     
 
-    
-      
-        <span class="icon-border order-2"></span>
-      
-
-      <span id="mode-toggle-wrapper" class="order-1">
-        <!--
-  Switch the mode between dark and light.
-
-  v2.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-
-<i class="mode-toggle fas fa-adjust"></i>
-
-<script type="text/javascript">
-
-  class ModeToggle {
-    static get MODE_KEY() { return "mode"; }
-    static get DARK_MODE() { return "dark"; }
-    static get LIGHT_MODE() { return "light"; }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      var self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addListener(function() {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.updateMermaid();
-      });
-
-    } /* constructor() */
-
-
-    setDark() {
-      $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      $('html').removeAttr(ModeToggle.MODE_KEY);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); }
-
-    get isSysDarkPrefer() { return this.sysDarkPrefers.matches; }
-
-    get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; }
-
-    get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; }
-
-    get hasMode() { return this.mode != null; }
-
-    get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode
-        || (!this.hasMode && this.isSysDarkPrefer) ) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    updateMermaid() {
-      if (typeof mermaid !== "undefined") {
-        let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default");
-        let config = { theme: expectedTheme };
-
-        /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */
-        $(".mermaid").each(function() {
-          let svgCode = $(this).prev().children().html();
-          $(this).removeAttr("data-processed");
-          $(this).html(svgCode);
-        });
-
-        mermaid.initialize(config);
-        mermaid.init(undefined, ".mermaid");
-      }
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.updateMermaid();
-
-    } /* flipMode() */
-
-  } /* ModeToggle */
-
-  let toggle = new ModeToggle();
-
-  $(".mode-toggle").click(function() {
-
-    toggle.flipMode();
-
-  });
-
-</script>
-
-      </span>
     
 
   </div> <!-- .sidebar-bottom -->
@@ -473,7 +317,7 @@
     <span id="search-wrapper" class="align-items-center">
       <i class="fas fa-search fa-fw"></i>
       <input class="form-control" id="search-input" type="search"
-        aria-label="search" placeholder="Search...">
+        aria-label="search" placeholder="Arama...">
       <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
     </span>
     <span id="search-cancel" >Cancel</span>
@@ -523,11 +367,35 @@
 
   
     <div>
-      <a class="tag" href="/tags/gnu-linux/">gnu/linux<span class="text-muted">1</span></a>
+      <a class="tag" href="/tags/backend/">backend<span class="text-muted">1</span></a>
     </div>
   
     <div>
-      <a class="tag" href="/tags/linux/">linux<span class="text-muted">1</span></a>
+      <a class="tag" href="/tags/django/">django<span class="text-muted">1</span></a>
+    </div>
+  
+    <div>
+      <a class="tag" href="/tags/gnu-linux/">gnu/linux<span class="text-muted">3</span></a>
+    </div>
+  
+    <div>
+      <a class="tag" href="/tags/network/">network<span class="text-muted">1</span></a>
+    </div>
+  
+    <div>
+      <a class="tag" href="/tags/opencv/">opencv<span class="text-muted">1</span></a>
+    </div>
+  
+    <div>
+      <a class="tag" href="/tags/python/">python<span class="text-muted">1</span></a>
+    </div>
+  
+    <div>
+      <a class="tag" href="/tags/ubuntu/">ubuntu<span class="text-muted">1</span></a>
+    </div>
+  
+    <div>
+      <a class="tag" href="/tags/usenet/">usenet<span class="text-muted">1</span></a>
     </div>
   
 
@@ -588,10 +456,239 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -612,7 +709,7 @@
 
   
     <div id="access-tags">
-      <span>Trending Tags</span>
+      <span>Trend Etiketler</span>
       <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
 
       
@@ -620,7 +717,25 @@
         <a class="post-tag" href="/tags/gnu-linux/">gnu/linux</a>
       
         
-        <a class="post-tag" href="/tags/linux/">linux</a>
+        <a class="post-tag" href="/tags/backend/">backend</a>
+      
+        
+        <a class="post-tag" href="/tags/django/">django</a>
+      
+        
+        <a class="post-tag" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag" href="/tags/opencv/">opencv</a>
+      
+        
+        <a class="post-tag" href="/tags/python/">python</a>
+      
+        
+        <a class="post-tag" href="/tags/ubuntu/">ubuntu</a>
+      
+        
+        <a class="post-tag" href="/tags/usenet/">usenet</a>
       
 
       </div>
@@ -686,7 +801,7 @@
 <div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
   <div class="col-12 col-xl-11 post-content">
     <div id="search-hints">
-      <h4 class="text-muted mb-4">Trending Tags</h4>
+      <h4 class="text-muted mb-4">Trend Etiketler</h4>
 
       
 
@@ -709,10 +824,239 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -736,7 +1080,25 @@
         <a class="post-tag" href="/tags/gnu-linux/">gnu/linux</a>
       
         
-        <a class="post-tag" href="/tags/linux/">linux</a>
+        <a class="post-tag" href="/tags/backend/">backend</a>
+      
+        
+        <a class="post-tag" href="/tags/django/">django</a>
+      
+        
+        <a class="post-tag" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag" href="/tags/opencv/">opencv</a>
+      
+        
+        <a class="post-tag" href="/tags/python/">python</a>
+      
+        
+        <a class="post-tag" href="/tags/ubuntu/">ubuntu</a>
+      
+        
+        <a class="post-tag" href="/tags/usenet/">usenet</a>
       
 
     </div>
