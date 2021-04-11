@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
-  <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim.  Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-01-03T20:06:19+03:00</updated>
+  <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
+  <updated>2021-04-11T18:47:53+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -16,6 +16,50 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?</title>
+    <link href="https://ilteriskeskin.github.io/posts/heybooster-about/" rel="alternate" type="text/html" title="Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?" />
+    <published>2021-04-11T18:30:00+03:00</published>
+  
+    <updated>2021-04-11T18:30:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/heybooster-about/</id>
+    <content src="https://ilteriskeskin.github.io/posts/heybooster-about/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="heybooster" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Merhaba arkadaşlar, bu yazımda heybooster
+ile neler yapabileceğinizden ve heybooster’ı kimlerin kullanabileceğinden ve heybooster’ı
+nasıl kullanabileceğinizden bahsedeceğim. Gelin etraflıca bir konuşalım.
+
+
+
+
+
+Heybooster Ne Yapıyor?
+Heybooster’ın yaptığı şeyi en basit şekliyle anlatmak gerekirse, kullanıcıların sitelerindeki
+gelişmeye açık senaryoları kullanıcıya gösteren, yapması gerekenleri b...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -172,46 +216,6 @@ Usenet Dünya çapında bir tartışma ortamıdır. Konuya göre ayrılmış tar
 Django Nedir?
 
 Django python ile yazılmış bir web çatısıdır (framework). Özgür ve açık kaynak kodludur. Arkasında büyük bir topluluk geliştirilmesi için uğraşmaktadır. Django MVT mimarisi üzerine yazılmıştır. MVT olarak bahsettiğimiz şey bir yapıdır. Model, Views ve Template’i ifade eder. Django diğer web çatılarına göre daha hızlı, daha güvenli, daha az karmaşık projeler geliştirmenizi hedef...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Neden GNU/Linux?</title>
-    <link href="https://ilteriskeskin.github.io/posts/neden-gnu-linux/" rel="alternate" type="text/html" title="Neden GNU/Linux?" />
-    <published>2017-07-05T11:39:00+03:00</published>
-  
-    <updated>2017-07-05T11:39:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/neden-gnu-linux/</id>
-    <content src="https://ilteriskeskin.github.io/posts/neden-gnu-linux/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="GNU/Linux" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-“Hızlı, güvenilir, ücretsiz” Bu sözleri GNU/Linux kullananlardan duymuşsunuzdur muhtemelen. Bunlar doğru ancak biraz daha açalım bu konuyu. Neden GNU/Linux kullanayım?
-
-GNU/Linux Özgürdür
-
-Bu belkide diğer sistemlerle arasındaki en önemli fark. Bilgisayarın dahi olsa özgür olamadığın bir ortamda bulunmak istemezsin. Peki bu özgürlük ne? Ne kadar özgürüm?  Richard M. Stallman GNU projesini 198...
     </summary>
   
 
