@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-04-17T23:55:59+03:00</updated>
+  <updated>2021-04-17T23:58:24+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -16,50 +16,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</title>
-    <link href="https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" rel="alternate" type="text/html" title="Mongodb Veritabanınızı Google Cloud Storage'a Aktarın" />
-    <published>2021-04-17T18:30:00+03:00</published>
-  
-    <updated>2021-04-17T18:30:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/</id>
-    <content src="https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="Python" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Merhaba arkadaşlar, bu yazımda heybooster
-ile nel
-
-
-
-
-
-Heybooster Ne Yapıyor?
-Heybooster’ın yaptığı şeyi en basit şekliyle anlatmak gerekirse, kullanıcıların sitelerindeki
-gelişmeye açık senaryoları kullanıcıya gösteren, yapması gerekenleri bildiren bir
-
-    </summary>
-  
-
-  </entry>
 
   
   <entry>
@@ -220,6 +176,46 @@ NOT: Hızlı bir internete sahipken kurulum yapmanız faydalı olacak...
 User’s Network’un kısaltmasıdır. News diye de anılır. 1979 senesinden beri kullanılmaka olan Usenet, dünyanın en eski yaygın ve heterojen grup iletişim sistemlerinden biridir.
 
 Usenet Dünya çapında bir tartışma ortamıdır. Konuya göre ayrılmış tartışma gruplarını içermektedir. Bu gruplara haber grubu veya Newsgroup adı verilir. Bu haber gruplarına uygun yazılımlara sahip kişiler tarafından mes...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Django Nedir? Nasıl Kurulur?</title>
+    <link href="https://ilteriskeskin.github.io/posts/django-nedir-nasil-kurulur/" rel="alternate" type="text/html" title="Django Nedir? Nasıl Kurulur?" />
+    <published>2017-09-22T16:19:00+03:00</published>
+  
+    <updated>2017-09-22T16:19:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/django-nedir-nasil-kurulur/</id>
+    <content src="https://ilteriskeskin.github.io/posts/django-nedir-nasil-kurulur/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+    <category term="Django" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Django Nedir?
+
+Django python ile yazılmış bir web çatısıdır (framework). Özgür ve açık kaynak kodludur. Arkasında büyük bir topluluk geliştirilmesi için uğraşmaktadır. Django MVT mimarisi üzerine yazılmıştır. MVT olarak bahsettiğimiz şey bir yapıdır. Model, Views ve Template’i ifade eder. Django diğer web çatılarına göre daha hızlı, daha güvenli, daha az karmaşık projeler geliştirmenizi hedef...
     </summary>
   
 
