@@ -23,25 +23,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="python" />
+<meta property="og:title" content="Mongodb Veritabanınızı Google Cloud Storage’a Aktarın" />
 <meta name="author" content="Ali İlteriş Keskin" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<meta property="og:description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<link rel="canonical" href="https://ilteriskeskin.github.io/tags/python/" />
-<meta property="og:url" content="https://ilteriskeskin.github.io/tags/python/" />
+<meta name="description" content="Merhaba arkadaşlar, bu yazımda heybooster ile nel" />
+<meta property="og:description" content="Merhaba arkadaşlar, bu yazımda heybooster ile nel" />
+<link rel="canonical" href="https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" />
+<meta property="og:url" content="https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-17T18:30:00+03:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="python" />
+<meta property="twitter:title" content="Mongodb Veritabanınızı Google Cloud Storage’a Aktarın" />
 <meta name="twitter:site" content="@ilteriskeskin" />
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"python","url":"https://ilteriskeskin.github.io/tags/python/","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Mongodb Veritabanınızı Google Cloud Storage’a Aktarın","url":"https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/","datePublished":"2021-04-17T18:30:00+03:00","dateModified":"2021-04-17T18:30:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Merhaba arkadaşlar, bu yazımda heybooster ile nel","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>python | Ali İlteriş Keskin
+  <title>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın | Ali İlteriş Keskin
   </title>
 
   <!--
@@ -117,9 +119,14 @@
 
 
 
-<link rel="preload" href="/assets/css/category-tag.css" as="style">
-<link rel="stylesheet" href="/assets/css/category-tag.css">
+<link rel="preload" href="/assets/css/post.css" as="style">
+<link rel="stylesheet" href="/assets/css/post.css">
 
+
+  
+    <link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" />
+  
 
 
 
@@ -142,7 +149,7 @@
 
 
 
-<script async src="/assets/js/page.min.js"></script>
+<script async src="/assets/js/post.min.js"></script>
 
 
 
@@ -293,22 +300,14 @@
         
         <span>
           <a href="/">
-            Home
-          </a>
-        </span>
-        
-      
-        
-        <span>
-          <a href="/tabs/tags/">
-            Tags
+            Posts
           </a>
         </span>
         
       
 
       
-        <span>python</span>
+        <span>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -316,7 +315,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -359,35 +358,189 @@
 
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
+
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
+
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+      <h1 data-toc-skip>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</h1>
+
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sat, Apr 17, 2021,  6:30 PM +0300"
+  >
+
+  
+  
+
+  
+    Apr 17
+  
+
+  <i class="unloaded">2021-04-17T18:30:00+03:00</i>
+
+</span>
+          by
+          <span class="author">
+            Ali İlteriş Keskin
+          </span>
+        </div>
+
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="29 words">1 min</span>
+
+
+          <!-- page views -->
+          
+
+        </div>
+
+      </div> <!-- .post-meta -->
+
+      <div class="post-content">
+
+        <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+        
+          
+          <p>Merhaba arkadaşlar, bu yazımda <a href="https://app.heybooster.ai" target="_blank">heybooster</a>
+ile nel</p>
+
+<hr />
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/hblogo.png" alt="heybooster-logo" /></p>
+
+<h2 id="heybooster-ne-yapıyor"><strong>Heybooster Ne Yapıyor?</strong></h2>
+<p>Heybooster’ın yaptığı şeyi en basit şekliyle anlatmak gerekirse, kullanıcıların sitelerindeki
+gelişmeye açık senaryoları kullanıcıya gösteren, yapması gerekenleri bildiren bir</p>
+
+        
+      </div>
+
+      <div class="post-tail-wrapper text-muted">
+
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/python/'>Python</a>
+        </div>
+        
+
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/python/"
+            class="post-tag no-text-decoration" >python</a>
+          
+          <a href="/tags/mongodb/"
+            class="post-tag no-text-decoration" >mongodb</a>
+          
+          <a href="/tags/google-cloud-storage/"
+            class="post-tag no-text-decoration" >google cloud storage</a>
+          
+          </div>
+        
+
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
+
+          <!--
+ Post sharing snippet
+
+ v2.1
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
-      <div id="page-tag">
-  <h1 class="pl-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    python
-    <span class="lead text-muted pl-2">2</span>
-  </h1>
-  <ul class="post-content pl-0">
     
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="/posts/google-cloud-storage-mongodb-data-transfer/">Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">Apr 17, 2021</span>
-    </li>
-    
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="/posts/django-nedir-nasil-kurulur/">Django Nedir? Nasıl Kurulur?</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">Sep 22, 2017</span>
-    </li>
-    
-  </ul>
-</div>
 
     
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
+      
+        <a href="https://twitter.com/intent/tweet?text=Mongodb Veritabanınızı Google Cloud Storage'a Aktarın - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+    
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Mongodb Veritabanınızı Google Cloud Storage'a Aktarın - Ali İlteriş Keskin&u=https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://telegram.me/share?text=Mongodb Veritabanınızı Google Cloud Storage'a Aktarın - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
+      
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" data-toggle="tooltip" data-placement="top"
+          title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin">
+          <i class="fa-fw fab fa-linkedin"></i>
+        </a>
+    
+
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
+
+  </span>
+</div>
+
+
+        </div><!-- .post-tail-bottom -->
+
+      </div><!-- div.post-tail -->
+
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
+
+  
+
+  
 
   <!--
   The Pannel on right side (Desktop views)
@@ -850,13 +1003,376 @@
   </div> <!-- .access -->
 
   
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">İçindekiler</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+
+ v2.0
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+  
+    
+    
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+          
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Daha Fazla Okuma</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/django-nedir-nasil-kurulur/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Sep 22, 2017
+  
+
+  <i class="unloaded">2017-09-22T16:19:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Django Nedir? Nasıl Kurulur?</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+
+Django Nedir?
+
+Django python ile yazılmış bir web çatısıdır (framework). Özgür ve açık kaynak kodludur. Arkasında büyük bir topluluk geliştirilmesi için uğraşmaktadır. Django MVT mimarisi üzerine...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/heybooster-about/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Apr 11
+  
+
+  <i class="unloaded">2021-04-11T18:30:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Merhaba arkadaşlar, bu yazımda heybooster
+ile neler yapabileceğinizden ve heybooster’ı kimlerin kullanabileceğinden ve heybooster’ı
+nasıl kullanabileceğinizden bahsedeceğim. Gelin etraflıca bir kon...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/gnu-linux-dosya-dizin-yapisi/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Jan  2
+  
+
+  <i class="unloaded">2021-01-02T22:48:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>GNU/Linux Sistemlerde Dosya ve Dizin Yapısı</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yap...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+
+  v2.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/heybooster-about/" class="btn btn-outline-primary">
+    <p>Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?</p>
+  </a>
+  
+
+  
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
+  
+
 </div>
 
+    
+      <!--
+  The Disqus lazy loading.
+  Powered by: https://osvaldas.info/lazy-loading-disqus-comments
+  v2.0
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2019 Cotes Chung
+  MIT License
+-->
 
+<div id="disqus" class="pt-2 pb-2">
+  <p class="font-italic text-center text-muted small">
+    Comments powered by <a href="https://disqus.com/">Disqus</a>.
+  </p>
+</div>
+
+<script src="/assets/js/lib/jquery.disqusloader.min.js"></script>
+<script>
+  var options = {
+    scriptUrl: '//ilteriskesk.disqus.com/embed.js',
+
+    disqusConfig: function() {
+      this.page.url = 'https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/';
+      this.page.identifier = '/posts/google-cloud-storage-mongodb-data-transfer/';
+    }
+  };
+
+  $.disqusLoader('#disqus', options);
+</script>
+    
+
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
+
+<!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('#post-wrapper img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 
