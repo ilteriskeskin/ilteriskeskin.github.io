@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Mongodb Veritabanınızı Google Cloud Storage&#39;a Aktarın",
+    "url": "/posts/google-cloud-storage-mongodb-data-transfer/",
+    "categories": "Python",
+    "tags": "python, mongodb, google cloud storage",
+    "date": "2021-04-17 18:30:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Merhaba arkadaşlar, bu yazımda heybooster‘ınveritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızıGoogle Cloud Storagedaaçtığımız bir bucketa yolluyor. Detayları aşağıda konuşalım :)Neden Mongodb?Bu yazı tek tek neyin ne olduğunu açıklayan bir yazı olmayacak ancak kısaca..."
+  },
+  
+  {
     "title": "Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?",
     "url": "/posts/heybooster-about/",
     "categories": "heybooster",

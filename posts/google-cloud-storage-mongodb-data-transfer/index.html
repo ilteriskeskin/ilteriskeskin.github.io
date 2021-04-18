@@ -23,27 +23,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Ubuntu 17.10 Üzerine OpenCV Kurulumu" />
+<meta property="og:title" content="Mongodb Veritabanınızı Google Cloud Storage’a Aktarın" />
 <meta name="author" content="Ali İlteriş Keskin" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<meta property="og:description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<link rel="canonical" href="https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/" />
-<meta property="og:url" content="https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/" />
+<meta name="description" content="Merhaba arkadaşlar, bu yazımda heybooster‘ın veritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızı Google Cloud Storageda açtığımız bir bucketa yolluyor. Detayları aşağıda konuşalım :)" />
+<meta property="og:description" content="Merhaba arkadaşlar, bu yazımda heybooster‘ın veritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızı Google Cloud Storageda açtığımız bir bucketa yolluyor. Detayları aşağıda konuşalım :)" />
+<link rel="canonical" href="https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" />
+<meta property="og:url" content="https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-06-03T23:30:00+03:00" />
+<meta property="article:published_time" content="2021-04-17T18:30:00+03:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Ubuntu 17.10 Üzerine OpenCV Kurulumu" />
+<meta property="twitter:title" content="Mongodb Veritabanınızı Google Cloud Storage’a Aktarın" />
 <meta name="twitter:site" content="@ilteriskeskin" />
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Ubuntu 17.10 Üzerine OpenCV Kurulumu","url":"https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/","datePublished":"2018-06-03T23:30:00+03:00","dateModified":"2018-06-03T23:30:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Mongodb Veritabanınızı Google Cloud Storage’a Aktarın","url":"https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/","datePublished":"2021-04-17T18:30:00+03:00","dateModified":"2021-04-17T18:30:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Merhaba arkadaşlar, bu yazımda heybooster‘ın veritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızı Google Cloud Storageda açtığımız bir bucketa yolluyor. Detayları aşağıda konuşalım :)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Ubuntu 17.10 Üzerine OpenCV Kurulumu | Ali İlteriş Keskin
+  <title>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın | Ali İlteriş Keskin
   </title>
 
   <!--
@@ -307,7 +307,7 @@
       
 
       
-        <span>Ubuntu 17.10 Üzerine OpenCV Kurulumu</span>
+        <span>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -363,7 +363,7 @@
 
     <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
-      <h1 data-toc-skip>Ubuntu 17.10 Üzerine OpenCV Kurulumu</h1>
+      <h1 data-toc-skip>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</h1>
 
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
@@ -380,17 +380,17 @@
   
     data-toggle="tooltip"
     data-placement="bottom"
-    title="Sun, Jun  3, 2018, 11:30 PM +0300"
+    title="Sat, Apr 17, 2021,  6:30 PM +0300"
   >
 
   
   
 
   
-    Jun  3, 2018
+    Apr 17
   
 
-  <i class="unloaded">2018-06-03T23:30:00+03:00</i>
+  <i class="unloaded">2021-04-17T18:30:00+03:00</i>
 
 </span>
           by
@@ -414,7 +414,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="263 words">1 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="529 words">2 min</span>
 
 
           <!-- page views -->
@@ -429,101 +429,147 @@
         <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
         
           
-          <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/opencv.png" alt="upload-image" height="300" /></p>
+          <p>Merhaba arkadaşlar, bu yazımda <a href="https://app.heybooster.ai" target="_blank">heybooster</a>‘ın
+veritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızı
+<a href="https://cloud.google.com/storage/">Google Cloud Storageda</a>
+açtığımız bir bucketa yolluyor. Detayları aşağıda konuşalım :)</p>
 
-<p>Herkese merhaba arkadaşlar. Bu yazımda Ubuntu’nun şuanki en güncel sürümüne opencv kütüphanesinin kurulumunu anlatacağım. Kendime kurmaya çalıştım ama çoğu kaynak eski olduğu için kütüphane hataları vs. bir sürü hata ile karşılaştım. Epey uğraştıktan sonra huzura erdim ve sizlerle bunu paylaşacağım.</p>
+<hr />
+<h2 id="neden-mongodb"><strong>Neden Mongodb?</strong></h2>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/mongodb_logo.png" alt="mongodb-logo" width="200" /></p>
 
-<p>Hazırsak hemen başlayalım.</p>
+<p>Bu yazı tek tek neyin ne olduğunu açıklayan bir yazı olmayacak ancak kısaca yazıda
+geçen teknolojilerden bahsetmek istiyorum. <a href="https://www.mongodb.com/" target="_blank">Mongodb</a>
+birçok programlama diline destek veren, ölçeklenebilir açık kaynak kodlu bir
+NoSQL veritabanıdır. Verileri SQL veritabanlarından farklı olarak JSON formatta
+tutmaktadır. Bu da bizim istediğimiz bir özellik. Mongodb NoSQL yapısıyla
+Heybooster’ın tüm ihtiyaçlarına çözüm sunuyordu. Bu yüzden veritabanı olarak
+Mongodb’yi tercih ettik.</p>
 
-<p><strong>NOT: Hızlı bir internete sahipken kurulum yapmanız faydalı olacaktır.</strong></p>
+<hr />
 
-<p>İlk olarak bazı kurulması zorunlu paketleri kurarak başlayalım.</p>
+<h2 id="neden-google-cloud-storage"><strong>Neden Google Cloud Storage?</strong></h2>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/gcs_logo.png" alt="gcs-logo" width="200" /></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt-get <span class="nb">install </span>build-essential
+<p>Yazının kalanında “Google Cloud Storage” yerine “GCS” yazacağım. Öncelikle ne olduğundan
+bahsedelim. Wikipedia’a göre aşağıdaki gibi bir tanımı var. Bu tanım ne olduğunu
+anlamaya yetecektir diye düşünüyorum.</p>
+<blockquote>
+  <p>Google Cloud Storage, Google Cloud Platform altyapısındaki verileri depolamak ve
+bunlara erişmek için RESTful bir çevrimiçi dosya depolama web hizmetidir. Hizmet,
+Google’ın bulutunun performansını ve ölçeklenebilirliğini gelişmiş güvenlik ve
+paylaşım yetenekleriyle birleştirir</p>
+</blockquote>
 
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+<hr />
 
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev
+<h2 id="peki-biz-ne-i̇stiyorduk"><strong>Peki Biz Ne İstiyorduk?</strong></h2>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/who_we_are_meme.jpg" alt="who-we-are-meme" width="400" /></p>
 
-<span class="nb">sudo </span>add-apt-repository <span class="s2">"deb http://security.ubuntu.com/ubuntu xenial-security main"</span>
-<span class="nb">sudo </span>apt-get update
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>libjasper1 libjasper-de
-</pre></td></tr></tbody></table></code></div></div>
+<p>Gelelim asıl konuya, biz ne istiyorduk? Bizim isteğimiz gün içinde oluşan veritabanındaki
+bazı verileri yedeklemek. Yani günlük veritabanı yedeği diyebiliriz. Peki bunu nasıl yapacağız?
+Mongodb database tool içinde bulunan mongodump programını kullanarak veritabanını export
+edebileceğiz. Sonra? Sonrası için ilk planımız <a href="https://www.digitalocean.com/" target="_blank">Digital Ocean</a>‘dan
+bir ubuntu makine açıp orda yedeklemekti ancak GCS’a göre çok daha pahalıya geliyordu.
+Bizim kararımız bu noktada netleşti.</p>
 
-<p>Şimdi OpenCV kütüphanesinin github reposundan en güncel versiyonunu bilgisayarımızda açtığımız bir dizine klonlayalım. Aynı dizine gerek duyabileceğimiz OpenCV contrib dosyalarını klonlayalım.</p>
+<hr />
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="nb">mkdir </span>OpenCV
-<span class="nb">cd </span>OpenCV
+<h2 id="operasyon-başlasın-"><strong>Operasyon Başlasın 👊</strong></h2>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/maskeli-besler-irak.jpg" alt="who-we-are-meme" width="400" /></p>
 
-git clone https://github.com/opencv/opencv.git 
-git clone https://github.com/opencv/opencv_contrib.git
-</pre></td></tr></tbody></table></code></div></div>
+<p>Kararlarımızı verdikten sonra gereklilikleri sağlayıp kod yazmaya başladık. Kodu
+yazı sonunda paylaşacağım ama önce gerekliliklerden kısaca bahsedeyim. Verilerini
+elde edeceğimiz veritabanının username, password gibi bilgilerine ihtiyacımız var.
+Sonrasında GCS için credential işlemleri ve gerekli GCS kütüphanesini yüklememiz
+gerekiyor. Bunları yaptıktan sonra kodumuzu yazabiliriz.</p>
 
-<p>Şimdi dosyaları derleyip çalıştıracağımız bir dizin oluşturalım.</p>
+<p>Gelelim koda.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>opencv
-<span class="nb">pwd</span>                <span class="c"># Bu komut nerede olduğunuzu görmenizi sağlar</span>
-~/OpenCV/opencv/   <span class="c"># Bu ise olmanız gereken dizin. Yani klonladığınız OpenCV'nin içinde olmanız gerek.</span>
+<pre><code class="language-Python">import os
+from dotenv import load_dotenv
+from google.cloud import storage
+from bson.objectid import ObjectId
+from datetime import datetime
+import time
 
-<span class="nb">mkdir </span>build
-<span class="nb">cd </span>build
-</pre></td></tr></tbody></table></code></div></div>
+load_dotenv()
 
-<p>Derlemek için OpenCV için gerekli bazı ayarlar yapmamız gerek.</p>
+DB_USER = os.environ['DB_USER']
+DB_PASSWORD = os.environ['DB_PASSWORD']
+DB_NAME = os.environ['DB_NAME']
+BUCKET_NAME = os.environ['BUCKET_NAME']
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>cmake <span class="nt">-D</span> <span class="nv">CMAKE_BUILD_TYPE</span><span class="o">=</span>RELEASE <span class="nt">-D</span> <span class="nv">CMAKE_INSTALL_PREFIX</span><span class="o">=</span>/usr/local <span class="nt">-D</span> <span class="nv">OPENCV_EXTRA_MODULES_PATH</span><span class="o">=</span>/home/kullaniciAdiniz/OpenCV/opencv_contrib/modules /home/kullaniciAdiniz/OpenCV/opencv/
-</pre></td></tr></tbody></table></code></div></div>
 
-<p>Sonlara yaklaşıyoruz hadi bakalım 🙂</p>
+def mongodump_export(archive_file):
+    today = datetime.today()
+    date = datetime(today.year, today.month, today.day, 0, 0, 0)
+    # Required for ignoring the documents older than 1 day
+    idMin = ObjectId(format(int(date.timestamp()), 'x') + "0000000000000000")
 
-<p>Bu işlem biraz zaman alacak 🙂</p>
+    # Using --out options to fix the file name
+    mongodump_query = """'{"_id": {'$gte': {}}}'""".format(idMin)
+    DB_DUMP_COMMAND = """
+        mongodump --uri "mongodb://uri" --collection collection_name --out {} --query {}
+        """.format(DB_USER, DB_PASSWORD, DB_NAME, archive_file, mongodump_query)
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>make <span class="nt">-j2</span>
-</pre></td></tr></tbody></table></code></div></div>
+    os.system(DB_DUMP_COMMAND)
 
-<p>Son olarak;</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>make <span class="nt">-j2</span> <span class="nb">install</span>
-</pre></td></tr></tbody></table></code></div></div>
+def list_blobs(bucket_name):
+    """Lists all the blobs in the bucket."""
 
-<p>Evvvettt bitti 🙂 Hemen kontrol etmek için şu komutu yazalım;</p>
+    storage_client = storage.Client.from_service_account_json(
+        'credentials.json')
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>pkg-config <span class="nt">--modversion</span> opencv
-</pre></td></tr></tbody></table></code></div></div>
+    # Note: Client.list_blobs requires at least package version 1.17.0.
+    return storage_client.list_blobs(bucket_name)
 
-<p>Umarım işlemler başarılı olmuştur. Şimdi ise python ile kullanabilmeniz için ufak bir kurulum yapalım.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>pip3 <span class="nb">install </span>opencv-python
-pip3 <span class="nb">install </span>opencv-contrib-python
-</pre></td></tr></tbody></table></code></div></div>
+def upload_backup_file(bucket_name, archive_file, destination_blob):
+    """Uploads a file to the bucket."""
 
-<p>Herkese iyi çalışmalar. 🙂</p>
+    storage_client = storage.Client.from_service_account_json(
+        'credentials.json')
+    bucket = storage_client.bucket(bucket_name)
+    blob = bucket.blob(destination_blob)
+    blob.upload_from_filename(archive_file)
+    print("File {} uploaded to {}.".format(archive_file, destination_blob))
+
+
+def remove_old_file(bucket_name, archive_file):
+    """Deletes a blob from the bucket."""
+
+    storage_client = storage.Client.from_service_account_json(
+        'credentials.json')
+
+    bucket = storage_client.bucket(bucket_name)
+    blob = bucket.blob(archive_file)
+    blob.delete()
+
+    print("Blob {} deleted.".format(archive_file))
+
+
+def start():
+    archive_file_name = "mongo_backup_" + time.strftime('%x').replace('/', '_')
+    destination_blob_name = archive_file_name
+    mongodump_export(archive_file_name)
+    upload_backup_file(BUCKET_NAME, archive_file_name, destination_blob_name)
+
+
+if __name__ == '__main__':
+    start()
+</code></pre>
+
+<p>Kod karmaşık olmadığı için anlaşılır diye düşünüyorum. Kısaca bahsedeyim, veritabanımızı
+export eden fonksyion “mongodump_export”un yaptığı şey mongodump komutunu çalıştırmak. Başka
+bir görevi yok. “list_blobs” isimli fonksiyon ise bucket içindeki dosyaları listelememizi
+sağlıyor. “upload_backup_file” ise istediğimiz dosyanın bucketa yüklenmesini sağlıyor.
+“remove_old_file” isminden anlaşıldığı gibi eski dosyaları silmemizi sağlıyor. Tabi bunu
+dosya ismini parametre olarak alarak yapıyor.</p>
+
+<p>Kodumuz bundan ibaret. Serverda bu kodun günlük olarak çalışmasını sağlamamız yeterli.
+Anlamadığınız bir yer varsa sorabilirsiniz. Umarım işinize yaramıştır. İyi pazarlar dilerim :)</p>
 
         
       </div>
@@ -535,7 +581,7 @@ pip3 <span class="nb">install </span>opencv-contrib-python
         <div class="post-meta mb-3">
           <i class="far fa-folder-open fa-fw mr-1"></i>
           
-            <a href='/categories/gnu-linux/'>GNU/Linux</a>
+            <a href='/categories/python/'>Python</a>
         </div>
         
 
@@ -544,14 +590,14 @@ pip3 <span class="nb">install </span>opencv-contrib-python
         <div class="post-tags">
           <i class="fa fa-tags fa-fw mr-1"></i>
           
-          <a href="/tags/gnu-linux/"
-            class="post-tag no-text-decoration" >gnu/linux</a>
+          <a href="/tags/python/"
+            class="post-tag no-text-decoration" >python</a>
           
-          <a href="/tags/ubuntu/"
-            class="post-tag no-text-decoration" >ubuntu</a>
+          <a href="/tags/mongodb/"
+            class="post-tag no-text-decoration" >mongodb</a>
           
-          <a href="/tags/opencv/"
-            class="post-tag no-text-decoration" >opencv</a>
+          <a href="/tags/google-cloud-storage/"
+            class="post-tag no-text-decoration" >google cloud storage</a>
           
           </div>
         
@@ -583,25 +629,25 @@ pip3 <span class="nb">install </span>opencv-contrib-python
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Ubuntu 17.10 Üzerine OpenCV Kurulumu - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=Mongodb Veritabanınızı Google Cloud Storage'a Aktarın - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Ubuntu 17.10 Üzerine OpenCV Kurulumu - Ali İlteriş Keskin&u=https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Mongodb Veritabanınızı Google Cloud Storage'a Aktarın - Ali İlteriş Keskin&u=https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text=Ubuntu 17.10 Üzerine OpenCV Kurulumu - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=Mongodb Veritabanınızı Google Cloud Storage'a Aktarın - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
     
       
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" data-toggle="tooltip" data-placement="top"
           title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin">
           <i class="fa-fw fab fa-linkedin"></i>
         </a>
@@ -1088,6 +1134,11 @@ pip3 <span class="nb">install </span>opencv-contrib-python
   </div> <!-- .access -->
 
   
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">İçindekiler</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
@@ -1126,46 +1177,46 @@ pip3 <span class="nb">install </span>opencv-contrib-python
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
   
 
   
@@ -1219,6 +1270,19 @@ pip3 <span class="nb">install </span>opencv-contrib-python
   
     
     
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
       
       
         
@@ -1237,7 +1301,7 @@ pip3 <span class="nb">install </span>opencv-contrib-python
       
       
       <div class="card">
-        <a href="/posts/neden-gnu-linux/">
+        <a href="/posts/django-nedir-nasil-kurulur/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1254,13 +1318,13 @@ pip3 <span class="nb">install </span>opencv-contrib-python
   
 
   
-    Jul  5, 2017
+    Sep 22, 2017
   
 
-  <i class="unloaded">2017-07-05T11:39:00+03:00</i>
+  <i class="unloaded">2017-09-22T16:19:00+03:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Neden GNU/Linux?</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Django Nedir? Nasıl Kurulur?</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1271,11 +1335,53 @@ pip3 <span class="nb">install </span>opencv-contrib-python
 
                 
 
-“Hızlı, güvenilir, ücretsiz” Bu sözleri GNU/Linux kullananlardan duymuşsunuzdur muhtemelen. Bunlar doğru ancak biraz daha açalım bu konuyu. Neden GNU/Linux kullanayım?
+Django Nedir?
 
-GNU/Linux Özgürdür
+Django python ile yazılmış bir web çatısıdır (framework). Özgür ve açık kaynak kodludur. Arkasında büyük bir topluluk geliştirilmesi için uğraşmaktadır. Django MVT mimarisi üzerine...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/heybooster-about/">
+          <div class="card-body">
+            <!--
+  Date format snippet
 
-Bu bel...
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Apr 11
+  
+
+  <i class="unloaded">2021-04-11T18:30:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Merhaba arkadaşlar, bu yazımda heybooster
+ile neler yapabileceğinizden ve heybooster’ı kimlerin kullanabileceğinden ve heybooster’ı
+nasıl kullanabileceğinizden bahsedeceğim. Gelin etraflıca bir kon...
               </p>
             </div>
           </div>
@@ -1324,51 +1430,6 @@ Bu bel...
         </a>
       </div>
     
-      
-      
-      <div class="card">
-        <a href="/posts/google-cloud-storage-mongodb-data-transfer/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago small"
-  >
-
-  
-  
-
-  
-    Apr 17
-  
-
-  <i class="unloaded">2021-04-17T18:30:00+03:00</i>
-
-</span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                Merhaba arkadaşlar, bu yazımda heybooster‘ın
-veritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızı
-Google Cloud Storageda
-açtığımız bir bucketa yolluyor. Detayları aşağıd...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
     </div> <!-- .card-deck -->
   </div> <!-- #related-posts -->
 
@@ -1385,15 +1446,15 @@ açtığımız bir bucketa yolluyor. Detayları aşağıd...
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/posts/usenet-nedir/" class="btn btn-outline-primary">
-    <p>Usenet (User’s Network) Nedir?</p>
+  <a href="/posts/heybooster-about/" class="btn btn-outline-primary">
+    <p>Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?</p>
   </a>
   
 
   
-  <a href="/posts/gnu-linux-dosya-dizin-yapisi/" class="btn btn-outline-primary">
-    <p>GNU/Linux Sistemlerde Dosya ve Dizin Yapısı</p>
-  </a>
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
   
 
 </div>
@@ -1420,8 +1481,8 @@ açtığımız bir bucketa yolluyor. Detayları aşağıd...
     scriptUrl: '//ilteriskesk.disqus.com/embed.js',
 
     disqusConfig: function() {
-      this.page.url = 'https://ilteriskeskin.github.io/posts/ubuntu-opencv-kurulum/';
-      this.page.identifier = '/posts/ubuntu-opencv-kurulum/';
+      this.page.url = 'https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/';
+      this.page.identifier = '/posts/google-cloud-storage-mongodb-data-transfer/';
     }
   };
 
