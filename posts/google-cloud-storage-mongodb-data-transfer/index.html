@@ -414,7 +414,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="529 words">2 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="590 words">3 min</span>
 
 
           <!-- page views -->
@@ -492,6 +492,8 @@ from google.cloud import storage
 from bson.objectid import ObjectId
 from datetime import datetime
 import time
+from os import listdir
+from os.path import isfile, join
 
 load_dotenv()
 
@@ -501,18 +503,16 @@ DB_NAME = os.environ['DB_NAME']
 BUCKET_NAME = os.environ['BUCKET_NAME']
 
 
-def mongodump_export(archive_file):
+def mongodump_reports(archive_file):
     today = datetime.today()
     date = datetime(today.year, today.month, today.day, 0, 0, 0)
     # Required for ignoring the documents older than 1 day
     idMin = ObjectId(format(int(date.timestamp()), 'x') + "0000000000000000")
 
     # Using --out options to fix the file name
-    mongodump_query = """'{"_id": {'$gte': {}}}'""".format(idMin)
     DB_DUMP_COMMAND = """
-        mongodump --uri "mongodb://uri" --collection collection_name --out {} --query {}
-        """.format(DB_USER, DB_PASSWORD, DB_NAME, archive_file, mongodump_query)
-
+    mongodump --uri "mongodb://{}:{}@heybooster-shard-00-00-yue91.mongodb.net:27017,heybooster-shard-00-01-yue91.mongodb.net:27017,heybooster-shard-00-02-yue91.mongodb.net:27017/{}?authSource=admin&amp;replicaSet=heybooster-shard-0&amp;retryWrites=true&amp;ssl=true&amp;w=majority" --collection reports --out {} --query""".format(
+        DB_USER, DB_PASSWORD, DB_NAME, archive_file) + """ '{"_id": {"$gte": ObjectId("'""" + str(idMin) + """'")}}'"""
     os.system(DB_DUMP_COMMAND)
 
 
@@ -532,12 +532,21 @@ def upload_backup_file(bucket_name, archive_file, destination_blob):
     storage_client = storage.Client.from_service_account_json(
         'credentials.json')
     bucket = storage_client.bucket(bucket_name)
-    blob = bucket.blob(destination_blob)
-    blob.upload_from_filename(archive_file)
+
+    current = os.getcwd()
+    a = listdir(archive_file)[0]
+    path = current + "/" + archive_file + "/" + a
+    files = [f for f in listdir(path) if isfile(join(path, f))]
+    for file in files:
+        archive_file = path + '/' + file
+        destination_blob = destination_blob + '_' + file
+        blob = bucket.blob(destination_blob)
+        blob.upload_from_filename(archive_file)
+
     print("File {} uploaded to {}.".format(archive_file, destination_blob))
 
 
-def remove_old_file(bucket_name, archive_file):
+def remove_old_reports(bucket_name, archive_file):
     """Deletes a blob from the bucket."""
 
     storage_client = storage.Client.from_service_account_json(
@@ -553,7 +562,7 @@ def remove_old_file(bucket_name, archive_file):
 def start():
     archive_file_name = "mongo_backup_" + time.strftime('%x').replace('/', '_')
     destination_blob_name = archive_file_name
-    mongodump_export(archive_file_name)
+    mongodump_reports(archive_file_name)
     upload_backup_file(BUCKET_NAME, archive_file_name, destination_blob_name)
 
 
@@ -562,7 +571,7 @@ if __name__ == '__main__':
 </code></pre>
 
 <p>Kod karmaşık olmadığı için anlaşılır diye düşünüyorum. Kısaca bahsedeyim, veritabanımızı
-export eden fonksyion “mongodump_export”un yaptığı şey mongodump komutunu çalıştırmak. Başka
+export eden fonksiyon “mongodump_export”un yaptığı şey mongodump komutunu çalıştırmak. Başka
 bir görevi yok. “list_blobs” isimli fonksiyon ise bucket içindeki dosyaları listelememizi
 sağlıyor. “upload_backup_file” ise istediğimiz dosyanın bucketa yüklenmesini sağlıyor.
 “remove_old_file” isminden anlaşıldığı gibi eski dosyaları silmemizi sağlıyor. Tabi bunu
@@ -570,6 +579,10 @@ dosya ismini parametre olarak alarak yapıyor.</p>
 
 <p>Kodumuz bundan ibaret. Serverda bu kodun günlük olarak çalışmasını sağlamamız yeterli.
 Anlamadığınız bir yer varsa sorabilirsiniz. Umarım işinize yaramıştır. İyi pazarlar dilerim :)</p>
+
+<ul>
+  <li>Typo düzeltmesi için teşekkürler <a href="https://twitter.com/yasarcelepp" target="_blank">@Yaşar</a></li>
+</ul>
 
         
       </div>
