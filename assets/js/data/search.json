@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Python İle Gmail Api Kullanarak Mail Gönder",
+    "url": "/posts/python-gmail-api/",
+    "categories": "Python",
+    "tags": "python, gmail",
+    "date": "2021-05-02 01:20:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Merhaba arkadaşlar, bu yazımda heybooster‘ayeni ekleyeceğimiz email yollama özelliğini Python ile nasıl yaptığımızdan bahsedeceğim.Örnek bir kod ile nasıl mail atabileceğinizi, mail template hazırlamayı ve uygulama içingerekli kimlik bilgilerini nasıl alacağınızı göstereceğim. İyi okumalar dileri..."
+  },
+  
+  {
     "title": "Mongodb Veritabanınızı Google Cloud Storage&#39;a Aktarın",
     "url": "/posts/google-cloud-storage-mongodb-data-transfer/",
     "categories": "Python",

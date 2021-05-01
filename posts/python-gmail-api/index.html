@@ -23,27 +23,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Hakkımda" />
+<meta property="og:title" content="Python İle Gmail Api Kullanarak Mail Gönder" />
 <meta name="author" content="Ali İlteriş Keskin" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<meta property="og:description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<link rel="canonical" href="https://ilteriskeskin.github.io/tabs/about/" />
-<meta property="og:url" content="https://ilteriskeskin.github.io/tabs/about/" />
+<meta name="description" content="Merhaba arkadaşlar, bu yazımda heybooster‘a yeni ekleyeceğimiz email yollama özelliğini Python ile nasıl yaptığımızdan bahsedeceğim. Örnek bir kod ile nasıl mail atabileceğinizi, mail template hazırlamayı ve uygulama için gerekli kimlik bilgilerini nasıl alacağınızı göstereceğim. İyi okumalar dilerim :)" />
+<meta property="og:description" content="Merhaba arkadaşlar, bu yazımda heybooster‘a yeni ekleyeceğimiz email yollama özelliğini Python ile nasıl yaptığımızdan bahsedeceğim. Örnek bir kod ile nasıl mail atabileceğinizi, mail template hazırlamayı ve uygulama için gerekli kimlik bilgilerini nasıl alacağınızı göstereceğim. İyi okumalar dilerim :)" />
+<link rel="canonical" href="https://ilteriskeskin.github.io/posts/python-gmail-api/" />
+<meta property="og:url" content="https://ilteriskeskin.github.io/posts/python-gmail-api/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-05-02T01:24:31+03:00" />
+<meta property="article:published_time" content="2021-05-02T01:20:00+03:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Hakkımda" />
+<meta property="twitter:title" content="Python İle Gmail Api Kullanarak Mail Gönder" />
 <meta name="twitter:site" content="@ilteriskeskin" />
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Hakkımda","url":"https://ilteriskeskin.github.io/tabs/about/","datePublished":"2021-05-02T01:24:31+03:00","dateModified":"2021-05-02T01:24:31+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/tabs/about/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Python İle Gmail Api Kullanarak Mail Gönder","url":"https://ilteriskeskin.github.io/posts/python-gmail-api/","datePublished":"2021-05-02T01:20:00+03:00","dateModified":"2021-05-02T01:20:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/python-gmail-api/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Merhaba arkadaşlar, bu yazımda heybooster‘a yeni ekleyeceğimiz email yollama özelliğini Python ile nasıl yaptığımızdan bahsedeceğim. Örnek bir kod ile nasıl mail atabileceğinizi, mail template hazırlamayı ve uygulama için gerekli kimlik bilgilerini nasıl alacağınızı göstereceğim. İyi okumalar dilerim :)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Hakkımda | Ali İlteriş Keskin
+  <title>Python İle Gmail Api Kullanarak Mail Gönder | Ali İlteriş Keskin
   </title>
 
   <!--
@@ -119,9 +119,14 @@
 
 
 
-<link rel="preload" href="/assets/css/page.css" as="style">
-<link rel="stylesheet" href="/assets/css/page.css">
+<link rel="preload" href="/assets/css/post.css" as="style">
+<link rel="stylesheet" href="/assets/css/post.css">
 
+
+  
+    <link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" />
+  
 
 
 
@@ -144,7 +149,7 @@
 
 
 
-<script async src="/assets/js/page.min.js"></script>
+<script async src="/assets/js/post.min.js"></script>
 
 
 
@@ -215,7 +220,7 @@
       </a>
     </li> <!-- .nav-item -->
     
-    <li class="nav-item active">
+    <li class="nav-item">
       <a href="/tabs/about/" class="nav-link">
         <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i>
         <span>HAKKIMDA</span>
@@ -295,14 +300,14 @@
         
         <span>
           <a href="/">
-            Home
+            Posts
           </a>
         </span>
         
       
 
       
-        <span>Hakkımda</span>
+        <span>Python İle Gmail Api Kullanarak Mail Gönder</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -310,7 +315,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Hakkımda
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -353,49 +358,281 @@
 
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
-    
-      <h1 class="dynamic-title">Hakkımda</h1>
+
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
+
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+      <h1 data-toc-skip>Python İle Gmail Api Kullanarak Mail Gönder</h1>
+
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sun, May  2, 2021,  1:20 AM +0300"
+  >
+
+  
+  
+
+  
+    May  2
+  
+
+  <i class="unloaded">2021-05-02T01:20:00+03:00</i>
+
+</span>
+          by
+          <span class="author">
+            Ali İlteriş Keskin
+          </span>
+        </div>
+
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="349 words">1 min</span>
+
+
+          <!-- page views -->
+          
+
+        </div>
+
+      </div> <!-- .post-meta -->
+
       <div class="post-content">
-        <p><img src="/assets/img/sample/pp.jpeg" alt="upload-image" style="border-radius:100%" /></p>
 
-<p>Merhaba, ben Ali İlteriş Keskin. 5 yıldır yazılım geliştirici olarak çalışıyorum. Şu anda 
-<a href="https://heybooster.ai" target="_blank">heybooster</a>‘da yazılım geliştirici olarak çalışıyorum.
-Daha çok web alanında kodluyorum. Başlıca kullandığım dil ve frameworkler;
-<a href="https://www.python.org/" target="_blak">Python</a>, 
-<a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blak">Flask</a>, 
-<a href="https://www.djangoproject.com/" target="_blak">Django</a>,
-<a href="https://vuejs.org/" target="_blak">Vue.js</a>.</p>
+        <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+        
+          
+          <p>Merhaba arkadaşlar, bu yazımda <a href="https://app.heybooster.ai" target="_blank">heybooster</a>‘a
+yeni ekleyeceğimiz email yollama özelliğini Python ile nasıl yaptığımızdan bahsedeceğim.
+Örnek bir kod ile nasıl mail atabileceğinizi, mail template hazırlamayı ve uygulama için
+gerekli kimlik bilgilerini nasıl alacağınızı göstereceğim. İyi okumalar dilerim :)</p>
 
-<blockquote>
-  <p>Özgür yazılım felsefesini benimsiyorum ve destekliyorum.</p>
-</blockquote>
+<hr />
+<h2 id="gmail-api-i̇çin-kimlik-bilgilerini-oluştur"><strong>Gmail API İçin Kimlik Bilgilerini Oluştur</strong></h2>
 
-<blockquote>
-  <p>5 yıldır windows kullanmıyorum ve bunun haklı gururunu yaşıyorum.</p>
-</blockquote>
+<p>İlk olarak <a href="https://console.cloud.google.com/apis/credentials">adresine</a> giriyoruz ve create
+credentials diyoruz. Açılan menüden OAuth client ID seçeneğini seçiyoruz. Aşağıdaki gibi
+bilgilerimizi girdikten sonra create diyebiliriz.</p>
 
-<blockquote>
-  <p>Şu anda Linux Mint 20 XFCE ve Manjaro XFCE 20.2 dağıtımlarını kullanıyorum.</p>
-</blockquote>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/gmail_api1.png" alt="upload-image" /></p>
 
-<blockquote>
-  <p>Kendime ait bir SaaS ürünü yaratma hedefindeyim.</p>
-</blockquote>
+<p>Sonraki adımımız ise oluşan credentials dosyasını indirmek. Dosyayı kodunuz ile aynı dizine
+indirmeli ve anlaşılır bir isim (credentials.json vb.) vermelisiniz. Kimlik bilgileri ile ilgili
+yapacaklarımız bu kadar. Hemen sonraki adıma  geçelim.</p>
 
-<blockquote>
-  <p>Diplomanın gereksiz olduğunu, diplomasız da bu işlerin yürüyeceğini düşünüyorum.</p>
-</blockquote>
+<h2 id="gerekli-kütüphanelerin-kurulması"><strong>Gerekli Kütüphanelerin Kurulması</strong></h2>
 
-<blockquote>
-  <p>Benimle görüşmek için <a href="https://superpeer.com/ilteriskeskin">Superpeer</a>‘dan randevu alabilirsin.</p>
-</blockquote>
+<p>Projenizde kullanacağınız kütüphanelerin kurulması gerekli. Bunun için aşağıdaki komutu
+çalıştırmanız yeterli olacaktır.</p>
 
+<pre><code class="language-Shell">pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+</code></pre>
+
+<p>Evet şimdi gerekli kütüphaneleri de kurduğumuza göre gelelim bu işin kod kısmına.</p>
+
+<h2 id="kodlar"><strong>Kodlar</strong></h2>
+
+<pre><code class="language-Python">from __future__ import print_function
+import os.path
+from googleapiclient.discovery import build
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from email.mime.text import MIMEText
+import base64
+
+
+SCOPES = ['https://www.googleapis.com/auth/gmail.send',
+          'https://www.googleapis.com/auth/gmail.readonly']
+
+def create_message(sender, to, subject, message_text):
+    message = MIMEText(message_text, 'html') # Sondaki html ifadesi html mesajınızı formatlamayı sağlamaktadır.
+    message['to'] = to
+    message['from'] = sender
+    message['subject'] = subject
+    raw_message = base64.urlsafe_b64encode(message.as_bytes())
+    return {'raw': raw_message.decode("utf-8")}
+
+
+def send_message(service, user_id, message):
+    print(user_id)
+    print(message)
+    message = (service.users().messages().send(userId=user_id, body=message).execute())
+    print('Message Id: {}'.format(message['id']))
+    return message
+
+
+def main():
+    creds = None
+    if os.path.exists('token.json'):
+        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(
+                'credentials.json', SCOPES)
+            creds = flow.run_local_server(port=0)
+        with open('token.json', 'w') as token:
+            token.write(creds.to_json())
+
+    service = build('gmail', 'v1', credentials=creds)
+    gonderici = 'gonderen@gmail.com'
+    alici = 'alici@gmail.com'
+    konu = 'Ayda 15.000€ Kazanmak İster misin?'
+    mesaj = """
+    &lt;html&gt;
+      &lt;head&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Test mesajı&lt;/h1&gt;
+        &lt;br&gt;
+        &lt;p&gt;Test mesajı&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    """
+    message = create_message(gonderici, alici, konu, mesaj)
+    send_message(service, 'me', message)
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+
+<p>Yukarıdaki kodda <strong>main</strong> fonksiyonu credentials.json dosyası kullanılarak gönderici
+mail adresinizde oturum açıp gerekli izinleri vermenizi ve gerekli token.json dosyasının
+oluşmasını sağlamaktadır. <strong>create_message</strong> fonksiyonu ise mesajını oluşturup gönderilecek
+formata getirmeyi sağlamaktadır. <strong>send_message</strong> ise tahmin ettiğiniz gibi mesajınızın
+yollanmasını sağlamaktadır :)</p>
+
+<p>Umarım işinize yaramıştır. Aklınıza takılan soruları herhangi bir yerden sorabilirsiniz.
+İyi çalışmalar dilerim :)</p>
+
+        
       </div>
+
+      <div class="post-tail-wrapper text-muted">
+
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/python/'>Python</a>
+        </div>
+        
+
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/python/"
+            class="post-tag no-text-decoration" >python</a>
+          
+          <a href="/tags/gmail/"
+            class="post-tag no-text-decoration" >gmail</a>
+          
+          </div>
+        
+
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
+
+          <!--
+ Post sharing snippet
+
+ v2.1
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
+    
+
+    
+      
+        <a href="https://twitter.com/intent/tweet?text=Python İle Gmail Api Kullanarak Mail Gönder - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/python-gmail-api/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+    
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Python İle Gmail Api Kullanarak Mail Gönder - Ali İlteriş Keskin&u=https://ilteriskeskin.github.io/posts/python-gmail-api/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://telegram.me/share?text=Python İle Gmail Api Kullanarak Mail Gönder - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/python-gmail-api/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
+      
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ilteriskeskin.github.io/posts/python-gmail-api/" data-toggle="tooltip" data-placement="top"
+          title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin">
+          <i class="fa-fw fab fa-linkedin"></i>
+        </a>
+    
+
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
+
+  </span>
+</div>
+
+
+        </div><!-- .post-tail-bottom -->
+
+      </div><!-- div.post-tail -->
+
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
+
+  
+
+  
 
   <!--
   The Pannel on right side (Desktop views)
@@ -860,13 +1097,388 @@ Daha çok web alanında kodluyorum. Başlıca kullandığım dil ve frameworkler
   </div> <!-- .access -->
 
   
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">İçindekiler</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+
+ v2.0
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+  
+    
+    
+  
+    
+    
+      
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+          
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Daha Fazla Okuma</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/django-nedir-nasil-kurulur/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Sep 22, 2017
+  
+
+  <i class="unloaded">2017-09-22T16:19:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Django Nedir? Nasıl Kurulur?</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+
+Django Nedir?
+
+Django python ile yazılmış bir web çatısıdır (framework). Özgür ve açık kaynak kodludur. Arkasında büyük bir topluluk geliştirilmesi için uğraşmaktadır. Django MVT mimarisi üzerine...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/google-cloud-storage-mongodb-data-transfer/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Apr 17
+  
+
+  <i class="unloaded">2021-04-17T18:30:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Merhaba arkadaşlar, bu yazımda heybooster‘ın
+veritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızı
+Google Cloud Storageda
+açtığımız bir bucketa yolluyor. Detayları aşağıd...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/heybooster-about/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Apr 11
+  
+
+  <i class="unloaded">2021-04-11T18:30:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Merhaba arkadaşlar, bu yazımda heybooster
+ile neler yapabileceğinizden ve heybooster’ı kimlerin kullanabileceğinden ve heybooster’ı
+nasıl kullanabileceğinizden bahsedeceğim. Gelin etraflıca bir kon...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+
+  v2.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/google-cloud-storage-mongodb-data-transfer/" class="btn btn-outline-primary">
+    <p>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</p>
+  </a>
+  
+
+  
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
+  
+
 </div>
 
+    
+      <!--
+  The Disqus lazy loading.
+  Powered by: https://osvaldas.info/lazy-loading-disqus-comments
+  v2.0
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2019 Cotes Chung
+  MIT License
+-->
 
+<div id="disqus" class="pt-2 pb-2">
+  <p class="font-italic text-center text-muted small">
+    Comments powered by <a href="https://disqus.com/">Disqus</a>.
+  </p>
+</div>
+
+<script src="/assets/js/lib/jquery.disqusloader.min.js"></script>
+<script>
+  var options = {
+    scriptUrl: '//ilteriskesk.disqus.com/embed.js',
+
+    disqusConfig: function() {
+      this.page.url = 'https://ilteriskeskin.github.io/posts/python-gmail-api/';
+      this.page.identifier = '/posts/python-gmail-api/';
+    }
+  };
+
+  $.disqusLoader('#disqus', options);
+</script>
+    
+
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
+
+<!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('#post-wrapper img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 

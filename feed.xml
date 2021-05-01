@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-04-20T13:25:19+03:00</updated>
+  <updated>2021-05-02T01:24:31+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -16,6 +16,49 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Python İle Gmail Api Kullanarak Mail Gönder</title>
+    <link href="https://ilteriskeskin.github.io/posts/python-gmail-api/" rel="alternate" type="text/html" title="Python İle Gmail Api Kullanarak Mail Gönder" />
+    <published>2021-05-02T01:20:00+03:00</published>
+  
+    <updated>2021-05-02T01:20:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/python-gmail-api/</id>
+    <content src="https://ilteriskeskin.github.io/posts/python-gmail-api/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Merhaba arkadaşlar, bu yazımda heybooster‘a
+yeni ekleyeceğimiz email yollama özelliğini Python ile nasıl yaptığımızdan bahsedeceğim.
+Örnek bir kod ile nasıl mail atabileceğinizi, mail template hazırlamayı ve uygulama için
+gerekli kimlik bilgilerini nasıl alacağınızı göstereceğim. İyi okumalar dilerim :)
+
+
+Gmail API İçin Kimlik Bilgilerini Oluştur
+
+İlk olarak adresine giriyoruz ve create
+credent...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -183,44 +226,6 @@ Herkese merhaba arkadaşlar. Bu yazımda Ubuntu’nun şuanki en güncel sürüm
 Hazırsak hemen başlayalım.
 
 NOT: Hızlı bir internete sahipken kurulum yapmanız faydalı olacak...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Usenet (User’s Network) Nedir?</title>
-    <link href="https://ilteriskeskin.github.io/posts/usenet-nedir/" rel="alternate" type="text/html" title="Usenet (User’s Network) Nedir?" />
-    <published>2018-03-13T12:33:00+03:00</published>
-  
-    <updated>2018-03-13T12:33:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/usenet-nedir/</id>
-    <content src="https://ilteriskeskin.github.io/posts/usenet-nedir/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="Usenet" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-User’s Network’un kısaltmasıdır. News diye de anılır. 1979 senesinden beri kullanılmaka olan Usenet, dünyanın en eski yaygın ve heterojen grup iletişim sistemlerinden biridir.
-
-Usenet Dünya çapında bir tartışma ortamıdır. Konuya göre ayrılmış tartışma gruplarını içermektedir. Bu gruplara haber grubu veya Newsgroup adı verilir. Bu haber gruplarına uygun yazılımlara sahip kişiler tarafından mes...
     </summary>
   
 
