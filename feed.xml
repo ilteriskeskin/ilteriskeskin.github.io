@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-10-24T18:45:31+03:00</updated>
+  <updated>2021-10-24T18:55:56+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -16,6 +16,43 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Python ile Veri Düzeltme</title>
+    <link href="https://ilteriskeskin.github.io/posts/python-veri-duzeltme/" rel="alternate" type="text/html" title="Python ile Veri Düzeltme" />
+    <published>2021-10-24T18:00:00+03:00</published>
+  
+    <updated>2021-10-24T18:00:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/python-veri-duzeltme/</id>
+    <content src="https://ilteriskeskin.github.io/posts/python-veri-duzeltme/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Herkese selamlar, bu yazımda Python ile bozuk verileri düzeltme konusundan bahsedeceğim. Uzun süredir yeni yazı 
+yazamıyorum. Bu yüzden kendimi kötü hissediyorum. Bu yazı son çözdüğüm sorunun özeti şeklinde olacak. Şu sıralar
+heybooster bir yarışma sürecinde olduğu için yoğun çalışmamız gereken 
+bir dönemdeyiz. Ne var ki, fırsat bulduğumda bir şeyler üretmeye çalışıyorum. Tabi eski motivasyonum...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -188,48 +225,6 @@ nasıl kullanabileceğinizden bahsedeceğim. Gelin etraflıca bir konuşalım.
 Heybooster Ne Yapıyor?
 Heybooster’ın yaptığı şeyi en basit şekliyle anlatmak gerekirse, kullanıcıların sitelerindeki
 gelişmeye açık senaryoları kullanıcıya gösteren, yapması gerekenleri b...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>GNU/Linux Sistemlerde Dosya ve Dizin Yapısı</title>
-    <link href="https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" rel="alternate" type="text/html" title="GNU/Linux Sistemlerde Dosya ve Dizin Yapısı" />
-    <published>2021-01-02T22:48:00+03:00</published>
-  
-    <updated>2021-01-02T22:48:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/</id>
-    <content src="https://ilteriskeskin.github.io/posts/gnu-linux-dosya-dizin-yapisi/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="GNU/Linux" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Merhaba arkadaşlar. Bu yazımda GNU/Linux bir sistemin (Ubuntu, Fedora, Linux Mint…) dosya ve dizin yapısını inceleyeceğim. GNU/Linux dağıtımı olan işletim sistemlerinin tamamında dosya ve dizin yapıları aynıdır.
-
-
-
-
-
-/ (Root-Kök) Dizini
-
-Diğer tüm dizinleri kapsayan, en büyük ebeveyn dizin / (root) dizinidir. Altında 15-16 dizin bulunur. / (root) dizininin silinmesi tüm sisteminizin silinmesi d...
     </summary>
   
 

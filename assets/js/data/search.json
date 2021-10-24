@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Python ile Veri Düzeltme",
+    "url": "/posts/python-veri-duzeltme/",
+    "categories": "Python",
+    "tags": "python, python3, difflib, gin, api",
+    "date": "2021-10-24 18:00:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Herkese selamlar, bu yazımda Python ile bozuk verileri düzeltme konusundan bahsedeceğim. Uzun süredir yeni yazı yazamıyorum. Bu yüzden kendimi kötü hissediyorum. Bu yazı son çözdüğüm sorunun özeti şeklinde olacak. Şu sıralarheybooster bir yarışma sürecinde olduğu için yoğun çalışmamız gereken bir..."
+  },
+  
+  {
     "title": "Go Gin Web Frameworku ile Hello World",
     "url": "/posts/go-gin-api/",
     "categories": "Go",
