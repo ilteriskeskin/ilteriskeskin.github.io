@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-10-24T18:55:56+03:00</updated>
+  <updated>2021-12-13T21:02:45+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -16,6 +16,49 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Üç Büyücü Turnuvası | Açık Kaynak Hackathon</title>
+    <link href="https://ilteriskeskin.github.io/posts/diminuendo/" rel="alternate" type="text/html" title="Üç Büyücü Turnuvası | Açık Kaynak Hackathon" />
+    <published>2021-12-12T18:00:00+03:00</published>
+  
+    <updated>2021-12-12T18:00:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/diminuendo/</id>
+    <content src="https://ilteriskeskin.github.io/posts/diminuendo/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Herkese iyi pazarlar. Bu yazımda Teknasyo’nun düzenlediği 
+Üç Büyücü Turnuvası isimli açık kaynak hackathonda 
+geliştirdiğimiz projeden bahsedeceğim. Tabii bir de Üç Büyücü Turnuvasında neler yaşadığımızdan bahsedeceğim. 
+Hazırsak başlayalım.
+
+
+
+Üç Büyücü Turnuvasında Neler Yaptık?
+
+Kod yazdık. Bol bol kod yazıp bugfix çıktık. Tabii hackathon ekibi haxball ve amongus turnuvası düzenledi. Eğlenc...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -181,50 +224,6 @@ Neden Mongodb?
 Bu yazı tek tek neyin ne olduğunu açıklayan bir yazı olmayacak ancak kısaca yazıda
 geçen teknolojilerden bahsetmek istiyorum. Mongodb
 birçok programlama diline destek...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?</title>
-    <link href="https://ilteriskeskin.github.io/posts/heybooster-about/" rel="alternate" type="text/html" title="Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?" />
-    <published>2021-04-11T18:30:00+03:00</published>
-  
-    <updated>2021-04-11T18:30:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/heybooster-about/</id>
-    <content src="https://ilteriskeskin.github.io/posts/heybooster-about/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="heybooster" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Merhaba arkadaşlar, bu yazımda heybooster
-ile neler yapabileceğinizden ve heybooster’ı kimlerin kullanabileceğinden ve heybooster’ı
-nasıl kullanabileceğinizden bahsedeceğim. Gelin etraflıca bir konuşalım.
-
-
-
-
-
-Heybooster Ne Yapıyor?
-Heybooster’ın yaptığı şeyi en basit şekliyle anlatmak gerekirse, kullanıcıların sitelerindeki
-gelişmeye açık senaryoları kullanıcıya gösteren, yapması gerekenleri b...
     </summary>
   
 

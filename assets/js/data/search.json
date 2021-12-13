@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Üç Büyücü Turnuvası | Açık Kaynak Hackathon",
+    "url": "/posts/diminuendo/",
+    "categories": "Python",
+    "tags": "python, python3, flask, url-shortener, diminuendo, ucbuyucuturnuvasi",
+    "date": "2021-12-12 18:00:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Herkese iyi pazarlar. Bu yazımda Teknasyo’nun düzenlediği Üç Büyücü Turnuvası isimli açık kaynak hackathonda geliştirdiğimiz projeden bahsedeceğim. Tabii bir de Üç Büyücü Turnuvasında neler yaşadığımızdan bahsedeceğim. Hazırsak başlayalım.Üç Büyücü Turnuvasında Neler Yaptık?Kod yazdık. Bol bol ko..."
+  },
+  
+  {
     "title": "Python ile Veri Düzeltme",
     "url": "/posts/python-veri-duzeltme/",
     "categories": "Python",
