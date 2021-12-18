@@ -30,6 +30,8 @@ const include = [
   
     '/tabs/about/',
   
+    '/tabs/consultancy/',
+  
 
   /*--- Icons ---*/'/assets/img/favicons/favicon.ico',
   '/assets/img/favicons/apple-icon.png',
