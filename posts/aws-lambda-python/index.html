@@ -26,8 +26,8 @@
 <meta property="og:title" content="AWS Lambda ile Python" />
 <meta name="author" content="Ali İlteriş Keskin" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Herkese iyi hafta sonları. Bir süredir heyboosterda Django ile yazdığımız bazı endpointlerini AWS Lambdaya taşıyoruz. Bu yazımda da basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️" />
-<meta property="og:description" content="Herkese iyi hafta sonları. Bir süredir heyboosterda Django ile yazdığımız bazı endpointlerini AWS Lambdaya taşıyoruz. Bu yazımda da basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️" />
+<meta name="description" content="Herkese iyi hafta sonları. Bir süredir heyboosterda Django ile yazdığımız bazı endpointleri AWS Lambdaya taşıyoruz. Bu yazımda da basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️" />
+<meta property="og:description" content="Herkese iyi hafta sonları. Bir süredir heyboosterda Django ile yazdığımız bazı endpointleri AWS Lambdaya taşıyoruz. Bu yazımda da basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️" />
 <link rel="canonical" href="https://ilteriskeskin.github.io/posts/aws-lambda-python/" />
 <meta property="og:url" content="https://ilteriskeskin.github.io/posts/aws-lambda-python/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
@@ -39,7 +39,7 @@
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"AWS Lambda ile Python","url":"https://ilteriskeskin.github.io/posts/aws-lambda-python/","datePublished":"2021-12-25T14:00:00+03:00","dateModified":"2021-12-25T14:00:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/aws-lambda-python/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Herkese iyi hafta sonları. Bir süredir heyboosterda Django ile yazdığımız bazı endpointlerini AWS Lambdaya taşıyoruz. Bu yazımda da basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://ilteriskeskin.github.io/posts/aws-lambda-python/","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/aws-lambda-python/"},"headline":"AWS Lambda ile Python","dateModified":"2021-12-25T14:00:00+03:00","datePublished":"2021-12-25T14:00:00+03:00","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Herkese iyi hafta sonları. Bir süredir heyboosterda Django ile yazdığımız bazı endpointleri AWS Lambdaya taşıyoruz. Bu yazımda da basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -437,7 +437,7 @@
         
           
           <p>Herkese iyi hafta sonları. Bir süredir <a href="https://heybooster.ai" target="_blank">heyboosterda</a>
-<a href="https://www.djangoproject.com/" target="_blank">Django</a> ile yazdığımız bazı endpointlerini
+<a href="https://www.djangoproject.com/" target="_blank">Django</a> ile yazdığımız bazı endpointleri
 <a href="https://aws.amazon.com/tr/lambda/" target="_blank">AWS Lambdaya</a> taşıyoruz. Bu yazımda da
 basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz
 bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️</p>
@@ -456,8 +456,7 @@ bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️</p>
   <p>AWS Lambda, sunucu tedarik etmeden veya yönetmeden neredeyse her tür uygulama veya arka uç hizmeti için kod çalıştırmanıza olanak tanıyan, sunucusuz, olaya dayalı bir işlem hizmetidir. Lambda’yı 200’ün üzerinde AWS hizmeti ve hizmet olarak yazılım (SaaS) uygulamasından tetikleyebilir ve yalnızca kullandığınız kadar ödeyebilirsiniz.</p>
 </blockquote>
 
-<p>Yani Lambda aslında kullandığın kadar öde mantığında çalışan ve serverless bir kod çalıştırma
-ortamı sunan AWS teknolojisidir. Ölçeklemek ve yönetmek oldukça kolaydır.</p>
+<p>Yani Lambda aslında kullandığın kadar öde mantığında çalışan ve serverless bir kod çalıştırma ortamı sunan AWS teknolojisidir. Ölçeklemek ve yönetmek oldukça kolaydır.</p>
 
 <hr />
 

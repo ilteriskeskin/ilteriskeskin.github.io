@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-12-25T14:01:52+03:00</updated>
+  <updated>2021-12-25T14:04:20+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -46,7 +46,7 @@
 
 
       Herkese iyi hafta sonları. Bir süredir heyboosterda
-Django ile yazdığımız bazı endpointlerini
+Django ile yazdığımız bazı endpointleri
 AWS Lambdaya taşıyoruz. Bu yazımda da
 basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz
 bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️
@@ -62,7 +62,7 @@ AWS’da açacağınız bir hesap ilk 1 yıl ücretsizdir.
 AWS Lambda Nedir?
 
 
-  AWS Lambda, sunucu tedari...
+  AWS Lambda, sunucu tedarik ...
     </summary>
   
 
