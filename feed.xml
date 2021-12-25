@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-12-18T16:11:07+03:00</updated>
+  <updated>2021-12-25T14:01:52+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -16,6 +16,57 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>AWS Lambda ile Python</title>
+    <link href="https://ilteriskeskin.github.io/posts/aws-lambda-python/" rel="alternate" type="text/html" title="AWS Lambda ile Python" />
+    <published>2021-12-25T14:00:00+03:00</published>
+  
+    <updated>2021-12-25T14:00:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/aws-lambda-python/</id>
+    <content src="https://ilteriskeskin.github.io/posts/aws-lambda-python/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Herkese iyi hafta sonları. Bir süredir heyboosterda
+Django ile yazdığımız bazı endpointlerini
+AWS Lambdaya taşıyoruz. Bu yazımda da
+basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuz
+bu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️
+
+
+
+Not:
+
+AWS’da açacağınız bir hesap ilk 1 yıl ücretsizdir.
+
+
+
+AWS Lambda Nedir?
+
+
+  AWS Lambda, sunucu tedari...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -179,51 +230,6 @@ Gmail API İçin Kimlik Bilgilerini Oluştur
 
 İlk olarak adresine giriyoruz ve create
 credent...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</title>
-    <link href="https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" rel="alternate" type="text/html" title="Mongodb Veritabanınızı Google Cloud Storage'a Aktarın" />
-    <published>2021-04-17T18:30:00+03:00</published>
-  
-    <updated>2021-04-17T18:30:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/</id>
-    <content src="https://ilteriskeskin.github.io/posts/google-cloud-storage-mongodb-data-transfer/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="Python" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Merhaba arkadaşlar, bu yazımda heybooster‘ın
-veritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızı
-Google Cloud Storageda
-açtığımız bir bucketa yolluyor. Detayları aşağıda konuşalım :)
-
-
-Neden Mongodb?
-
-
-Bu yazı tek tek neyin ne olduğunu açıklayan bir yazı olmayacak ancak kısaca yazıda
-geçen teknolojilerden bahsetmek istiyorum. Mongodb
-birçok programlama diline destek...
     </summary>
   
 

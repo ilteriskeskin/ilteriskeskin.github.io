@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "AWS Lambda ile Python",
+    "url": "/posts/aws-lambda-python/",
+    "categories": "Python",
+    "tags": "python, python3, aws, api, lambda, api-gateway",
+    "date": "2021-12-25 14:00:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Herkese iyi hafta sonları. Bir süredir heyboosterdaDjango ile yazdığımız bazı endpointleriniAWS Lambdaya taşıyoruz. Bu yazımda dabasit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl bir endpoint oluştururuzbu soruların cevabını vereceğim. Hazırsak kemerleri takalım ✈️Not:AWS’da açac..."
+  },
+  
+  {
     "title": "Üç Büyücü Turnuvası | Açık Kaynak Hackathon",
     "url": "/posts/diminuendo/",
     "categories": "Python",
