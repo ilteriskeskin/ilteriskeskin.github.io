@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2021-12-28T04:27:26+03:00</updated>
+  <updated>2022-01-07T09:57:52+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -12,10 +12,51 @@
   <link href="/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://ilteriskeskin.github.io" rel="alternate" type="text/html" />
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
-  <rights> © 2021 Ali İlteriş Keskin </rights>
+  <rights> © 2022 Ali İlteriş Keskin </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>AWS Lambda ile Zamanlanmış İşlemler</title>
+    <link href="https://ilteriskeskin.github.io/posts/aws-eventbridge-with-lambda-function/" rel="alternate" type="text/html" title="AWS Lambda ile Zamanlanmış İşlemler" />
+    <published>2022-01-07T06:00:00+03:00</published>
+  
+    <updated>2022-01-07T06:00:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/aws-eventbridge-with-lambda-function/</id>
+    <content src="https://ilteriskeskin.github.io/posts/aws-eventbridge-with-lambda-function/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Herkese iyi sabahlar. Daha doğrusu bana iyi sabahlar yazı kaçta çıkar emin değilim :) Bu yazıyı 
+yazmak için sabahları mesai saatimden erken kalkıyorum. Kendime böyle bir düzen kurmaya çalışıyorum.
+
+Bir süredir heyboosterda
+günlük, saatlik veya haftalık çalışmasını istediğimiz scriptleri
+AWS EventBridge ile zamanlıyoruz. 
+Bir önceki yazımda lambda function oluşturmayı
+anlatmıştım. Bugün ise lam...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -187,49 +228,6 @@ Kısaca Go
 
 Go 2009 yılında ortaya çıkan açık kaynak kodlu
 bir programlama dilidir. Statik yapılı bir dildir. Google’ın mühendisleri C++ dilindeki ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Python İle Gmail Api Kullanarak Mail Gönder</title>
-    <link href="https://ilteriskeskin.github.io/posts/python-gmail-api/" rel="alternate" type="text/html" title="Python İle Gmail Api Kullanarak Mail Gönder" />
-    <published>2021-05-02T01:20:00+03:00</published>
-  
-    <updated>2021-05-02T01:20:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/python-gmail-api/</id>
-    <content src="https://ilteriskeskin.github.io/posts/python-gmail-api/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="Python" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Merhaba arkadaşlar, bu yazımda heybooster‘a
-yeni ekleyeceğimiz email yollama özelliğini Python ile nasıl yaptığımızdan bahsedeceğim.
-Örnek bir kod ile nasıl mail atabileceğinizi, mail template hazırlamayı ve uygulama için
-gerekli kimlik bilgilerini nasıl alacağınızı göstereceğim. İyi okumalar dilerim :)
-
-
-Gmail API İçin Kimlik Bilgilerini Oluştur
-
-İlk olarak adresine giriyoruz ve create
-credent...
     </summary>
   
 

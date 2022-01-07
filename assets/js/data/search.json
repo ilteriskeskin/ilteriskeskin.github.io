@@ -1,10 +1,25 @@
 [
   
   {
+    "title": "AWS Lambda ile Zamanlanmış İşlemler",
+    "url": "/posts/aws-eventbridge-with-lambda-function/",
+    "categories": "Python",
+    "tags": "python, python3, aws, serverless, lambda, eventbridge",
+    "date": "2022-01-07 06:00:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Herkese iyi sabahlar. Daha doğrusu bana iyi sabahlar yazı kaçta çıkar emin değilim :) Bu yazıyı yazmak için sabahları mesai saatimden erken kalkıyorum. Kendime böyle bir düzen kurmaya çalışıyorum.Bir süredir heyboosterdagünlük, saatlik veya haftalık çalışmasını istediğimiz scriptleriAWS EventBrid..."
+  },
+  
+  {
     "title": "AWS Lambda ile Python",
     "url": "/posts/aws-lambda-python/",
     "categories": "Python",
-    "tags": "python, python3, aws, api, lambda, api-gateway",
+    "tags": "python, python3, aws, api, lambda, api-gateway, serverless",
     "date": "2021-12-25 14:00:00 +0300",
     
 
