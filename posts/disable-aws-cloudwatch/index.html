@@ -421,7 +421,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="380 words">2 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="375 words">2 min</span>
 
 
           <!-- page views -->
@@ -440,18 +440,19 @@
 
 <p>Önümüzdeki ilk paragraf azıcık iç dökmeli olacak isteyen atlayabilir 😢</p>
 
+<hr />
+
 <p>Herkese selam. Bu yazıya başlamadan önce süper bir motivasyonla hazırlanmıştım. Sonra kiracısı olduğum ev satıldığı için
 üç dört ay içinde çıkmam gerektiğini öğrendim ve haliyle motivasyonum epey düştü. Neyse ki derin bir nefes çekip meditasyon
-yapınca sakinleştim. Bir süre önce harika bir <strong>savaş sanatı</strong> olan <a href="https://tr.wikipedia.org/wiki/Aikido" target="_blank">Aikidoya</a>
-başladım. Meditasyon ile sakinleşmeyi de orda öğrendim diyebilirim. Bunla ilgili de bir yazı yazmayı düşünüyorum ama önce 
+yapınca sakinleştim. Bir süre önce harika bir <strong>savaş sanatı</strong> olan <a href="https://tr.wikipedia.org/wiki/Aikido" target="_blank">Aikidoya</a>	
+🥋 başladım. Meditasyon ile sakinleşmeyi de orda öğrendim diyebilirim. Bunla ilgili de bir yazı yazmayı düşünüyorum ama önce 
 biraz daha devam edeyim :)</p>
 
 <p>Neyse iç dökme seansı bitti konumuza dönebiliriz 😎</p>
 
 <p><a href="https://ilteriskeskin.github.io/posts/aws-lambda-python/" target="_blank">Bir önceki yazımda</a> lambda function oluşturmuştuk. 
 Bu yazımda ise lambda functionın sürekli olarak loglanmasının önüne geçeceğiz. Peki ya nasıl ve neden? Cevapları aşağıda bulacaksınız.
-Kahvenizi hazırlayıp devam edebilirsiniz okumaya.
-—</p>
+Kahvenizi hazırlayıp devam edebilirsiniz okumaya.</p>
 
 <p><strong>Not:</strong></p>
 
@@ -471,7 +472,7 @@ Kahvenizi hazırlayıp devam edebilirsiniz okumaya.
 
 <h2 id="neden-cloudwatchı-kapatayım-mis-gibi-log-tutuyor">Neden CloudWatch’ı Kapatayım Mis Gibi Log Tutuyor???</h2>
 
-<p>Bunun için bizim sebebimizçalışan uygulamanızdaki hataları <a href="https://sentry.io/" target="_blank">Sentry</a> gibi harika bir araçla
+<p>Bunun için bizim sebebimi uygulamalarımızdaki hataları <a href="https://sentry.io/" target="_blank">Sentry</a> gibi harika bir araçla
 tutup CloudWathc’a para vermek istemiyor olmamızdı. Yoğun kullanılan uygulamalarda her şeyi logladığı için durmadan para yakıyor.</p>
 
 <h2 id="tamam-hadi-konuya-gel-nasıl-kapatacağız">Tamam Hadi Konuya Gel! Nasıl Kapatacağız?</h2>
@@ -480,7 +481,7 @@ tutup CloudWathc’a para vermek istemiyor olmamızdı. Yoğun kullanılan uygul
 Şimdi ekran görüntüleri ile devam edeceğim.</p>
 
 <p><a href="https://ilteriskeskin.github.io/posts/aws-eventbridge-with-lambda-function/" target="_blank">Geçtimiz yazıda</a> lambda function oluşturmuştuk.
-Şimdi o lambda functionın loglarını durduracağım. Lambda functionımızı açalım ve ondan sonrasını ekran görüntüleri ile destekliyor olacağım.</p>
+Şimdi o lambda functionın loglarını durduracağım. Lambda functionımızı açalım ve devam edelim.</p>
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/cw1.png" alt="ss1" /></p>
 
@@ -489,7 +490,7 @@ tutup CloudWathc’a para vermek istemiyor olmamızdı. Yoğun kullanılan uygul
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/cw1.png" alt="ss1" /></p>
 
-<p>Gördüğünüz gibi bir sürü log oluşturmuş. Lambda functionımızın sayfasına geri dönüp bu sefer <strong>configuration</strong> menüsüne gelelim. Ordan da
+<p>Gördüğünüz gibi bir sürü log oluşturmuş. Lambda function sayfasına geri dönüp bu sefer <strong>configuration</strong> menüsüne gelelim. Ordan da
 <strong>permission</strong> sekmesine tıklayalım.</p>
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/cw3.png" alt="ss1" /></p>
