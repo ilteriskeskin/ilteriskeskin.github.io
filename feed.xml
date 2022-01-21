@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2022-01-07T09:57:52+03:00</updated>
+  <updated>2022-01-21T21:29:12+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -16,6 +16,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Amazon CloudWatch Servisini Durdurma</title>
+    <link href="https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" rel="alternate" type="text/html" title="Amazon CloudWatch Servisini Durdurma" />
+    <published>2022-01-21T13:45:00+03:00</published>
+  
+    <updated>2022-01-21T13:45:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/</id>
+    <content src="https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Cloud" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Uyarı:
+
+Önümüzdeki ilk paragraf azıcık iç dökmeli olacak isteyen atlayabilir 😢
+
+Herkese selam. Bu yazıya başlamadan önce süper bir motivasyonla hazırlanmıştım. Sonra kiracısı olduğum ev satıldığı için
+üç dört ay içinde çıkmam gerektiğini öğrendim ve haliyle motivasyonum epey düştü. Neyse ki derin bir nefes çekip meditasyon
+yapınca sakinleştim. Bir süre önce harika bir savaş sanatı olan Aikidoya...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -34,6 +74,8 @@
   
     
     <category term="Python" />
+    
+    <category term="Cloud" />
     
   
 
@@ -75,6 +117,8 @@ anlatmıştım. Bugün ise lam...
   
     
     <category term="Python" />
+    
+    <category term="Cloud" />
     
   
 
@@ -184,50 +228,6 @@ Kod yazdık. Bol bol kod yazıp bugfix çıktık. Tabii hackathon ekibi haxball 
 yazamıyorum. Bu yüzden kendimi kötü hissediyorum. Bu yazı son çözdüğüm sorunun özeti şeklinde olacak. Şu sıralar
 heybooster bir yarışma sürecinde olduğu için yoğun çalışmamız gereken 
 bir dönemdeyiz. Ne var ki, fırsat bulduğumda bir şeyler üretmeye çalışıyorum. Tabi eski motivasyonum...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Go Gin Web Frameworku ile Hello World</title>
-    <link href="https://ilteriskeskin.github.io/posts/go-gin-api/" rel="alternate" type="text/html" title="Go Gin Web Frameworku ile Hello World" />
-    <published>2021-07-23T21:20:00+03:00</published>
-  
-    <updated>2021-07-23T21:20:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/go-gin-api/</id>
-    <content src="https://ilteriskeskin.github.io/posts/go-gin-api/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="Go" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Merhaba arkadaşlar, bu yazımda yeni öğrenmeye başladığım Go diline
-ait Gin frameworku ile basit bir giriş api’ı oluşturacağım.
-Buradaki motivasyonum kendi yapacağım örneği yazıya döküp internette basit de olsa bir Türkçe yazı bulunmasını
-sağlamak.
-
-
-
-Kısaca Go
-
-Go 2009 yılında ortaya çıkan açık kaynak kodlu
-bir programlama dilidir. Statik yapılı bir dildir. Google’ın mühendisleri C++ dilindeki ...
     </summary>
   
 

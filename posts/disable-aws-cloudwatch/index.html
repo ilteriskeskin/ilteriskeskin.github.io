@@ -23,25 +23,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="aws" />
+<meta property="og:title" content="Amazon CloudWatch Servisini Durdurma" />
 <meta name="author" content="Ali İlteriş Keskin" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<meta property="og:description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<link rel="canonical" href="https://ilteriskeskin.github.io/tags/aws/" />
-<meta property="og:url" content="https://ilteriskeskin.github.io/tags/aws/" />
+<meta name="description" content="Uyarı:" />
+<meta property="og:description" content="Uyarı:" />
+<link rel="canonical" href="https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" />
+<meta property="og:url" content="https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-21T13:45:00+03:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="aws" />
+<meta property="twitter:title" content="Amazon CloudWatch Servisini Durdurma" />
 <meta name="twitter:site" content="@ilteriskeskin" />
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="MKWI2Ke4BuJSyKVEuKSdBo6P7n6cJeeRJrTNJkVMG54" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"aws","url":"https://ilteriskeskin.github.io/tags/aws/","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Amazon CloudWatch Servisini Durdurma","url":"https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/","datePublished":"2022-01-21T13:45:00+03:00","dateModified":"2022-01-21T13:45:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Uyarı:","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>aws | Ali İlteriş Keskin
+  <title>Amazon CloudWatch Servisini Durdurma | Ali İlteriş Keskin
   </title>
 
   <!--
@@ -117,9 +119,14 @@
 
 
 
-<link rel="preload" href="/assets/css/category-tag.css" as="style">
-<link rel="stylesheet" href="/assets/css/category-tag.css">
+<link rel="preload" href="/assets/css/post.css" as="style">
+<link rel="stylesheet" href="/assets/css/post.css">
 
+
+  
+    <link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" />
+  
 
 
 
@@ -142,7 +149,7 @@
 
 
 
-<script async src="/assets/js/page.min.js"></script>
+<script async src="/assets/js/post.min.js"></script>
 
 
 
@@ -300,22 +307,14 @@
         
         <span>
           <a href="/">
-            Home
-          </a>
-        </span>
-        
-      
-        
-        <span>
-          <a href="/tabs/tags/">
-            Tags
+            Posts
           </a>
         </span>
         
       
 
       
-        <span>aws</span>
+        <span>Amazon CloudWatch Servisini Durdurma</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -323,7 +322,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -366,41 +365,262 @@
 
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
+
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
+
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+      <h1 data-toc-skip>Amazon CloudWatch Servisini Durdurma</h1>
+
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Fri, Jan 21, 2022,  1:45 PM +0300"
+  >
+
+  
+  
+
+  
+    Jan 21
+  
+
+  <i class="unloaded">2022-01-21T13:45:00+03:00</i>
+
+</span>
+          by
+          <span class="author">
+            Ali İlteriş Keskin
+          </span>
+        </div>
+
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="380 words">2 min</span>
+
+
+          <!-- page views -->
+          
+
+        </div>
+
+      </div> <!-- .post-meta -->
+
+      <div class="post-content">
+
+        <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+        
+          
+          <p><strong>Uyarı:</strong></p>
+
+<p>Önümüzdeki ilk paragraf azıcık iç dökmeli olacak isteyen atlayabilir 😢</p>
+
+<p>Herkese selam. Bu yazıya başlamadan önce süper bir motivasyonla hazırlanmıştım. Sonra kiracısı olduğum ev satıldığı için
+üç dört ay içinde çıkmam gerektiğini öğrendim ve haliyle motivasyonum epey düştü. Neyse ki derin bir nefes çekip meditasyon
+yapınca sakinleştim. Bir süre önce harika bir <strong>savaş sanatı</strong> olan <a href="https://tr.wikipedia.org/wiki/Aikido" target="_blank">Aikidoya</a>
+başladım. Meditasyon ile sakinleşmeyi de orda öğrendim diyebilirim. Bunla ilgili de bir yazı yazmayı düşünüyorum ama önce 
+biraz daha devam edeyim :)</p>
+
+<p>Neyse iç dökme seansı bitti konumuza dönebiliriz 😎</p>
+
+<p><a href="https://ilteriskeskin.github.io/posts/aws-lambda-python/" target="_blank">Bir önceki yazımda</a> lambda function oluşturmuştuk. 
+Bu yazımda ise lambda functionın sürekli olarak loglanmasının önüne geçeceğiz. Peki ya nasıl ve neden? Cevapları aşağıda bulacaksınız.
+Kahvenizi hazırlayıp devam edebilirsiniz okumaya.
+—</p>
+
+<p><strong>Not:</strong></p>
+
+<p>AWS’da açacağınız bir hesap ilk 1 yıl ücretsizdir.</p>
+
+<hr />
+
+<h2 id="amazon-cloudwatch-nedir">Amazon CloudWatch Nedir?</h2>
+
+<blockquote>
+  <p>Amazon CloudWatch; DevOps mühendisleri, geliştiriciler, saha güvenilirliği mühendisleri (SRE’ler), BT yöneticileri ve ürün sahipleri için geliştirilmiş bir izleme ve gözlemlenebilirlik hizmetidir.</p>
+</blockquote>
+
+<p>Daha detaylı okumak için şu sayfaya bakmanızı öneririm <a href="https://aws.amazon.com/tr/eventbridge/" target="_blank">Amazon CloudWatch</a></p>
+
+<hr />
+
+<h2 id="neden-cloudwatchı-kapatayım-mis-gibi-log-tutuyor">Neden CloudWatch’ı Kapatayım Mis Gibi Log Tutuyor???</h2>
+
+<p>Bunun için bizim sebebimizçalışan uygulamanızdaki hataları <a href="https://sentry.io/" target="_blank">Sentry</a> gibi harika bir araçla
+tutup CloudWathc’a para vermek istemiyor olmamızdı. Yoğun kullanılan uygulamalarda her şeyi logladığı için durmadan para yakıyor.</p>
+
+<h2 id="tamam-hadi-konuya-gel-nasıl-kapatacağız">Tamam Hadi Konuya Gel! Nasıl Kapatacağız?</h2>
+
+<p>Amazon CloudWatch’u kapatmak için ne yazık ki bir buton vs koymamışlar. Yine de düşündüğümden daha kolay bir şekilde kapatabiliyormuşuz.
+Şimdi ekran görüntüleri ile devam edeceğim.</p>
+
+<p><a href="https://ilteriskeskin.github.io/posts/aws-eventbridge-with-lambda-function/" target="_blank">Geçtimiz yazıda</a> lambda function oluşturmuştuk.
+Şimdi o lambda functionın loglarını durduracağım. Lambda functionımızı açalım ve ondan sonrasını ekran görüntüleri ile destekliyor olacağım.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/cw1.png" alt="ss1" /></p>
+
+<p>İlk olarak yukaridaki görselde de gördüğünüz gibi lambda functionın <strong>Monitor</strong> sekmesine giriyoruz. Ardından bu sayfada bulunan
+<strong>View logs on CloudWatch</strong> butonuna tıklıyoruz.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/cw1.png" alt="ss1" /></p>
+
+<p>Gördüğünüz gibi bir sürü log oluşturmuş. Lambda functionımızın sayfasına geri dönüp bu sefer <strong>configuration</strong> menüsüne gelelim. Ordan da
+<strong>permission</strong> sekmesine tıklayalım.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/cw3.png" alt="ss1" /></p>
+
+<p>Buraya kadar geldik yolun yarısı bitti. Şimdi yukaridaki görselde de görünen <strong>execution role</strong> başlığı altındaki linke tıklayacağız. Bizi
+aşağıdaki gibi bir sayfa karşılayacak. Yapacağımız tek şey artık policyi güncellemek. Gelin onu da yapalım.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/cw4.png" alt="ss1" /></p>
+
+<p>Hemen aşağıdaki <strong>Edit Policy</strong> butonuna tıklayıp JSON sekmesini seçiyorum. Böyece çok daha rahat editleme yapabileceğim. Yaptığım tek şey ise
+<strong>Effect</strong> keyinin değerlerini <strong>Allow</strong>‘dan <strong>Deny</strong>‘e çekmek oldu. Bu şekilde kaydettikten sonra log tutmayı durdurmuş olacağız.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/cw5.png" alt="ss1" /></p>
+
+<hr />
+
+<p>Bu yazımdan bu kadar. Umarım yazı işinize yarar. Anlamadığınız yerleri, isteklerinizi veya önerilerinizi bana iletbilirsiniz. Keyifli haftalar dilerim :)</p>
+
+<hr />
+
+<h2 id="yararlandığım-kaynaklar">Yararlandığım Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://aws.amazon.com/tr/lambda/" target="_blank">https://aws.amazon.com/tr/lambda/</a></li>
+  <li><a href="https://aws.amazon.com/tr/cloudwatch/" target="_blank">https://aws.amazon.com/tr/cloudwatch/</a></li>
+</ul>
+
+        
+      </div>
+
+      <div class="post-tail-wrapper text-muted">
+
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/cloud/'>Cloud</a>
+        </div>
+        
+
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/aws/"
+            class="post-tag no-text-decoration" >aws</a>
+          
+          <a href="/tags/serverless/"
+            class="post-tag no-text-decoration" >serverless</a>
+          
+          <a href="/tags/lambda/"
+            class="post-tag no-text-decoration" >lambda</a>
+          
+          <a href="/tags/cloudwatch/"
+            class="post-tag no-text-decoration" >cloudwatch</a>
+          
+          </div>
+        
+
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
+
+          <!--
+ Post sharing snippet
+
+ v2.1
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
-      <div id="page-tag">
-  <h1 class="pl-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    aws
-    <span class="lead text-muted pl-2">3</span>
-  </h1>
-  <ul class="post-content pl-0">
     
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="/posts/disable-aws-cloudwatch/">Amazon CloudWatch Servisini Durdurma</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">Jan 21, 2022</span>
-    </li>
-    
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="/posts/aws-eventbridge-with-lambda-function/">AWS Lambda ile Zamanlanmış İşlemler</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">Jan  7, 2022</span>
-    </li>
-    
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="/posts/aws-lambda-python/">AWS Lambda ile Python</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">Dec 25, 2021</span>
-    </li>
-    
-  </ul>
-</div>
 
     
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
+      
+        <a href="https://twitter.com/intent/tweet?text=Amazon CloudWatch Servisini Durdurma - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+    
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Amazon CloudWatch Servisini Durdurma - Ali İlteriş Keskin&u=https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://telegram.me/share?text=Amazon CloudWatch Servisini Durdurma - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
+      
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" data-toggle="tooltip" data-placement="top"
+          title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin">
+          <i class="fa-fw fab fa-linkedin"></i>
+        </a>
+    
+
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
+
+  </span>
+</div>
+
+
+        </div><!-- .post-tail-bottom -->
+
+      </div><!-- div.post-tail -->
+
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
+
+  
+
+  
 
   <!--
   The Pannel on right side (Desktop views)
@@ -1179,13 +1399,469 @@
   </div> <!-- .access -->
 
   
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">İçindekiler</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+
+ v2.0
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+  
+    
+    
+  
+    
+    
+      
+      
+    
+  
+    
+    
+      
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+          
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Daha Fazla Okuma</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/aws-lambda-python/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Dec 25, 2021
+  
+
+  <i class="unloaded">2021-12-25T14:00:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>AWS Lambda ile Python</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Herkese iyi hafta sonları. Bir süredir heyboosterda
+Django ile yazdığımız bazı endpointleri
+AWS Lambdaya taşıyoruz. Bu yazımda da
+basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl ...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/aws-eventbridge-with-lambda-function/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Jan  7
+  
+
+  <i class="unloaded">2022-01-07T06:00:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>AWS Lambda ile Zamanlanmış İşlemler</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Herkese iyi sabahlar. Daha doğrusu bana iyi sabahlar yazı kaçta çıkar emin değilim :) Bu yazıyı 
+yazmak için sabahları mesai saatimden erken kalkıyorum. Kendime böyle bir düzen kurmaya çalışıyorum....
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/diminuendo/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Dec 12, 2021
+  
+
+  <i class="unloaded">2021-12-12T18:00:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Üç Büyücü Turnuvası | Açık Kaynak Hackathon</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Herkese iyi pazarlar. Bu yazımda Teknasyo’nun düzenlediği 
+Üç Büyücü Turnuvası isimli açık kaynak hackathonda 
+geliştirdiğimiz projeden bahsedeceğim. Tabii bir de Üç Büyücü Turnuvasında neler yaşad...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+
+  v2.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/aws-eventbridge-with-lambda-function/" class="btn btn-outline-primary">
+    <p>AWS Lambda ile Zamanlanmış İşlemler</p>
+  </a>
+  
+
+  
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
+  
+
 </div>
 
+    
+      <!--
+  The Disqus lazy loading.
+  Powered by: https://osvaldas.info/lazy-loading-disqus-comments
+  v2.0
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2019 Cotes Chung
+  MIT License
+-->
 
+<div id="disqus" class="pt-2 pb-2">
+  <p class="font-italic text-center text-muted small">
+    Comments powered by <a href="https://disqus.com/">Disqus</a>.
+  </p>
+</div>
+
+<script src="/assets/js/lib/jquery.disqusloader.min.js"></script>
+<script>
+  var options = {
+    scriptUrl: '//ilteriskesk.disqus.com/embed.js',
+
+    disqusConfig: function() {
+      this.page.url = 'https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/';
+      this.page.identifier = '/posts/disable-aws-cloudwatch/';
+    }
+  };
+
+  $.disqusLoader('#disqus', options);
+</script>
+    
+
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
+
+<!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('#post-wrapper img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 

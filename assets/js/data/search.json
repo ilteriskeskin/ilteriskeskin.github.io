@@ -1,9 +1,24 @@
 [
   
   {
+    "title": "Amazon CloudWatch Servisini Durdurma",
+    "url": "/posts/disable-aws-cloudwatch/",
+    "categories": "Cloud",
+    "tags": "aws, serverless, lambda, cloudwatch",
+    "date": "2022-01-21 13:45:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Uyarı:Önümüzdeki ilk paragraf azıcık iç dökmeli olacak isteyen atlayabilir 😢Herkese selam. Bu yazıya başlamadan önce süper bir motivasyonla hazırlanmıştım. Sonra kiracısı olduğum ev satıldığı içinüç dört ay içinde çıkmam gerektiğini öğrendim ve haliyle motivasyonum epey düştü. Neyse ki derin bir ..."
+  },
+  
+  {
     "title": "AWS Lambda ile Zamanlanmış İşlemler",
     "url": "/posts/aws-eventbridge-with-lambda-function/",
-    "categories": "Python",
+    "categories": "Python, Cloud",
     "tags": "python, python3, aws, serverless, lambda, eventbridge",
     "date": "2022-01-07 06:00:00 +0300",
     
@@ -18,7 +33,7 @@
   {
     "title": "AWS Lambda ile Python",
     "url": "/posts/aws-lambda-python/",
-    "categories": "Python",
+    "categories": "Python, Cloud",
     "tags": "python, python3, aws, api, lambda, api-gateway, serverless",
     "date": "2021-12-25 14:00:00 +0300",
     
