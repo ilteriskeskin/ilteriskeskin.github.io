@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "GitHub Actions ile Otomatik Deployment",
+    "url": "/posts/github-actions-digitalocean/",
+    "categories": "Devops",
+    "tags": "devops, github, actions, digitalocean",
+    "date": "2022-02-10 13:45:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Canım şehrim Samsun’dan herkese selamlar. Sevdiğim insanlarla sevdiğim bir şehirde olduğum için mutluyum. Bu mutlulukla bir yazı yazmak istedim. Yazı da başlıktan anlaşılacağı gibi GitHub Actions kullanımıyla ilgili 🔥DigitalOcean’daki Ubuntu makineme elle deploy almak istemediğim için süreci GitH..."
+  },
+  
+  {
     "title": "Amazon CloudWatch Servisini Durdurma",
     "url": "/posts/disable-aws-cloudwatch/",
     "categories": "Cloud",

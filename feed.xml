@@ -4,7 +4,7 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2022-01-21T21:44:11+03:00</updated>
+  <updated>2022-02-10T22:52:14+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
@@ -16,6 +16,49 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>GitHub Actions ile Otomatik Deployment</title>
+    <link href="https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" rel="alternate" type="text/html" title="GitHub Actions ile Otomatik Deployment" />
+    <published>2022-02-10T13:45:00+03:00</published>
+  
+    <updated>2022-02-10T13:45:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/github-actions-digitalocean/</id>
+    <content src="https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="Devops" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Canım şehrim Samsun’dan herkese selamlar. Sevdiğim insanlarla sevdiğim bir şehirde olduğum için mutluyum. Bu mutlulukla bir yazı yazmak istedim. Yazı da başlıktan anlaşılacağı gibi GitHub Actions kullanımıyla ilgili 🔥
+
+DigitalOcean’daki Ubuntu makineme elle deploy almak istemediğim için süreci GitHub Actions ile otomatikleştirme üzerine bir yazı yazacağım.
+
+
+
+GitHub Actions Nedir?
+GitHub Acti...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -193,43 +236,6 @@ Hazırsak başlayalım.
 Üç Büyücü Turnuvasında Neler Yaptık?
 
 Kod yazdık. Bol bol kod yazıp bugfix çıktık. Tabii hackathon ekibi haxball ve amongus turnuvası düzenledi. Eğlenc...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Python ile Veri Düzeltme</title>
-    <link href="https://ilteriskeskin.github.io/posts/python-veri-duzeltme/" rel="alternate" type="text/html" title="Python ile Veri Düzeltme" />
-    <published>2021-10-24T18:00:00+03:00</published>
-  
-    <updated>2021-10-24T18:00:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/python-veri-duzeltme/</id>
-    <content src="https://ilteriskeskin.github.io/posts/python-veri-duzeltme/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="Python" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Herkese selamlar, bu yazımda Python ile bozuk verileri düzeltme konusundan bahsedeceğim. Uzun süredir yeni yazı 
-yazamıyorum. Bu yüzden kendimi kötü hissediyorum. Bu yazı son çözdüğüm sorunun özeti şeklinde olacak. Şu sıralar
-heybooster bir yarışma sürecinde olduğu için yoğun çalışmamız gereken 
-bir dönemdeyiz. Ne var ki, fırsat bulduğumda bir şeyler üretmeye çalışıyorum. Tabi eski motivasyonum...
     </summary>
   
 

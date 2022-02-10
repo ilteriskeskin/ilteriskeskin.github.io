@@ -23,27 +23,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Hakkımda" />
+<meta property="og:title" content="GitHub Actions ile Otomatik Deployment" />
 <meta name="author" content="Ali İlteriş Keskin" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Merhaba, ben Ali İlteriş Keskin. 5 yıldır yazılım geliştirici olarak çalışıyorum. Şu anda heybooster‘da yazılım geliştirici olarak çalışıyorum. Daha çok web alanında kodluyorum. Başlıca kullandığım dil ve frameworkler; Python, Flask, Django, Vue.js." />
-<meta property="og:description" content="Merhaba, ben Ali İlteriş Keskin. 5 yıldır yazılım geliştirici olarak çalışıyorum. Şu anda heybooster‘da yazılım geliştirici olarak çalışıyorum. Daha çok web alanında kodluyorum. Başlıca kullandığım dil ve frameworkler; Python, Flask, Django, Vue.js." />
-<link rel="canonical" href="https://ilteriskeskin.github.io/tabs/about/" />
-<meta property="og:url" content="https://ilteriskeskin.github.io/tabs/about/" />
+<meta name="description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
+<meta property="og:description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
+<link rel="canonical" href="https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" />
+<meta property="og:url" content="https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-02-10T22:52:14+03:00" />
+<meta property="article:published_time" content="2022-02-10T13:45:00+03:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Hakkımda" />
+<meta property="twitter:title" content="GitHub Actions ile Otomatik Deployment" />
 <meta name="twitter:site" content="@ilteriskeskin" />
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="MKWI2Ke4BuJSyKVEuKSdBo6P7n6cJeeRJrTNJkVMG54" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Hakkımda","url":"https://ilteriskeskin.github.io/tabs/about/","datePublished":"2022-02-10T22:52:14+03:00","dateModified":"2022-02-10T22:52:14+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/tabs/about/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Merhaba, ben Ali İlteriş Keskin. 5 yıldır yazılım geliştirici olarak çalışıyorum. Şu anda heybooster‘da yazılım geliştirici olarak çalışıyorum. Daha çok web alanında kodluyorum. Başlıca kullandığım dil ve frameworkler; Python, Flask, Django, Vue.js.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"GitHub Actions ile Otomatik Deployment","url":"https://ilteriskeskin.github.io/posts/github-actions-digitalocean/","datePublished":"2022-02-10T13:45:00+03:00","dateModified":"2022-02-10T13:45:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/github-actions-digitalocean/"},"author":{"@type":"Person","name":"Ali İlteriş Keskin"},"description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Hakkımda | Ali İlteriş Keskin
+  <title>GitHub Actions ile Otomatik Deployment | Ali İlteriş Keskin
   </title>
 
   <!--
@@ -119,9 +119,14 @@
 
 
 
-<link rel="preload" href="/assets/css/page.css" as="style">
-<link rel="stylesheet" href="/assets/css/page.css">
+<link rel="preload" href="/assets/css/post.css" as="style">
+<link rel="stylesheet" href="/assets/css/post.css">
 
+
+  
+    <link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" />
+  
 
 
 
@@ -144,7 +149,7 @@
 
 
 
-<script async src="/assets/js/page.min.js"></script>
+<script async src="/assets/js/post.min.js"></script>
 
 
 
@@ -215,7 +220,7 @@
       </a>
     </li> <!-- .nav-item -->
     
-    <li class="nav-item active">
+    <li class="nav-item">
       <a href="/tabs/about/" class="nav-link">
         <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i>
         <span>HAKKIMDA</span>
@@ -302,14 +307,14 @@
         
         <span>
           <a href="/">
-            Home
+            Posts
           </a>
         </span>
         
       
 
       
-        <span>Hakkımda</span>
+        <span>GitHub Actions ile Otomatik Deployment</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -317,7 +322,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Hakkımda
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -360,51 +365,264 @@
 
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
-    
-      <h1 class="dynamic-title">Hakkımda</h1>
+
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
+
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+      <h1 data-toc-skip>GitHub Actions ile Otomatik Deployment</h1>
+
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Thu, Feb 10, 2022,  1:45 PM +0300"
+  >
+
+  
+  
+
+  
+    Feb 10
+  
+
+  <i class="unloaded">2022-02-10T13:45:00+03:00</i>
+
+</span>
+          by
+          <span class="author">
+            Ali İlteriş Keskin
+          </span>
+        </div>
+
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="354 words">1 min</span>
+
+
+          <!-- page views -->
+          
+
+        </div>
+
+      </div> <!-- .post-meta -->
+
       <div class="post-content">
-        <p>Merhaba, ben Ali İlteriş Keskin. 5 yıldır yazılım geliştirici olarak çalışıyorum. Şu anda 
-<a href="https://heybooster.ai" target="_blank">heybooster</a>‘da yazılım geliştirici olarak çalışıyorum.
-Daha çok web alanında kodluyorum. Başlıca kullandığım dil ve frameworkler;
-<a href="https://www.python.org/" target="_blak">Python</a>, 
-<a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blak">Flask</a>, 
-<a href="https://www.djangoproject.com/" target="_blak">Django</a>,
-<a href="https://vuejs.org/" target="_blak">Vue.js</a>.</p>
 
-<blockquote>
-  <p>Kendimi DevOps alanında geliştirmek istiyor ve bunun için çalışıyorum.</p>
-</blockquote>
+        <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+        
+          
+          <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dkzenas0691firpju3hr.png" alt="github-actions" /></p>
 
-<blockquote>
-  <p>Özgür yazılım felsefesini benimsiyorum ve destekliyorum.</p>
-</blockquote>
+<p>Canım şehrim Samsun’dan herkese selamlar. Sevdiğim insanlarla sevdiğim bir şehirde olduğum için mutluyum. Bu mutlulukla bir yazı yazmak istedim. Yazı da başlıktan anlaşılacağı gibi <a href="https://docs.github.com/en/actions">GitHub Actions</a> kullanımıyla ilgili 🔥</p>
 
-<blockquote>
-  <p>5 yıldır windows kullanmıyorum ve bunun haklı gururunu yaşıyorum.</p>
-</blockquote>
+<p><a href="https://www.digitalocean.com/">DigitalOcean’daki</a> Ubuntu makineme elle deploy almak istemediğim için süreci <a href="https://docs.github.com/en/actions">GitHub Actions</a> ile otomatikleştirme üzerine bir yazı yazacağım.</p>
 
-<blockquote>
-  <p>Şu anda Linux Mint 20 XFCE ve Manjaro XFCE 20.2 dağıtımlarını kullanıyorum.</p>
-</blockquote>
+<hr />
 
-<blockquote>
-  <p>Diplomanın gereksiz olduğunu, diplomasız da bu işlerin yürüyeceğini düşünüyorum.</p>
-</blockquote>
+<h2 id="github-actions-nedir">GitHub Actions Nedir?</h2>
+<p>GitHub Actions, kaba tabirle yazdığımız kodlara bir workflow oluşturmamızı sağlamaktadır. Ben de bu yazıda GitHub Actions’ı projeyi sunucuda yayına almak ile ilgili kullanacağım.</p>
 
-<blockquote>
-  <p>Benimle görüşmek için <a href="https://superpeer.com/ilteriskeskin" target="_blank">Superpeer</a>‘dan randevu alabilirsin.</p>
-</blockquote>
+<hr />
 
-<blockquote>
-  <p>Teknik bilgim hakkında detaylı bilgi için <a href="/tabs/consultancy/">şu sayfayı</a> ziyaret edebilirsiniz.</p>
-</blockquote>
+<h2 id="digitalocean-nedir">DigitalOcean Nedir?</h2>
+<p>Bu soruyu sormayacağınıza eminim ama laf olsun torba dolsun işte 😅 Şaka bir yana DigitalOcean’da, AWS, Google Cloud gibi bir sağlayıcıdır.</p>
 
+<hr />
+
+<h2 id="genel-hazırlık">Genel Hazırlık</h2>
+<p>Benim yapmak istediğim DigitalOcean’da açtığım bir Ubuntu makinede yayında olan sitemi main branche commit attığımda güncellemekti. Ben bunu nasıl yaptığımı anlatacağım. Yani makine açma gibi konulara değinmeyeceğim.</p>
+
+<hr />
+
+<h2 id="ssh-bağlantısı-ile-i̇lgili-hazırlıklar">SSH Bağlantısı ile İlgili Hazırlıklar</h2>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uu70ptc1y5rr9d235h9j.png" alt="image1" />
+İlk olarak GitHub repomuzda “Settings” menüsünde “Deploy keys” sekmesine tıklayalım. Oraya sunucumuzun ssh keyini eklememiz gerekli. Peki ssh keyi nasıl elde edeceğiz? Sunucunuzda <strong>ssh-keygen</strong> komutunu çalıştırın ve <strong>cat ~/.ssh/id_rsa.pub</strong> ile içeriğini koplayalayın. Sonrasında da GitHub’da “Add deploy key” diyerek ekleyin. Aynı zamanda <strong>nano .ssh/authorized_keys</strong> komutu ile bir dosya açıp içine <strong>cat ~/.ssh/id_rsa.pub</strong> çıktısını da ekleyin. Sonrasında da bu dosyaya yetki tanımlamak için <strong>chmod 700 .ssh/authorized_keys</strong> komutunu çalıştırın.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x3ugpajti9o6901aob84.png" alt="image2" />
+İkinci olarak yine “Settings” menüsünde “Secrets-&gt;Actions” sekmesinde “New repository secret” diyerek 3 adet key ekleyeceğiz. Bu keylerin isimlerini ben <strong>SSH_HOST</strong>, <strong>SSH_KEY</strong> ve <strong>SSH_USERNAME</strong> verdim. İçerikleri ise:</p>
+
+<p><strong>SSH_USERNAME:</strong> Sunucudaki kullanıcı isminiz. Benim root
+<strong>SSH_HOST:</strong> Sunucunuzun ip adresi
+<strong>SSH_KEY:</strong> Gizli ssh keyiniz. <strong>cat .ssh/id_rsa</strong> komutu ile öğrenebilirsiniz.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2p6qw872qq1os63yu061.png" alt="image3" />
+Son adımımıza geldik. Şimdi görseldeki gibi <strong>Actions</strong> menüsüne tıklıyoruz ve <strong>set up a workflow yourself</strong> bağlantısına tıklayıp kendi dosyamızı özelleştireceğiz. Benim dosyam şu şekilde:</p>
+
+<p>deploy.yml</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="na">name</span><span class="pi">:</span> <span class="s">Bigcats Deploy Automation</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">main</span><span class="pi">]</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">deploy</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Deploy static site</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">appleboy/ssh-action@v0.1.2</span>
+      <span class="na">with</span><span class="pi">:</span> 
+        <span class="na">host</span><span class="pi">:</span> <span class="s">$</span>
+        <span class="na">key</span><span class="pi">:</span> <span class="s">$</span>
+        <span class="na">username</span><span class="pi">:</span> <span class="s">$</span>
+        
+        <span class="na">script</span><span class="pi">:</span> <span class="s">cd /var/www/big-cats &amp;&amp; git pull &amp;&amp; systemctl restart nginx.service</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Yapmak istediğim şey main branchinde yaptığım değişiklikleri otomatik olarak sunucuda yayına almaktı. Bu dosya ile bunu yapıyorum.</p>
+
+<p>Umarım yazı işinize yaramıştır. Anlamadığınız yerleri, isteklerinizi veya önerilerinizi bana iletbilirsiniz. Keyifli haftalar dilerim :)</p>
+
+        
       </div>
+
+      <div class="post-tail-wrapper text-muted">
+
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/devops/'>Devops</a>
+        </div>
+        
+
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/devops/"
+            class="post-tag no-text-decoration" >devops</a>
+          
+          <a href="/tags/github/"
+            class="post-tag no-text-decoration" >github</a>
+          
+          <a href="/tags/actions/"
+            class="post-tag no-text-decoration" >actions</a>
+          
+          <a href="/tags/digitalocean/"
+            class="post-tag no-text-decoration" >digitalocean</a>
+          
+          </div>
+        
+
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
+
+          <!--
+ Post sharing snippet
+
+ v2.1
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
+    
+
+    
+      
+        <a href="https://twitter.com/intent/tweet?text=GitHub Actions ile Otomatik Deployment - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+    
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=GitHub Actions ile Otomatik Deployment - Ali İlteriş Keskin&u=https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://telegram.me/share?text=GitHub Actions ile Otomatik Deployment - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
+      
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" data-toggle="tooltip" data-placement="top"
+          title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin">
+          <i class="fa-fw fab fa-linkedin"></i>
+        </a>
+    
+
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
+
+  </span>
+</div>
+
+
+        </div><!-- .post-tail-bottom -->
+
+      </div><!-- div.post-tail -->
+
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
+
+  
+
+  
 
   <!--
   The Pannel on right side (Desktop views)
@@ -1298,13 +1516,494 @@ Daha çok web alanında kodluyorum. Başlıca kullandığım dil ve frameworkler
   </div> <!-- .access -->
 
   
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">İçindekiler</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+
+ v2.0
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+  
+    
+    
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+          
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Daha Fazla Okuma</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/disable-aws-cloudwatch/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Jan 21
+  
+
+  <i class="unloaded">2022-01-21T13:45:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Amazon CloudWatch Servisini Durdurma</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Uyarı:
+
+Önümüzdeki ilk paragraf azıcık iç dökmeli olacak isteyen atlayabilir 😢
+
+
+
+Herkese selam. Bu yazıya başlamadan önce süper bir motivasyonla hazırlanmıştım. Sonra kiracısı olduğum ev satıldığı...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/aws-eventbridge-with-lambda-function/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Jan  7
+  
+
+  <i class="unloaded">2022-01-07T06:00:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>AWS Lambda ile Zamanlanmış İşlemler</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Herkese iyi sabahlar. Daha doğrusu bana iyi sabahlar yazı kaçta çıkar emin değilim :) Bu yazıyı 
+yazmak için sabahları mesai saatimden erken kalkıyorum. Kendime böyle bir düzen kurmaya çalışıyorum....
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/aws-lambda-python/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Dec 25, 2021
+  
+
+  <i class="unloaded">2021-12-25T14:00:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>AWS Lambda ile Python</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Herkese iyi hafta sonları. Bir süredir heyboosterda
+Django ile yazdığımız bazı endpointleri
+AWS Lambdaya taşıyoruz. Bu yazımda da
+basit bir Lambda function nasıl oluşturulur, API Gateway ile nasıl ...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+
+  v2.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/disable-aws-cloudwatch/" class="btn btn-outline-primary">
+    <p>Amazon CloudWatch Servisini Durdurma</p>
+  </a>
+  
+
+  
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
+  
+
 </div>
 
+    
+      <!--
+  The Disqus lazy loading.
+  Powered by: https://osvaldas.info/lazy-loading-disqus-comments
+  v2.0
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2019 Cotes Chung
+  MIT License
+-->
 
+<div id="disqus" class="pt-2 pb-2">
+  <p class="font-italic text-center text-muted small">
+    Comments powered by <a href="https://disqus.com/">Disqus</a>.
+  </p>
+</div>
+
+<script src="/assets/js/lib/jquery.disqusloader.min.js"></script>
+<script>
+  var options = {
+    scriptUrl: '//ilteriskesk.disqus.com/embed.js',
+
+    disqusConfig: function() {
+      this.page.url = 'https://ilteriskeskin.github.io/posts/github-actions-digitalocean/';
+      this.page.identifier = '/posts/github-actions-digitalocean/';
+    }
+  };
+
+  $.disqusLoader('#disqus', options);
+</script>
+    
+
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
+
+<!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('#post-wrapper img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 
