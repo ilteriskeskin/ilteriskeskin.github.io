@@ -23,27 +23,27 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Arşiv" />
+<meta property="og:title" content="MongoDB’de Indexing ve Dahası" />
 <meta name="author" content="Ali İlteriş Keskin" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
 <meta property="og:description" content="Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı." />
-<link rel="canonical" href="https://ilteriskeskin.github.io/tabs/archives/" />
-<meta property="og:url" content="https://ilteriskeskin.github.io/tabs/archives/" />
+<link rel="canonical" href="https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" />
+<meta property="og:url" content="https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" />
 <meta property="og:site_name" content="Ali İlteriş Keskin" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-10-08T02:54:47+03:00" />
+<meta property="article:published_time" content="2022-02-10T13:45:00+03:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Arşiv" />
+<meta property="twitter:title" content="MongoDB’de Indexing ve Dahası" />
 <meta name="twitter:site" content="@ilteriskeskin" />
 <meta name="twitter:creator" content="@Ali İlteriş Keskin" />
 <meta name="google-site-verification" content="MKWI2Ke4BuJSyKVEuKSdBo6P7n6cJeeRJrTNJkVMG54" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"dateModified":"2022-10-08T02:54:47+03:00","datePublished":"2022-10-08T02:54:47+03:00","description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","headline":"Arşiv","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/tabs/archives/"},"url":"https://ilteriskeskin.github.io/tabs/archives/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ali İlteriş Keskin"},"dateModified":"2022-02-10T13:45:00+03:00","datePublished":"2022-02-10T13:45:00+03:00","description":"Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.","headline":"MongoDB’de Indexing ve Dahası","mainEntityOfPage":{"@type":"WebPage","@id":"https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/"},"url":"https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Arşiv | Ali İlteriş Keskin
+  <title>MongoDB'de Indexing ve Dahası | Ali İlteriş Keskin
   </title>
 
   <!--
@@ -119,9 +119,14 @@
 
 
 
-<link rel="preload" href="/assets/css/archives.css" as="style">
-<link rel="stylesheet" href="/assets/css/archives.css">
+<link rel="preload" href="/assets/css/post.css" as="style">
+<link rel="stylesheet" href="/assets/css/post.css">
 
+
+  
+    <link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" />
+  
 
 
 
@@ -144,7 +149,7 @@
 
 
 
-<script async src="/assets/js/page.min.js"></script>
+<script async src="/assets/js/post.min.js"></script>
 
 
 
@@ -208,7 +213,7 @@
       </a>
     </li> <!-- .nav-item -->
     
-    <li class="nav-item active">
+    <li class="nav-item">
       <a href="/tabs/archives/" class="nav-link">
         <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i>
         <span>ARŞIV</span>
@@ -302,14 +307,14 @@
         
         <span>
           <a href="/">
-            Home
+            Posts
           </a>
         </span>
         
       
 
       
-        <span>Arşiv</span>
+        <span>MongoDB'de Indexing ve Dahası</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -317,7 +322,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Arşiv
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -360,268 +365,287 @@
 
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
-    
-      <h1 class="dynamic-title">Arşiv</h1>
+
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
+
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+      <h1 data-toc-skip>MongoDB'de Indexing ve Dahası</h1>
+
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Thu, Feb 10, 2022,  1:45 PM +0300"
+  >
+
+  
+  
+
+  
+    Feb 10
+  
+
+  <i class="unloaded">2022-02-10T13:45:00+03:00</i>
+
+</span>
+          by
+          <span class="author">
+            Ali İlteriş Keskin
+          </span>
+        </div>
+
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="429 words">2 min</span>
+
+
+          <!-- page views -->
+          
+
+        </div>
+
+      </div> <!-- .post-meta -->
+
       <div class="post-content">
-        <div id="archives" class="pl-xl-2">
 
-  
-  
-  
+        <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+        
+          
+          <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png" alt="mongodb" /></p>
+
+<p>Herkese merhaba. Çook uzun süredir (neredeyse 8 ay) yazı yazmıyordum. En büyük nedeni üşengeçlik tabi.</p>
+
+<hr />
+
+<h2 id="mongodb-nedir">MongoDB Nedir?</h2>
+
+<p>MongoDB, yüksek hacimli veri depolama için kullanılan belge odaklı bir NoSQL veritabanıdır. MongoDB relational veritabanları gibi “table” ve “rows”
+kullanmamaktadır. Bunun yerine “collections” ve “documents” kullanmaktadır. “Documents” dediğimiz şeyler key-value yapısı kullanır. Programlamada
+sıkça kullandığımız dictionary veya json yapılarına benzetilebilir.</p>
+
+<hr />
+
+<h2 id="index-nedir">Index Nedir?</h2>
+
+<p>Index veritabanına attığımız sorguların daha hızlı sonuç vermesi için oluşturulan yapılardır. Indexleme yaptıktan sonra veritabanında
+bir kayıt aradığınızda tüm kayıtları tek tek incelemeye gerek duymadan daha hızlı sonuç döner.</p>
+
+<hr />
+
+<h2 id="index-oluşturma">Index Oluşturma</h2>
+
+<p>MongoDB sadece “_id” özelinde atılan sorgular için id bilgisini kendisi indexliyor. Biz ise şimdi örnek bir senaryo canlandıracağız.</p>
+
+<p>İlk olarak user collectionının mevcut indexlerine bakalım. Ben veritabanı uygulaması olarak <a href="https://nosqlbooster.com/">NoSQLBooster</a>
+kullanıyorum. Orada örnek vereceğim. Collection üstüne sağ tılayıp Indexes -&gt; View Indexes yolunu takip ediyorum. Beni şöyle bir ekran karşılıyor.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/nosqlbooster_view_indexes.png" alt="nosqlbooster_view_indexes" /></p>
+
+<p>Yani görüyoruz ki MongoDB bizim için indexlemiş id keyini. Şimdi senaryomuza geçelim.</p>
+
+<p>Veritabanında “user” adında bir collectionınız olduğunu düşünün. Bu collectiona sadece “_id” ile değil aynı zamanda sık sık “email” sorgusu da
+attığınızı düşünün. O zaman email ile atılan sorguları daha verimli hale getirmek için email keyini indexleyebiliriz. Gelin bir index oluşturalım.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>db.user.createIndex({ name: 1 })
+
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><strong>Not:</strong> Veritabanında oluşturduğunuz indexler diskte yer kaplamaktadır.</p>
+
+<p><strong>“Gereksiz indexleme, indexleme değildir.”</strong></p>
+
+<ul>
+  <li>Bir yazılımcı (ben)</li>
+</ul>
+
+<hr />
+
+<p>Güzell veritabanındaki ilk indeximizi oluşturduk. Peki şimdi indexlerimize bakmaya ne dersiniz? Gelin bakalım.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/nosqlbooster_view_indexes_2.png" alt="nosqlbooster_view_indexes_2" /></p>
+
+<p>Evet işte artık email keyimiz de index listesinde görünüyor.</p>
+
+<hr />
+
+<h2 id="index-tipleri">Index Tipleri</h2>
+
+<p>MongoDB’de birden fazla index tipi vardır. Bu index tiplerini işinize olan uygunluğuna göre seçip kullanabilirsiniz. Bazı index
+tiplerini inceleyelim.</p>
+
+<h3 id="single-field-indexler">Single Field Indexler</h3>
+
+<p>Yukarıda oluşturduğumuz ilk indexi buna örnek gösterebiliriz. Kısaca tek bir field için oluşturulan indexlerdir.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.mongodb.com/docs/manual/images/index-ascending.bakedsvg.svg" alt="mongodb" /></p>
+
+<h3 id="compound-indexler">Compound Indexler</h3>
+
+<p>Eğer veritabanına birden fazla key ile sorgu atıyorsanız <strong>Compound Index</strong> kullanabilirsiniz. Bu index tipinde dikkat edilmesi gereken
+şey ise indexi oluştururken fieldları nasıl sıraladığımız. Yukarıda dikkat etmemiştik buna ama artık bizim için önemli oluyor. 
+Örneğin, bir <strong>Compound Index</strong> <code class="language-plaintext highlighter-rouge">{ name: 1, no: -1 }</code> den oluşuyorsa, index önce kullanıcı ismine göre sıralanır ve ardından 
+her kullanıcı ismi puana göre sıralanır.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.mongodb.com/docs/manual/images/index-compound-key.bakedsvg.svg" alt="mongodb" /></p>
+
+<p>Kullanımı <strong>Single Field Index</strong> kullanımı ile aynı. Aşağıda ufak bir örnek yapalım.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>db.collection.createIndex({ name: 1, no: -1 })
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="multikey-indexler">Multikey Indexler</h3>
+
+<p>MongoDB, arraylerde depolanan içeriği indexlemek için <strong>Multikey Indexler</strong> kullanır. Array değeri içeren bir alanı indekslerseniz, MongoDB 
+dizinin her elemanı için ayrı index girdileri oluşturur. Sorguların arraylerin öğelerini eşleştirerek dizileri içeren belgeleri seçmesine 
+olanak tanır.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.mongodb.com/docs/manual/images/index-multikey.bakedsvg.svg" alt="mongodb" /></p>
+
+<hr />
+
+<h2 id="kapanış">Kapanış</h2>
+
+<p>Index tiplerine de göz attıktan sonra kendi veritabanımdaki son durumu göstereyim.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/nosqlbooster_view_indexes_3.png" alt="nosqlbooster_view_indexes_2" /></p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/sample/nosqlbooster_view_indexes_4.png" alt="nosqlbooster_view_indexes_2" /></p>
+
+<p>Unutmayın gereksiz indexlemeler sizin için dezavantajlı bir durumdur. Bu yüzden indexlemelerinizi planlı yapın.</p>
+
+<hr />
+
+<p>Umarım yazı işinize yaramıştır. Anlamadığınız yerleri, isteklerinizi veya önerilerinizi bana iletbilirsiniz. Keyifli haftalar dilerim :)</p>
+
+        
+      </div>
+
+      <div class="post-tail-wrapper text-muted">
+
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/mongodb/'>MongoDB</a>
+        </div>
+        
+
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/nosql/"
+            class="post-tag no-text-decoration" >nosql</a>
+          
+          <a href="/tags/mongodb/"
+            class="post-tag no-text-decoration" >mongodb</a>
+          
+          <a href="/tags/database/"
+            class="post-tag no-text-decoration" >database</a>
+          
+          </div>
+        
+
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
+
+          <!--
+ Post sharing snippet
+
+ v2.1
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
     
-  <span class="lead">2022</span>
-  <ul class="list-unstyled">
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">10</span>
-        <span class="date month small text-muted">Feb</span>
-        <a href="/posts/mongodb-indexing-and-more/">MongoDB'de Indexing ve Dahası</a>
-      </div>
-    </li>
-  
 
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">10</span>
-        <span class="date month small text-muted">Feb</span>
-        <a href="/posts/github-actions-digitalocean/">GitHub Actions ile Otomatik Deployment</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">21</span>
-        <span class="date month small text-muted">Jan</span>
-        <a href="/posts/disable-aws-cloudwatch/">Amazon CloudWatch Servisini Durdurma</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">07</span>
-        <span class="date month small text-muted">Jan</span>
-        <a href="/posts/aws-eventbridge-with-lambda-function/">AWS Lambda ile Zamanlanmış İşlemler</a>
-      </div>
-    </li>
-  
-  </ul>
-  <span class="lead">2021</span>
-  <ul class="list-unstyled">
     
+      
+        <a href="https://twitter.com/intent/tweet?text=MongoDB'de Indexing ve Dahası - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
     
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">25</span>
-        <span class="date month small text-muted">Dec</span>
-        <a href="/posts/aws-lambda-python/">AWS Lambda ile Python</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">12</span>
-        <span class="date month small text-muted">Dec</span>
-        <a href="/posts/diminuendo/">Üç Büyücü Turnuvası | Açık Kaynak Hackathon</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">24</span>
-        <span class="date month small text-muted">Oct</span>
-        <a href="/posts/python-veri-duzeltme/">Python ile Veri Düzeltme</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">23</span>
-        <span class="date month small text-muted">Jul</span>
-        <a href="/posts/go-gin-api/">Go Gin Web Frameworku ile Hello World</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">02</span>
-        <span class="date month small text-muted">May</span>
-        <a href="/posts/python-gmail-api/">Python İle Gmail Api Kullanarak Mail Gönder</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">17</span>
-        <span class="date month small text-muted">Apr</span>
-        <a href="/posts/google-cloud-storage-mongodb-data-transfer/">Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">11</span>
-        <span class="date month small text-muted">Apr</span>
-        <a href="/posts/heybooster-about/">Heybooster Nedir, Ne Yapar, Kimler Kullanabilir?</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">02</span>
-        <span class="date month small text-muted">Jan</span>
-        <a href="/posts/gnu-linux-dosya-dizin-yapisi/">GNU/Linux Sistemlerde Dosya ve Dizin Yapısı</a>
-      </div>
-    </li>
-  
-  </ul>
-  <span class="lead">2018</span>
-  <ul class="list-unstyled">
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=MongoDB'de Indexing ve Dahası - Ali İlteriş Keskin&u=https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
     
+      
+        <a href="https://telegram.me/share?text=MongoDB'de Indexing ve Dahası - Ali İlteriş Keskin&url=https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
     
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">03</span>
-        <span class="date month small text-muted">Jun</span>
-        <a href="/posts/ubuntu-opencv-kurulum/">Ubuntu 17.10 Üzerine OpenCV Kurulumu</a>
-      </div>
-    </li>
-  
-
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">13</span>
-        <span class="date month small text-muted">Mar</span>
-        <a href="/posts/usenet-nedir/">Usenet (User’s Network) Nedir?</a>
-      </div>
-    </li>
-  
-  </ul>
-  <span class="lead">2017</span>
-  <ul class="list-unstyled">
+      
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" data-toggle="tooltip" data-placement="top"
+          title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin">
+          <i class="fa-fw fab fa-linkedin"></i>
+        </a>
     
-    
-  
 
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">22</span>
-        <span class="date month small text-muted">Sep</span>
-        <a href="/posts/django-nedir-nasil-kurulur/">Django Nedir? Nasıl Kurulur?</a>
-      </div>
-    </li>
-  
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
 
-  
-  
-  
-    <li>
-      <div>
-        
-        
-        <span class="date day">05</span>
-        <span class="date month small text-muted">Jul</span>
-        <a href="/posts/neden-gnu-linux/">Neden GNU/Linux?</a>
-      </div>
-    </li>
-  
-  </ul>
-  
-
+  </span>
 </div>
 
-      </div>
-    
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
+
+        </div><!-- .post-tail-bottom -->
+
+      </div><!-- div.post-tail -->
+
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
+
+  
+
+  
 
   <!--
   The Pannel on right side (Desktop views)
@@ -1675,13 +1699,498 @@
   </div> <!-- .access -->
 
   
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">İçindekiler</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+
+ v2.0
+ https://github.com/cotes2020/jekyll-theme-chirpy
+ © 2019 Cotes Chung
+ Published under the MIT License
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+  
+    
+    
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+          
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Daha Fazla Okuma</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/google-cloud-storage-mongodb-data-transfer/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Apr 17, 2021
+  
+
+  <i class="unloaded">2021-04-17T18:30:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Mongodb Veritabanınızı Google Cloud Storage'a Aktarın</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Merhaba arkadaşlar, bu yazımda heybooster‘ın
+veritabanı yedeği için yazdığımız bir koddan bahsedeceğim. Bu kod veritabanımızı
+Google Cloud Storageda
+açtığımız bir bucketa yolluyor. Detayları aşağıd...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/github-actions-digitalocean/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Feb 10
+  
+
+  <i class="unloaded">2022-02-10T13:45:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>GitHub Actions ile Otomatik Deployment</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+
+Canım şehrim Samsun’dan herkese selamlar. Sevdiğim insanlarla sevdiğim bir şehirde olduğum için mutluyum. Bu mutlulukla bir yazı yazmak istedim. Yazı da başlıktan anlaşılacağı gibi GitHub Actions...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/disable-aws-cloudwatch/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Jan 21
+  
+
+  <i class="unloaded">2022-01-21T13:45:00+03:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Amazon CloudWatch Servisini Durdurma</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Uyarı:
+
+Önümüzdeki ilk paragraf azıcık iç dökmeli olacak isteyen atlayabilir 😢
+
+
+
+Herkese selam. Bu yazıya başlamadan önce süper bir motivasyonla hazırlanmıştım. Sonra kiracısı olduğum ev satıldığı...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+
+  v2.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/github-actions-digitalocean/" class="btn btn-outline-primary">
+    <p>GitHub Actions ile Otomatik Deployment</p>
+  </a>
+  
+
+  
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
+  
+
 </div>
 
+    
+      <!--
+  The Disqus lazy loading.
+  Powered by: https://osvaldas.info/lazy-loading-disqus-comments
+  v2.0
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2019 Cotes Chung
+  MIT License
+-->
 
+<div id="disqus" class="pt-2 pb-2">
+  <p class="font-italic text-center text-muted small">
+    Comments powered by <a href="https://disqus.com/">Disqus</a>.
+  </p>
+</div>
+
+<script src="/assets/js/lib/jquery.disqusloader.min.js"></script>
+<script>
+  var options = {
+    scriptUrl: '//ilteriskesk.disqus.com/embed.js',
+
+    disqusConfig: function() {
+      this.page.url = 'https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/';
+      this.page.identifier = '/posts/mongodb-indexing-and-more/';
+    }
+  };
+
+  $.disqusLoader('#disqus', options);
+</script>
+    
+
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
+
+<!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('#post-wrapper img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 

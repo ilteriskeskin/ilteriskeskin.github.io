@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "MongoDB&#39;de Indexing ve Dahası",
+    "url": "/posts/mongodb-indexing-and-more/",
+    "categories": "MongoDB",
+    "tags": "nosql, mongodb, database",
+    "date": "2022-02-10 13:45:00 +0300",
+    
+
+
+
+
+
+    "snippet": "Herkese merhaba. Çook uzun süredir (neredeyse 8 ay) yazı yazmıyordum. En büyük nedeni üşengeçlik tabi.MongoDB Nedir?MongoDB, yüksek hacimli veri depolama için kullanılan belge odaklı bir NoSQL veritabanıdır. MongoDB relational veritabanları gibi “table” ve “rows”kullanmamaktadır. Bunun yerine “co..."
+  },
+  
+  {
     "title": "GitHub Actions ile Otomatik Deployment",
     "url": "/posts/github-actions-digitalocean/",
     "categories": "Devops",

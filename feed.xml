@@ -4,18 +4,61 @@
   <id>https://ilteriskeskin.github.io</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2022-06-07T22:40:37+03:00</updated>
+  <updated>2022-10-08T02:54:47+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
     <uri>https://ilteriskeskin.github.io</uri>
   </author>
   <link href="/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://ilteriskeskin.github.io" rel="alternate" type="text/html" />
-  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
   <rights> © 2022 Ali İlteriş Keskin </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>MongoDB'de Indexing ve Dahası</title>
+    <link href="https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" rel="alternate" type="text/html" title="MongoDB'de Indexing ve Dahası" />
+    <published>2022-02-10T13:45:00+03:00</published>
+  
+    <updated>2022-02-10T13:45:00+03:00</updated>
+  
+    <id>https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/</id>
+    <content src="https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" />
+    <author>
+      <name>Ali İlteriş Keskin</name>
+    </author>
+
+  
+    
+    <category term="MongoDB" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Herkese merhaba. Çook uzun süredir (neredeyse 8 ay) yazı yazmıyordum. En büyük nedeni üşengeçlik tabi.
+
+
+
+MongoDB Nedir?
+
+MongoDB, yüksek hacimli veri depolama için kullanılan belge odaklı bir NoSQL veritabanıdır. MongoDB relational veritabanları gibi “table” ve “rows”
+kullanmamaktadır. Bunun yerine “collections” ve “documents” kullanmaktadır. “Documents” dediğimiz şeyler key-value yapısı kul...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -193,49 +236,6 @@ AWS Lambda Nedir?
 
 
   AWS Lambda, sunucu tedarik ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Üç Büyücü Turnuvası | Açık Kaynak Hackathon</title>
-    <link href="https://ilteriskeskin.github.io/posts/diminuendo/" rel="alternate" type="text/html" title="Üç Büyücü Turnuvası | Açık Kaynak Hackathon" />
-    <published>2021-12-12T18:00:00+03:00</published>
-  
-    <updated>2021-12-12T18:00:00+03:00</updated>
-  
-    <id>https://ilteriskeskin.github.io/posts/diminuendo/</id>
-    <content src="https://ilteriskeskin.github.io/posts/diminuendo/" />
-    <author>
-      <name>Ali İlteriş Keskin</name>
-    </author>
-
-  
-    
-    <category term="Python" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Herkese iyi pazarlar. Bu yazımda Teknasyo’nun düzenlediği 
-Üç Büyücü Turnuvası isimli açık kaynak hackathonda 
-geliştirdiğimiz projeden bahsedeceğim. Tabii bir de Üç Büyücü Turnuvasında neler yaşadığımızdan bahsedeceğim. 
-Hazırsak başlayalım.
-
-
-
-Üç Büyücü Turnuvasında Neler Yaptık?
-
-Kod yazdık. Bol bol kod yazıp bugfix çıktık. Tabii hackathon ekibi haxball ve amongus turnuvası düzenledi. Eğlenc...
     </summary>
   
 
