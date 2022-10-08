@@ -1,16 +1,16 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://ilteriskeskin.github.io</id>
+  <id>http://localhost:4000</id>
   <title>Ali İlteriş Keskin</title>
   <subtitle>Ben Ali İlteriş Keskin, yazılım geliştiriciyim. Bu blogda bildiklerimi ve öğrendiklerimi bulabilirsin. Bilginin paylaştıkça artacağına inanıyorum. Bilgi de yazılım gibi özgür olmalı.</subtitle>
-  <updated>2022-10-08T02:54:47+03:00</updated>
+  <updated>2022-10-08T03:07:19+03:00</updated>
   <author>
     <name>Ali İlteriş Keskin</name>
-    <uri>https://ilteriskeskin.github.io</uri>
+    <uri>http://localhost:4000</uri>
   </author>
   <link href="/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="https://ilteriskeskin.github.io" rel="alternate" type="text/html" />
+  <link href="http://localhost:4000" rel="alternate" type="text/html" />
   <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
   <rights> © 2022 Ali İlteriş Keskin </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,13 +20,13 @@
   
   <entry>
     <title>MongoDB'de Indexing ve Dahası</title>
-    <link href="https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" rel="alternate" type="text/html" title="MongoDB'de Indexing ve Dahası" />
+    <link href="http://localhost:4000/posts/mongodb-indexing-and-more/" rel="alternate" type="text/html" title="MongoDB'de Indexing ve Dahası" />
     <published>2022-02-10T13:45:00+03:00</published>
   
     <updated>2022-02-10T13:45:00+03:00</updated>
   
-    <id>https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/</id>
-    <content src="https://ilteriskeskin.github.io/posts/mongodb-indexing-and-more/" />
+    <id>http://localhost:4000/posts/mongodb-indexing-and-more/</id>
+    <content src="http://localhost:4000/posts/mongodb-indexing-and-more/" />
     <author>
       <name>Ali İlteriş Keskin</name>
     </author>
@@ -63,13 +63,13 @@ kullanmamaktadır. Bunun yerine “collections” ve “documents” kullanmakta
   
   <entry>
     <title>GitHub Actions ile Otomatik Deployment</title>
-    <link href="https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" rel="alternate" type="text/html" title="GitHub Actions ile Otomatik Deployment" />
+    <link href="http://localhost:4000/posts/github-actions-digitalocean/" rel="alternate" type="text/html" title="GitHub Actions ile Otomatik Deployment" />
     <published>2022-02-10T13:45:00+03:00</published>
   
     <updated>2022-02-10T13:45:00+03:00</updated>
   
-    <id>https://ilteriskeskin.github.io/posts/github-actions-digitalocean/</id>
-    <content src="https://ilteriskeskin.github.io/posts/github-actions-digitalocean/" />
+    <id>http://localhost:4000/posts/github-actions-digitalocean/</id>
+    <content src="http://localhost:4000/posts/github-actions-digitalocean/" />
     <author>
       <name>Ali İlteriş Keskin</name>
     </author>
@@ -106,13 +106,13 @@ GitHub Acti...
   
   <entry>
     <title>Amazon CloudWatch Servisini Durdurma</title>
-    <link href="https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" rel="alternate" type="text/html" title="Amazon CloudWatch Servisini Durdurma" />
+    <link href="http://localhost:4000/posts/disable-aws-cloudwatch/" rel="alternate" type="text/html" title="Amazon CloudWatch Servisini Durdurma" />
     <published>2022-01-21T13:45:00+03:00</published>
   
     <updated>2022-01-21T13:45:00+03:00</updated>
   
-    <id>https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/</id>
-    <content src="https://ilteriskeskin.github.io/posts/disable-aws-cloudwatch/" />
+    <id>http://localhost:4000/posts/disable-aws-cloudwatch/</id>
+    <content src="http://localhost:4000/posts/disable-aws-cloudwatch/" />
     <author>
       <name>Ali İlteriş Keskin</name>
     </author>
@@ -148,13 +148,13 @@ yapınca sakinleştim. Bir süre önce harika bir savaş sanatı olan Aikido...
   
   <entry>
     <title>AWS Lambda ile Zamanlanmış İşlemler</title>
-    <link href="https://ilteriskeskin.github.io/posts/aws-eventbridge-with-lambda-function/" rel="alternate" type="text/html" title="AWS Lambda ile Zamanlanmış İşlemler" />
+    <link href="http://localhost:4000/posts/aws-eventbridge-with-lambda-function/" rel="alternate" type="text/html" title="AWS Lambda ile Zamanlanmış İşlemler" />
     <published>2022-01-07T06:00:00+03:00</published>
   
     <updated>2022-01-07T06:00:00+03:00</updated>
   
-    <id>https://ilteriskeskin.github.io/posts/aws-eventbridge-with-lambda-function/</id>
-    <content src="https://ilteriskeskin.github.io/posts/aws-eventbridge-with-lambda-function/" />
+    <id>http://localhost:4000/posts/aws-eventbridge-with-lambda-function/</id>
+    <content src="http://localhost:4000/posts/aws-eventbridge-with-lambda-function/" />
     <author>
       <name>Ali İlteriş Keskin</name>
     </author>
@@ -191,13 +191,13 @@ anlatmıştım. Bugün ise lam...
   
   <entry>
     <title>AWS Lambda ile Python</title>
-    <link href="https://ilteriskeskin.github.io/posts/aws-lambda-python/" rel="alternate" type="text/html" title="AWS Lambda ile Python" />
+    <link href="http://localhost:4000/posts/aws-lambda-python/" rel="alternate" type="text/html" title="AWS Lambda ile Python" />
     <published>2021-12-25T14:00:00+03:00</published>
   
     <updated>2021-12-25T14:00:00+03:00</updated>
   
-    <id>https://ilteriskeskin.github.io/posts/aws-lambda-python/</id>
-    <content src="https://ilteriskeskin.github.io/posts/aws-lambda-python/" />
+    <id>http://localhost:4000/posts/aws-lambda-python/</id>
+    <content src="http://localhost:4000/posts/aws-lambda-python/" />
     <author>
       <name>Ali İlteriş Keskin</name>
     </author>

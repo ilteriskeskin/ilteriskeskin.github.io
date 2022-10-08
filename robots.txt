@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: https://ilteriskeskin.github.io/sitemap.xml
+Sitemap: http://localhost:4000/sitemap.xml
